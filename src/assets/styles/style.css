@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: Gilroy;
+    src: url(../fonts/Gilroy/Gilroy-Thin.eot);
+    src: url(../fonts/Gilroy/Gilroy-Thin.eot?#iefix) format("embedded-opentype"),
+    url(../fonts/Gilroy/Gilroy-Thin.woff) format("woff"),
+    url(../fonts/Gilroy/Gilroy-Thin.ttf) format("truetype");
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: Gilroy;
+    src: url(../fonts/Gilroy/Gilroy-ThinItalic.eot);
+    src: url(../fonts/Gilroy/Gilroy-ThinItalic.eot?#iefix) format("embedded-opentype"),
+    url(../fonts/Gilroy/Gilroy-ThinItalic.woff) format("woff"),
+    url(../fonts/Gilroy/Gilroy-ThinItalic.ttf) format("truetype");
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap
+}
+
+@font-face {
+    font-family: Gilroy;
+    src: url(../fonts/Gilroy/Gilroy-Light.woff) format("woff");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap
+}
+
+@font-face {
+    font-family: Gilroy;
+    src: url(../fonts/Gilroy/Gilroy-Regular.woff) format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap
+}
+
+
+@font-face {
+    font-family: Gilroy;
+    src: url(../fonts/Gilroy/Gilroy-Medium.woff) format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap
+}
+:root {
+    --fz:.2778vw;
+}
+@media (min-width: 768px) {
+    :root {
+        --fz:.13021vw
+    }
+}
+
+@media (min-width: 992px) {
+    :root {
+        --fz:.08581vw
+    }
+}
+
+@media (min-width: 1200px) {
+    :root {
+        --fz:.0521vw
+    }
+}
+.content {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+body {
+    font-family: var(--font);
+    margin: 0;
+    padding: 0;
+    font-size: calc(16 * var(--fz));
+    line-height: 1.25;
+    overflow-x: hidden;
+    position: relative;
+    color: var(--color-main);
+    background: #fff;
+    transition:  0.3s ease;
+}
+.content {
+    position: relative;
+    z-index: 5;
+    max-width: var(--container);
+    padding: 0 calc(var(--container-padding) * var(--fz));
+}
+
