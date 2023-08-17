@@ -10,12 +10,12 @@
     align-items: center;
 }
 .logo {
-    margin-right: calc(90 * var(--fz));
+    margin-right: calc(30 * var(--fz));
 
 }
 .logo img {
-    width: calc(150 * var(--fz));
-    height: calc(20 * var(--fz));
+    width: calc(190 * var(--fz));
+    height: calc(25 * var(--fz));
 }
 .navigation , .item-btn ul {
     display: flex;
@@ -80,7 +80,7 @@
     visibility: visible;
 }
 .navigation-dropdown-submenu li a , .submenu-brands ul li a {
-    font-size: 18px;
+    font-size: calc(18 * var(--fz));
     font-style: normal;
     font-weight: 500;
     line-height: 125%; /* 22.5px */
@@ -136,7 +136,7 @@
     height: calc(20 * var(--fz));
 }
 .navigation-phone-num span {
-    font-size: 18px;
+    font-size: calc(18 * var(--fz));
     font-style: normal;
     font-weight: 500;
     line-height: 125%;
@@ -166,8 +166,9 @@
     transition: all 250ms ease-out;
     cursor: pointer;
     position: inherit;
+    margin-left: calc(20 * var(--fz));
   }
-  
+
   .burger:before, .burger:after {
     content: '';
     width: 25px;
@@ -178,22 +179,22 @@
     will-change: transform;
     top: 50%;
   }
-  
+
   .burger:before {
     transform: translateY(-3px);
   }
-  
+
   .burger:after {
     transform: translateY(3px);
   }
-  
+
   .active.burger:before {
     transform: translateY(0) rotate(45deg);
   }
-  
+
   .active.burger:after {
     transform: translateY(0) rotate(-45deg);
-  } 
+  }
 
 
 .mobile-menu {
@@ -203,17 +204,25 @@
     height: 100vh;
     width: 100%;
     background-color: #fff;
-    padding: 18px 16px;
+    margin-top: -1000px;
+    padding: calc(18 * var(--fz)) calc(16 * var(--fz));
+    transition: all 0.5s ease;
+    opacity: 0;
+}
+.mobile-menu.active {
+    opacity: 1;
+    margin-top: 0;
 }
 .mobile-head {
     display: flex;
     justify-content: space-between;
-    align-items: center;  
+    align-items: center;
 }
 .mobile-inner {
     display: flex;
     flex-direction: column;
     padding: 50px 0 42px;
+    height: 100%;
 }
 .mobile-dropdown-item {
     position: relative;
@@ -226,10 +235,86 @@
     width: 12px;
     height: 8px;
 }
-/* .mobile-dropdown-item:active::after {
+.mobile-dropdown-item.mob-dropdown-open::after {
     content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='11' height='7' viewBox='0 0 11 7' fill='none'%3E%3Cline x1='10.5962' y1='5.82816' x2='5.12132' y2='0.353269' stroke='black'/%3E%3Cline x1='5.82871' y1='0.353553' x2='0.353818' y2='5.82845' stroke='black'/%3E%3C/svg%3E");
-} */
+}
 
+.mobile-submenu-repair li a , .mobile-submenu-brands  li a {
+    font-size: calc(16 * var(--fz));
+    font-style: normal;
+    font-weight: 500;
+    line-height: 125%;
+    letter-spacing: -0.48px;
+    color:#474747 ;
+}
+.mobile-list-title {
+    font-size: calc(22 * var(--fz));
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%;
+    letter-spacing: -0.66px;
+    color: var(--black);
+}
+.mobile-submenu-brands li:last-child a {
+    color: var(--carrot, #E55938);
+}
+.dropdown-inner {
+    position: relative;
+}
+.mobile-submenu-repair , .mobile-submenu-brands {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    /* padding-top: 20px; */
+    cursor:pointer;
+    top: -200px;
+    height:0;
+    transition: all 1s;
+    overflow:hidden;
+    opacity: 0;
+}
+.mobile-inner-list  {
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+.mobile-contacts {
+    display: flex;
+    flex-direction: column;
+}
+.mobile-contacts {
+    margin-top: auto;
+    padding-top: 50px;
+    justify-self:flex-end;
+}
+.list-1 {
+    margin-bottom:50px;
+}
+
+.open-mob-submenu {
+    padding-top: 20px;
+    top: 0;
+    height: auto;
+    opacity: 1;
+
+}
+.mobile-contacts li:first-child a {
+    font-size: calc(22 * var(--fz));
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%; /* 24.2px */
+    letter-spacing: -0.66px;
+    color: var(--carrot);
+    margin-top: 8px;
+}
+.mobile-contacts li:last-child a  {
+    font-size: calc(16 * var(--fz));
+    font-style: normal;
+    font-weight: 500;
+    line-height: 125%; /* 20px */
+    letter-spacing: -0.48px;
+    color: var(--black);
+}
 @media (min-width: 1200px) {
     .header {
         padding: calc(41 * var(--fz)) 0;
@@ -262,6 +347,12 @@
     }
     .mobile-menu {
         display: none;
+    }
+    .burger  {
+        display: none;
+    }
+    .logo {
+        margin-right: calc(90 * var(--fz));
     }
 }
 
