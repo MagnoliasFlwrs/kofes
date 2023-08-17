@@ -8,49 +8,32 @@
 }
 @font-face {
     font-family: 'Gilroy';
-    src: url(../fonts/Gilroy/Gilroy-Thin.eot);
-    src: url(../fonts/Gilroy/Gilroy-Thin.eot?#iefix) format("embedded-opentype"),
-    url(../fonts/Gilroy/Gilroy-Thin.woff) format("woff"),
-    url(../fonts/Gilroy/Gilroy-Thin.ttf) format("truetype");
+    src: url(../fonts/Gilroy-Thin.woff) format("woff");
     font-weight: 100;
     font-style: normal;
-    font-display: swap
+    font-display: swap;
 }
-
 @font-face {
     font-family: 'Gilroy';
-    src: url(../fonts/Gilroy/Gilroy-ThinItalic.eot);
-    src: url(../fonts/Gilroy/Gilroy-ThinItalic.eot?#iefix) format("embedded-opentype"),
-    url(../fonts/Gilroy/Gilroy-ThinItalic.woff) format("woff"),
-    url(../fonts/Gilroy/Gilroy-ThinItalic.ttf) format("truetype");
-    font-weight: 100;
-    font-style: italic;
-    font-display: swap
-}
-
-@font-face {
-    font-family: 'Gilroy';
-    src: url(../fonts/Gilroy/Gilroy-Light.woff) format("woff");
+    src: url(../fonts/Gilroy-Light.woff) format("woff");
     font-weight: 300;
     font-style: normal;
-    font-display: swap
+    font-display: swap;
 }
-
 @font-face {
     font-family: 'Gilroy';
-    src: url(../fonts/Gilroy/Gilroy-Regular.woff) format("woff");
+    src: url(../fonts/Gilroy-Regular.woff) format("woff");
     font-weight: 400;
     font-style: normal;
-    font-display: swap
+    font-display: swap;
 }
-
 
 @font-face {
     font-family: 'Gilroy';
-    src: url(../fonts/Gilroy/Gilroy-Medium.woff) format("woff");
+    src: url(../fonts/Gilroy-Medium.woff) format("woff");
     font-weight: 500;
     font-style: normal;
-    font-display: swap
+    font-display: swap;
 }
 :root {
     --fz:.2778vw;
@@ -75,11 +58,18 @@ ol, ul {
     :root {
         --fz:.13021vw
     }
+    body {
+        --container:calc(700 * var(--fz));
+        --container-padding: 15
+    }
 }
 
 @media (min-width: 992px) {
     :root {
         --fz:.08581vw
+    }
+    body {
+        --container:calc(1100 * var(--fz))
     }
 }
 
@@ -87,7 +77,12 @@ ol, ul {
     :root {
         --fz:.0521vw
     }
+    body {
+        --container:calc(1790 * var(--fz));
+        --l-column: calc(25% + (5 * var(--fz)));
+    }
 }
+
 .content {
     width: 100%;
     padding-right: 15px;
@@ -99,7 +94,7 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    font-family:'Gilroy' ;
+    font-family:Gilroy ;
     margin: 0;
     padding: 0;
     font-size: calc(16 * var(--fz));
