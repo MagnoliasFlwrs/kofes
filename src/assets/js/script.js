@@ -28,3 +28,10 @@ function activateMobileDropdown() {
     })
 }
 activateMobileDropdown();
+
+// header animation
+
+const headerAnimLinks = document.querySelectorAll('.link-text');
+headerAnimLinks.forEach(el => {
+    el.dataset.text =  el.innerHTML;
+})

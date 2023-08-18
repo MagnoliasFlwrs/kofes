@@ -315,6 +315,68 @@
     letter-spacing: -0.48px;
     color: var(--black);
 }
+.navigation-item li .link-text , .item-btn .navigation-phone-num .link-text{
+    color: transparent;
+    position: relative;
+    
+}
+.navigation-item li .link-text::after , .navigation-item li .link-text::before
+,.item-btn .link-text::before , .item-btn .link-text::after {
+    content: attr(data-text);
+    display: inline-block;
+    vertical-align: top;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: .4s ease-out;
+    will-change: transform;
+    transform-origin: 50% 50% .5em;
+}
+.navigation-item li .link-text::before , .item-btn .link-text::before{
+    color: var(--black) ;
+}
+
+.navigation-item li .link-text:hover::before  {
+    animation: c .4s ease-out 1;
+    color: var(--black);
+}
+.item-btn .navigation-phone-num .link-text:hover::before  {
+    animation: c .4s ease-out 1;
+    color: var(--carrot);
+}
+.navigation-item li .link-text:hover::after {
+    color: var(--text-gray);
+    animation: d .4s ease-out 1;
+    opacity: 0;
+}
+.item-btn .link-text:hover::after {
+    color: var(--carrot);
+    animation: d .4s ease-out 1;
+    opacity: 0;
+}
+
+
+@keyframes c {
+    0% {
+        transform: rotateX(90deg)
+    }
+
+    to {
+        transform: rotate3d(0,0,0,90deg)
+    }
+}
+
+@keyframes d {
+    0% {
+        transform: rotate3d(0,0,0,90deg)
+    }
+
+    to {
+        transform: rotate3d(-1,0,0,90deg)
+    }
+}
 @media (min-width: 1200px) {
     .header {
         padding: calc(41 * var(--fz)) 0;
