@@ -116,14 +116,14 @@ body {
     padding: 0 calc(var(--container-padding) * var(--fz));
 }
 .carrot-btn {
-    padding: 12px 60px;
+    padding: calc(12 * var(--fz))  calc(35 * var(--fz));
     border-radius: 1000px;
     border: 2px solid var(--carrot, #E55938);
     background-color: var(--carrot, #E55938);
-    font-size: calc(26 * var(--fz));
+    font-size: calc(16 * var(--fz));
     font-style: normal;
     font-weight: 500;
-    line-height: 125%; 
+    line-height: 125%;
     letter-spacing: -0.78px;
     color: #fff;
     cursor: pointer;
@@ -132,14 +132,14 @@ body {
     background-color: var(--carrot-2);
 }
 .dark-btn {
-    padding: 12px 60px;
+    padding: calc(12 * var(--fz))  calc(60 * var(--fz));
     border-radius: 1000px;
     border: 2px solid var(--black-2, #303030);
     background-color: var(--black-2, #303030);
     font-size: calc(26 * var(--fz));
     font-style: normal;
     font-weight: 500;
-    line-height: 125%; 
+    line-height: 125%;
     letter-spacing: -0.78px;
     color: #fff;
     cursor: pointer;
@@ -149,13 +149,13 @@ body {
     color: #fff;
 }
 .dark-border-btn {
-    padding: 8px 35px;
+    padding: calc(8 * var(--fz))  calc(35 * var(--fz));
     border-radius: 1000px;
     border: 2px solid var(--black-2, #303030);
     font-size: calc(26 * var(--fz));
     font-style: normal;
     font-weight: 500;
-    line-height: 125%; 
+    line-height: 125%;
     letter-spacing: -0.78px;
     color: var(--black-2, #303030);
     cursor: pointer;
@@ -165,14 +165,14 @@ body {
     background-color: var(--carrot);
 }
 .gray-btn {
-    padding: 12px 60px;
+    padding: calc(12 * var(--fz))  calc(60 * var(--fz));
     border-radius: 1000px;
     border: 2px solid var(--soft-gray, #F3F4F5);
     background-color: var(--soft-gray, #F3F4F5);
     font-size: calc(26 * var(--fz));
     font-style: normal;
     font-weight: 500;
-    line-height: 125%; 
+    line-height: 125%;
     letter-spacing: -0.78px;
     color: var(--black-3, #212121);
     cursor: pointer;
@@ -183,18 +183,33 @@ body {
     color: #fff;
 }
 .carrot-border-btn {
-    padding: 16px 30px;
+    padding: calc(16 * var(--fz))  calc(30 * var(--fz));
     border-radius: 1000px;
     background-color: #fff;
     border: 2px solid var(--carrot, #E55938);
     font-size: calc(20 * var(--fz));
     font-style: normal;
     font-weight: 500;
-    line-height: 125%; 
+    line-height: 125%;
     letter-spacing: -0.6px;
     cursor: pointer;
 }
 .carrot-border-btn:hover {
     background: var(--black-2, #303030);
     color: #fff;
+}
+@media (min-width:992px) {
+    .carrot-btn {
+        padding: calc(12 * var(--fz))  calc(60 * var(--fz));
+        border-radius: 1000px;
+        border: 2px solid var(--carrot, #E55938);
+        background-color: var(--carrot, #E55938);
+        font-size: calc(22 * var(--fz));
+        font-style: normal;
+        font-weight: 500;
+        line-height: 125%;
+        letter-spacing: -0.78px;
+        color: #fff;
+        cursor: pointer;
+    }
 }

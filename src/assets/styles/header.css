@@ -74,6 +74,7 @@
     background-color: #ffffff;
     opacity: 0;
     visibility: hidden;
+    z-index: 3;
 }
 .repair-dropdown:hover .navigation-dropdown-submenu , .brands-dropdown:hover .brands-submenu  {
     opacity: 1;
@@ -318,7 +319,7 @@
 .navigation-item li .link-text , .item-btn .navigation-phone-num .link-text{
     color: transparent;
     position: relative;
-    
+
 }
 .navigation-item li .link-text::after , .navigation-item li .link-text::before
 ,.item-btn .link-text::before , .item-btn .link-text::after {
