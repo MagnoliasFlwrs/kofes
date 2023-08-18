@@ -1,4 +1,6 @@
 @import url(./header.css);
+@import url(./main-page.css);
+@import url(./footer.css);
 
 
 * {
@@ -43,8 +45,10 @@
     --line-gray:#DBDDE1;
     --black-2:#303030;
     --carrot:#E55938;
+    --carrot-2:#E3512E;
     --black-3:#212121;
     --text-gray:#848484;
+    --soft-gray:#F3F4F5;
 }
 a {
     text-decoration: none;
@@ -111,4 +115,86 @@ body {
     max-width: var(--container);
     padding: 0 calc(var(--container-padding) * var(--fz));
 }
-
+.carrot-btn {
+    padding: 12px 60px;
+    border-radius: 1000px;
+    border: 2px solid var(--carrot, #E55938);
+    background-color: var(--carrot, #E55938);
+    font-size: calc(26 * var(--fz));
+    font-style: normal;
+    font-weight: 500;
+    line-height: 125%; 
+    letter-spacing: -0.78px;
+    color: #fff;
+    cursor: pointer;
+}
+.carrot-btn:hover {
+    background-color: var(--carrot-2);
+}
+.dark-btn {
+    padding: 12px 60px;
+    border-radius: 1000px;
+    border: 2px solid var(--black-2, #303030);
+    background-color: var(--black-2, #303030);
+    font-size: calc(26 * var(--fz));
+    font-style: normal;
+    font-weight: 500;
+    line-height: 125%; 
+    letter-spacing: -0.78px;
+    color: #fff;
+    cursor: pointer;
+}
+.dark-btn:hover {
+    background-color: var(--black-3, #212121);
+    color: #fff;
+}
+.dark-border-btn {
+    padding: 8px 35px;
+    border-radius: 1000px;
+    border: 2px solid var(--black-2, #303030);
+    font-size: calc(26 * var(--fz));
+    font-style: normal;
+    font-weight: 500;
+    line-height: 125%; 
+    letter-spacing: -0.78px;
+    color: var(--black-2, #303030);
+    cursor: pointer;
+}
+.dark-border-btn:hover {
+    color: #fff;
+    background-color: var(--carrot);
+}
+.gray-btn {
+    padding: 12px 60px;
+    border-radius: 1000px;
+    border: 2px solid var(--soft-gray, #F3F4F5);
+    background-color: var(--soft-gray, #F3F4F5);
+    font-size: calc(26 * var(--fz));
+    font-style: normal;
+    font-weight: 500;
+    line-height: 125%; 
+    letter-spacing: -0.78px;
+    color: var(--black-3, #212121);
+    cursor: pointer;
+}
+.gray-btn:hover {
+    border: 2px solid var(--black-3, #212121);
+    background: var(--black-3, #212121);
+    color: #fff;
+}
+.carrot-border-btn {
+    padding: 16px 30px;
+    border-radius: 1000px;
+    background-color: #fff;
+    border: 2px solid var(--carrot, #E55938);
+    font-size: calc(20 * var(--fz));
+    font-style: normal;
+    font-weight: 500;
+    line-height: 125%; 
+    letter-spacing: -0.6px;
+    cursor: pointer;
+}
+.carrot-border-btn:hover {
+    background: var(--black-2, #303030);
+    color: #fff;
+}
