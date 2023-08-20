@@ -35,3 +35,22 @@ const headerAnimLinks = document.querySelectorAll('.link-text');
 headerAnimLinks.forEach(el => {
     el.dataset.text =  el.innerHTML;
 })
+
+const swiper = new Swiper('.staff-swiper', {
+    slidesPerView: 2,
+    loop: true,
+    centeredSlides: true,
+    spaceBetween: 16,
+    speed: 2000,
+    freeMode: true,
+    autoplay: {
+      delay: 0,
+      disableOnInteraction: false,
+    },
+    breakpoints: {
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 20
+        }
+      }
+   });
