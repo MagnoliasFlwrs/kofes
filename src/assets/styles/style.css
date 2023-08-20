@@ -128,6 +128,8 @@ body {
     letter-spacing: -0.78px;
     color: #fff;
     cursor: pointer;
+    text-align: center;
+    display: inline-block;
 }
 .carrot-btn:hover {
     background-color: var(--carrot-2);
@@ -153,17 +155,19 @@ body {
     padding: calc(8 * var(--fz))  calc(35 * var(--fz));
     border-radius: 1000px;
     border: 2px solid var(--black-2, #303030);
-    font-size: calc(26 * var(--fz));
+    font-size: calc(16 * var(--fz));
     font-style: normal;
     font-weight: 500;
     line-height: 125%;
     letter-spacing: -0.78px;
     color: var(--black-2, #303030);
     cursor: pointer;
+    background-color: transparent;
 }
 .dark-border-btn:hover {
     color: #fff;
     background-color: var(--carrot);
+    border: 2px solid var(--carrot, #E55938);
 }
 .gray-btn {
     padding: calc(12 * var(--fz))  calc(60 * var(--fz));
@@ -199,6 +203,22 @@ body {
     background: var(--black-2, #303030);
     color: #fff;
 }
+.circle-btn {
+    display: flex;
+    width: calc(80 * var(--fz));
+    height: calc(80 * var(--fz));
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    flex-shrink: 0;
+    border-radius: 500px;
+    background-color: var(--carrot);
+    border: none;
+    cursor: pointer;
+}
+.circle-btn::hover {
+    background-color: var(--carrot-2);
+}
 @media (min-width:992px) {
     .carrot-btn {
         padding: calc(12 * var(--fz))  calc(60 * var(--fz));
@@ -212,5 +232,12 @@ body {
         letter-spacing: -0.78px;
         color: #fff;
         cursor: pointer;
+    }
+    .circle-btn {
+        width: calc(120 * var(--fz));
+        height: calc(120 * var(--fz));
+    }
+    .dark-border-btn {
+        font-size: calc(26 * var(--fz));
     }
 }
