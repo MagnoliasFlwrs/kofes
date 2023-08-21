@@ -7,6 +7,108 @@
     <title>Главная</title>
 </head>
 <body>
+    <div class="overlay"></div>
+    <div class="modal modal-order ">
+        <div class="modal-close">
+            <div class="close-inner">
+                <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44" fill="none">
+                    <rect x="14.0587" y="13" width="23.9583" height="1.49739" rx="0.748697" transform="rotate(45 14.0587 13)" fill="#2E3331"/>
+                    <rect x="13" y="29.9409" width="23.9583" height="1.49739" rx="0.748697" transform="rotate(-45 13 29.9409)" fill="#2E3331"/>
+                    <rect x="1" y="1" width="42" height="42" rx="21" stroke="black" stroke-width="2"/>
+                  </svg>
+            </div>
+        </div>
+        <div class="modal-content">
+            <h3>Консультация <br> и заказ</h3>
+            <p>Оставьте заявку и наши специалисты свяжутся с Вами</p>
+            <form >
+                <div class="input-wrap">
+                    <input type="text" name="modal-cons-name" required>
+                    <div class="label-box">
+                        <label class="custom-placeholder">Имя <span>*</span></label> 
+                    </div>
+                </div>
+                <div class="input-wrap">
+                    <input type="tel" name="modal-cons-tel" required>
+                    <div class="label-box">
+                        <label class="custom-placeholder">Телефон <span>*</span></label> 
+                    </div>
+                </div>
+                <div class="input-wrap">
+                    <input type="text" name="modal-cons-comm" required>
+                    <div class="label-box">
+                        <label class="custom-placeholder">Комментарий к заказу</label> 
+                    </div>
+                </div>
+                <div class="submit-wrap">
+                    <button class="carrot-btn" type="submit">Отправить</button>
+                    <span>Согласен(а) с политикой обработки 
+                        персональных данных и офертой</span>
+                </div>
+
+            </form>
+            
+        </div>
+    </div>
+    <div class="modal modal-application ">
+        <div class="modal-close">
+            <div class="close-inner">
+                <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44" fill="none">
+                    <rect x="14.0587" y="13" width="23.9583" height="1.49739" rx="0.748697" transform="rotate(45 14.0587 13)" fill="#2E3331"/>
+                    <rect x="13" y="29.9409" width="23.9583" height="1.49739" rx="0.748697" transform="rotate(-45 13 29.9409)" fill="#2E3331"/>
+                    <rect x="1" y="1" width="42" height="42" rx="21" stroke="black" stroke-width="2"/>
+                  </svg>
+            </div>
+        </div>
+        <div class="modal-content">
+            <h3>Оставить заявку</h3>
+            <p>Оставьте заявку и наши специалисты свяжутся с Вами</p>
+            <form >
+                <div class="input-wrap">
+                    <input type="text" name="modal-cons-name" required>
+                    <div class="label-box">
+                        <label class="custom-placeholder">Имя <span>*</span></label> 
+                    </div>
+                </div>
+                <div class="input-wrap">
+                    <input type="tel" name="modal-cons-tel" required>
+                    <div class="label-box">
+                        <label class="custom-placeholder">Телефон <span>*</span></label> 
+                    </div>
+                </div>
+                <div class="input-wrap">
+                    <input type="text" name="modal-cons-comm" required>
+                    <div class="label-box">
+                        <label class="custom-placeholder">Комментарий к заказу</label> 
+                    </div>
+                </div>
+                <div class="submit-wrap">
+                    <button class="carrot-btn" type="submit">Отправить</button>
+                    <span>Согласен(а) с политикой обработки 
+                        персональных данных и офертой</span>
+                </div>
+
+            </form>
+            
+        </div>
+    </div>
+    <div class="send-ok-message ">
+        <div class="modal-close">
+            <div class="close-inner">
+                <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44" fill="none">
+                    <rect x="14.0587" y="13" width="23.9583" height="1.49739" rx="0.748697" transform="rotate(45 14.0587 13)" fill="#2E3331"/>
+                    <rect x="13" y="29.9409" width="23.9583" height="1.49739" rx="0.748697" transform="rotate(-45 13 29.9409)" fill="#2E3331"/>
+                    <rect x="1" y="1" width="42" height="42" rx="21" stroke="black" stroke-width="2"/>
+                  </svg>
+            </div>
+        </div>
+        <div class="send-ok-content">
+            <h3>Ваша заявка отправлена</h3>
+            <p>В ближайшее время наши специалисты 
+                свяжуться с Вами для уточнения деталей ремонта.</p>
+            <button class="carrot-btn">Продолжить</button>
+        </div>
+    </div>
     <header class="header">
         <div class="content">
             <div class="header-wrapper header-wrapper-desctop">
@@ -207,7 +309,7 @@
                             <h2>Ремонт и сервис кофемашин всех видов с гарантией</h2>
                             <p>Собственный сервисный центр в Санкт-Петербурге.
                                 Работаем без посредников</p>
-                            <button class="carrot-btn ">Заявка на ремонт</button>
+                            <button class="to-application carrot-btn ">Заявка на ремонт</button>
                         </div>
                     </div>
                     <div class="desktop-banner">
@@ -215,7 +317,7 @@
                             <h2>Ремонт и сервис кофемашин <br> всех видов с гарантией</h2>
                             <p>Собственный сервисный центр в Санкт-Петербурге.<br>
                                 Работаем без посредников</p>
-                            <button class="carrot-btn ">Заявка на ремонт</button>
+                            <button class="carrot-btn to-application">Заявка на ремонт</button>
                         </div>
                     </div>
 
@@ -400,7 +502,7 @@
                                 <p class="problems-card-price">
                                     от <span>900</span> руб.
                                 </p>
-                                <button type="button" class="dark-border-btn">Заказать</button>
+                                <button type="button" class="to-order dark-border-btn">Заказать</button>
                             </div>
                         </div>
                     </div>
@@ -422,7 +524,7 @@
                                 <p class="problems-card-price">
                                     от <span>900</span> руб.
                                 </p>
-                                <button type="button" class="dark-border-btn">Заказать</button>
+                                <button type="button" class="to-order dark-border-btn">Заказать</button>
                             </div>
                         </div>
                     </div>
@@ -443,7 +545,7 @@
                                 <p class="problems-card-price">
                                     от <span>900</span> руб.
                                 </p>
-                                <button type="button" class="dark-border-btn">Заказать</button>
+                                <button type="button" class=" to-order dark-border-btn">Заказать</button>
                             </div>
                         </div>
                     </div>
@@ -469,7 +571,7 @@
                                 <p class="problems-card-price">
                                     от <span>900</span> руб.
                                 </p>
-                                <button type="button" class="dark-border-btn">Заказать</button>
+                                <button type="button" class="to-order dark-border-btn">Заказать</button>
                             </div>
                         </div>
                     </div>
@@ -491,7 +593,7 @@
                                 <p class="problems-card-price">
                                     от <span>900</span> руб.
                                 </p>
-                                <button type="button" class="dark-border-btn">Заказать</button>
+                                <button type="button" class="to-order dark-border-btn">Заказать</button>
                             </div>
                         </div>
                     </div>
@@ -512,7 +614,7 @@
                                 <p class="problems-card-price">
                                     от <span>900</span> руб.
                                 </p>
-                                <button type="button" class="dark-border-btn">Заказать</button>
+                                <button type="button" class="to-order dark-border-btn">Заказать</button>
                             </div>
                         </div>
                     </div>
@@ -532,7 +634,7 @@
                                 <p class="problems-card-price">
                                     от <span>900</span> руб.
                                 </p>
-                                <button type="button" class="dark-border-btn">Заказать</button>
+                                <button type="button" class="to-order dark-border-btn">Заказать</button>
                             </div>
                         </div>
                     </div>
@@ -552,7 +654,7 @@
                                 <p class="problems-card-price">
                                     от <span>900</span> руб.
                                 </p>
-                                <button type="button" class="dark-border-btn">Заказать</button>
+                                <button type="button" class="to-order dark-border-btn">Заказать</button>
                             </div>
                         </div>
                     </div>
@@ -572,7 +674,7 @@
                                 <p class="problems-card-price">
                                     от <span>900</span> руб.
                                 </p>
-                                <button type="button" class="dark-border-btn">Заказать</button>
+                                <button type="button" class="to-order dark-border-btn">Заказать</button>
                             </div>
                         </div>
                     </div>
@@ -594,7 +696,7 @@
                                 <p class="problems-card-price">
                                     от <span>900</span> руб.
                                 </p>
-                                <button type="button" class="dark-border-btn">Заказать</button>
+                                <button type="button" class="to-order dark-border-btn">Заказать</button>
                             </div>
                         </div>
                     </div>
@@ -614,7 +716,7 @@
                                 <p class="problems-card-price">
                                     от <span>900</span> руб.
                                 </p>
-                                <button type="button" class="dark-border-btn">Заказать</button>
+                                <button type="button" class="to-order dark-border-btn">Заказать</button>
                             </div>
                         </div>
                     </div>
@@ -635,7 +737,7 @@
                                 <p class="problems-card-price">
                                     от <span>900</span> руб.
                                 </p>
-                                <button type="button" class="dark-border-btn">Заказать</button>
+                                <button type="button" class="to-order dark-border-btn">Заказать</button>
                             </div>
                         </div>
                     </div>
@@ -643,7 +745,6 @@
 
             </div>
         </div>
-        <!-- to do -->
         <div class="dark-form">
             <div class="content">
                 <div class="dark-form-inner">
@@ -658,15 +759,22 @@
                     <div class="form-wrap">
                         <div class="form">
                             <div class="input-wrap">
-                                <input type="tel" name="form-tel">
-                                <p class="custom-placeholder">Телефон <span>*</span></p>
+                                <input type="tel" name="form-tel" required>
+                                <div class="label-box">
+                                    <label class="custom-placeholder">Телефон <span>*</span></label> 
+                                </div>
+                                
                             </div>
                             <div class="input-wrap">
                                 <input type="text" name="form-text">
-                                <p class="custom-placeholder">Опишите проблему</p>
+                                <div class="label-box">
+                                    <label class="custom-placeholder">Опишите проблему</label> 
+                                </div>
                             </div>
-                            <button type="submit">Отправить</button>
-                            <span>Согласен(а) с политикой обработки персональных данных и офертой</span>
+                            <div class="input-wrap">
+                                <button class="carrot-btn" type="submit">Отправить</button>
+                                <span>Согласен(а) с политикой обработки персональных данных и офертой</span>
+                            </div>
                         </div>
 
                     </div>
@@ -679,7 +787,7 @@
                     <h3>Часто задаваемые вопросы</h3>
                     <div class="accordion-container">
                         <div class="acc-col">
-                            <div class="box active">
+                            <div class="box">
                                 <div class="label">
                                   <p>Что в первую очередь
                                       проверяется при диагностике кофемашины?</p>
@@ -747,6 +855,96 @@
                                   </div>
                                 </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="team">
+            <div class="content">
+                <div class="team-inner">
+                    <div class="swiper team-swiper">
+                        <div class="team-row">
+                            <h3>Ваша команда мастеров</h3>
+                            <div class="team-arrows">
+                                <div class="team-button-prev arrow-btn ">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+                                        <g clip-path="url(#clip0_3684_27987)">
+                                          <path fill-rule="evenodd" clip-rule="evenodd" d="M14.0624 7.50002C14.0624 7.3757 14.013 7.25647 13.9251 7.16856C13.8372 7.08065 13.7179 7.03127 13.5936 7.03127L2.53767 7.03127L5.48799 4.08189C5.57601 3.99387 5.62545 3.8745 5.62545 3.75002C5.62545 3.62554 5.57601 3.50616 5.48799 3.41814C5.39997 3.33012 5.28059 3.28068 5.15611 3.28068C5.03163 3.28068 4.91225 3.33012 4.82424 3.41814L1.07424 7.16814C1.03058 7.21169 0.995949 7.26341 0.972318 7.32036C0.948687 7.37731 0.936523 7.43836 0.936523 7.50002C0.936523 7.56168 0.948687 7.62273 0.972318 7.67967C0.995949 7.73662 1.03058 7.78835 1.07424 7.83189L4.82424 11.5819C4.86782 11.6255 4.91956 11.66 4.9765 11.6836C5.03344 11.7072 5.09448 11.7194 5.15611 11.7194C5.28059 11.7194 5.39997 11.6699 5.48799 11.5819C5.57601 11.4939 5.62545 11.3745 5.62545 11.25C5.62545 11.1255 5.57601 11.0062 5.48799 10.9181L2.53767 7.96877L13.5936 7.96877C13.7179 7.96877 13.8372 7.91938 13.9251 7.83147C14.013 7.74357 14.0624 7.62434 14.0624 7.50002Z" fill="white"/>
+                                        </g>
+                                        <defs>
+                                          <clipPath id="clip0_3684_27987">
+                                            <rect width="15" height="15" fill="white" transform="translate(0 15) rotate(-90)"/>
+                                          </clipPath>
+                                        </defs>
+                                      </svg>
+                                </div>
+                                <div class="team-button-next arrow-btn ">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+                                        <g clip-path="url(#clip0_3684_27990)">
+                                          <path fill-rule="evenodd" clip-rule="evenodd" d="M0.937639 7.49998C0.937639 7.6243 0.987024 7.74353 1.07493 7.83144C1.16284 7.91935 1.28207 7.96873 1.40639 7.96873L12.4623 7.96873L9.51201 10.9181C9.42399 11.0061 9.37455 11.1255 9.37455 11.25C9.37455 11.3745 9.42399 11.4938 9.51201 11.5819C9.60003 11.6699 9.71941 11.7193 9.84389 11.7193C9.96837 11.7193 10.0877 11.6699 10.1758 11.5819L13.9258 7.83186C13.9694 7.78831 14.0041 7.73659 14.0277 7.67964C14.0513 7.62269 14.0635 7.56164 14.0635 7.49998C14.0635 7.43832 14.0513 7.37727 14.0277 7.32033C14.0041 7.26338 13.9694 7.21165 13.9258 7.16811L10.1758 3.41811C10.1322 3.37452 10.0804 3.33995 10.0235 3.31637C9.96656 3.29278 9.90552 3.28064 9.84389 3.28064C9.71941 3.28064 9.60003 3.33009 9.51201 3.41811C9.424 3.50613 9.37455 3.6255 9.37455 3.74998C9.37455 3.87446 9.42399 3.99384 9.51201 4.08186L12.4623 7.03123L1.40639 7.03123C1.28207 7.03123 1.16284 7.08062 1.07493 7.16853C0.987024 7.25643 0.937639 7.37566 0.937639 7.49998Z" fill="white"/>
+                                        </g>
+                                        <defs>
+                                          <clipPath id="clip0_3684_27990">
+                                            <rect width="15" height="15" fill="white" transform="translate(15) rotate(90)"/>
+                                          </clipPath>
+                                        </defs>
+                                      </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="./src/assets/images/main-page/team/team1.png" alt="team-image"></div>
+                            <div class="swiper-slide"><img src="./src/assets/images/main-page/team/team2.png" alt="team-image"></div>
+                            <div class="swiper-slide"><img src="./src/assets/images/main-page/team/team3.png" alt="team-image"></div>
+                            <div class="swiper-slide"><img src="./src/assets/images/main-page/team/team1.png" alt="team-image"></div>
+                            <div class="swiper-slide"><img src="./src/assets/images/main-page/team/team2.png" alt="team-image"></div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+        <div class="repair">
+            <div class="content">
+                <div class="repair-inner">
+                    <div class="repair-col">
+                        <h3>Где отремонтировать 
+                            кофемашину 
+                            в Санкт-Петербурге</h3>
+                    </div>
+                    <div class="repair-col">
+                        <p>Сложно представить начало дня без чашки ароматного кофе. Бодрящий и вкусный напиток стал частью жизни современного человека. Дома, на работе, в кофейне его предпочитают готовить с помощью специальной техники, которая создает неповторимые вкусовые сочетания.</p>
+                        <p>Высокотехнологичные аппараты нуждаются в периодической диагностике и ремонте, которые продлевают период использования оборудования, минимизируют затраты на обслуживание.</p>
+                        <p>Провести профессиональный осмотр и диагностические процедуры стоит в таких случаях:</p>
+                        <ul>
+                            <li>подтёки в узлах устройства;</li>
+                            <li>налив кофе стал затрудненным;</li>
+                            <li>аппарат перестал греть воду;</li>
+                            <li>на панели управления высвечивается ошибка;</li>
+                            <li>агрегат не включается.</li>
+                        </ul>
+                        <p>Проблемы становятся причиной выхода устройства из строя, 
+                            что в итоге приводят к дорогому ремонту.</p>
+                        <h4>Восстановительные мероприятия</h4>
+                        <p>Производить ремонт кофемашин должны только квалифицированные мастера, имеющие опыт работы с оборудованием. Специалисты проводят комплексную диагностику, готовы при необходимости быстро отремонтировать технику, предоставив 
+                            гарантии на выполненные работы.</p>
+                        <p>Частые причины неисправностей:</p>
+                        <ul>
+                            <li>нарушение герметичности гидросистемы;</li>
+                            <li>засорение фильтрующих устройств;</li>
+                            <li>поломка механических элементов;</li>
+                            <li>выход из строя нагревателя;</li>
+                            <li>проблемы с платой управления и т.д.</li>
+                        </ul>
+                        <p>После всех восстановительных или ремонтных работ мастер обязательно проверит работоспособность кофемашины и настроит ее на требуемый пользователю режим.</p>
+                        <h4>Цены на ремонт кофемашин</h4>
+                        <p>Стоимость обслуживания рассчитывается персонально и зависит от таких факторов:</p>
+                        <ul>
+                            <li>срочность работ;</li>
+                            <li>особенности поломки;</li>
+                            <li>бренд техники;</li>
+                            <li>необходимость замены деталей.</li>
+                        </ul>
+                        <p>Вашей кофемашине нужен срочный ремонт в СПб? Звоните по указанным на сайте телефонам и специалист сразу отправится на вызов!</p>
                     </div>
                 </div>
             </div>

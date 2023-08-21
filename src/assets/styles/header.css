@@ -209,6 +209,7 @@
     padding: calc(18 * var(--fz)) calc(16 * var(--fz));
     transition: all 0.5s ease;
     opacity: 0;
+    z-index: 10;
 }
 .mobile-menu.active {
     opacity: 1;
