@@ -220,6 +220,29 @@ body {
 .circle-btn:hover {
     background-color: var(--carrot-2);
 }
+.breadcrumbs {
+    display: flex;
+    gap: 5px;
+    margin-bottom: calc(20 * var(--fz));
+}
+.breadcrumbs li {
+    padding: calc(3 * var(--fz)) calc(15 * var(--fz));
+    border-radius: 100px;
+    background-color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.breadcrumbs li a {
+    color: var(--text-gray, #848484);
+    font-size: calc(14 * var(--fz));
+    font-style: normal;
+    font-weight: 500;
+    line-height: 125%;
+}
+.breadcrumbs .breadcrumbs-page-now {
+    opacity: 0.65;
+}
 @media (min-width:992px) {
     .carrot-btn {
         padding: calc(12 * var(--fz))  calc(60 * var(--fz));
@@ -241,10 +264,17 @@ body {
     .dark-border-btn {
         font-size: calc(26 * var(--fz));
     }
+    .breadcrumbs {
+        gap: 10px;
+        margin-bottom: calc(30 * var(--fz));
+    }
+    .breadcrumbs li a {
+        font-size: calc(16 * var(--fz));
+    }
 }
 @media (min-width:1200px) {
     .carrot-btn {
         font-size: calc(30 * var(--fz));
     }
-    
+
 }
