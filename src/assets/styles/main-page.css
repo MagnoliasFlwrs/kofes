@@ -364,7 +364,7 @@
     max-width: 32%;
     width: calc(90 * var(--fz));
     height: calc(90 * var(--fz));
-    border-radius: 100px;
+    border-radius: 100%;
     background-color: #fff;
     display: flex;
     justify-content: center;
@@ -817,6 +817,9 @@
     .accordion-container .box .acc-content p {
         font-size: calc(26 * var(--fz));
     }
+    .accordion-container .box .label {
+        height: 250px;
+    }
     .accordion-container .box .label p {
         font-size: calc(42 * var(--fz));
     }
@@ -875,7 +878,7 @@
     }
     .problems-card {
         padding-bottom: calc(60 * var(--fz));
-        height: 600px;
+        height: 700px;
     }
     .problems-card-head p {
         font-size: calc(42 * var(--fz));
@@ -908,6 +911,7 @@
     }
     .accordion-container .box .label {
         padding: calc(60 * var(--fz));
+        height: 250px;
     }
     .faq-accord h3 {
         padding: 0 calc(60 * var(--fz));
