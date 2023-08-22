@@ -408,6 +408,10 @@
     }
     .navigation .dropdown-item , .navigation .item-btn ul {
         display: flex;
+        align-items: center;
+    }
+    .brands-inner {
+        gap: 80px;
     }
 }
 @media (min-width:992px) {
@@ -435,15 +439,9 @@
         width: calc(292 * var(--fz));
         height: calc(40 * var(--fz));
     }
-    /* .mobile-menu {
-        display: none;
+    .brands-inner {
+        gap: 50px;
     }
-    .burger  {
-        display: none;
-    }
-    .logo {
-        margin-right: calc(90 * var(--fz));
-    } */
 }
 
 @media (min-width: 738px) {
