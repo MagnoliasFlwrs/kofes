@@ -209,3 +209,12 @@ inputs.forEach(el=> {
     })
     
 })
+
+// show more
+const showMoreBtn = document.querySelector('.show-more-btn');
+const showMoreBody = document.querySelector('.show-more-body');
+
+showMoreBtn.addEventListener('click' , ()=> {
+    showMoreBody.classList.add('active');
+    showMoreBtn.style.display="none";
+})

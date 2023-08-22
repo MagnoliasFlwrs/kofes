@@ -935,12 +935,12 @@
         padding-top: calc(120 * var(--fz));
     }
     .problems-card-head {
-        height: 190px;
+        height: 100px;
         padding: calc(20 * var(--fz)) calc(60 * var(--fz)) calc(20 * var(--fz));
     }
     .problems-card {
         padding-bottom: calc(30 * var(--fz));
-        height: 700px;
+        height: 600px;
     }
 
     .problems-card-head img {
@@ -949,7 +949,7 @@
     }
     .problems-card-info {
         padding: calc(40 * var(--fz)) calc(60 * var(--fz)) 0;
-        height: calc(100% - 190px);
+        height: calc(100% - 100px);
     }
     .problems-card-info ul {
         gap: calc(15 * var(--fz));

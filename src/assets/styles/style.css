@@ -136,11 +136,11 @@ body {
     background-color: var(--carrot-2);
 }
 .dark-btn {
-    padding: calc(12 * var(--fz))  calc(60 * var(--fz));
+    padding: calc(12 * var(--fz))  calc(35 * var(--fz));
     border-radius: 1000px;
     border: 2px solid var(--black-2, #303030);
     background-color: var(--black-2, #303030);
-    font-size: calc(26 * var(--fz));
+    font-size: calc(16 * var(--fz));
     font-style: normal;
     font-weight: 500;
     line-height: 125%;
@@ -222,6 +222,7 @@ body {
 }
 .breadcrumbs {
     display: flex;
+    flex-wrap: wrap;
     gap: 5px;
     margin-bottom: calc(20 * var(--fz));
 }
@@ -271,10 +272,18 @@ body {
     .breadcrumbs li a {
         font-size: calc(16 * var(--fz));
     }
+    .dark-btn {
+        padding: calc(12 * var(--fz))  calc(40 * var(--fz));
+        font-size: calc(20 * var(--fz));
+    }
 }
 @media (min-width:1200px) {
     .carrot-btn {
         font-size: calc(30 * var(--fz));
+    }
+    .dark-btn {
+        padding: calc(12 * var(--fz))  calc(60 * var(--fz));
+        font-size: calc(26 * var(--fz));
     }
 
 }
