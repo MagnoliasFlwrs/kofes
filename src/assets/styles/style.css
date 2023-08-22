@@ -244,6 +244,79 @@ body {
 .breadcrumbs .breadcrumbs-page-now {
     opacity: 0.65;
 }
+.repair-brands {
+    width: 100%;
+    background-color: var(--soft-gray, #F3F4F5);
+    border-radius: 20px;
+    padding: calc(120 * var(--fz)) 0;
+    margin-bottom: calc(120 * var(--fz));
+}
+.repair-brands h3 {
+    text-align: center;
+    font-size: calc(30 * var(--fz));
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%;
+    letter-spacing: -0.96px;
+    color: var(--black);
+    margin-bottom: 30px;
+}
+.repair-brands-cards-mob , .show-more-body {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.show-more-body {
+    height: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s ease;
+}
+.show-more-body.active {
+    height: auto;
+    opacity: 1;
+    visibility: visible;
+}
+.repair-brands-card {
+    padding: calc(30 * var(--fz));
+    background-color: #fff;
+    border-radius: 20px;
+    font-size: calc(22 * var(--fz));
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%;
+    letter-spacing: -0.66px;
+    color: var(--black);
+    border: 1px solid #fff;
+    position: relative;
+}
+.show-more-btn  {
+    margin: 0 auto;
+}
+.repair-brands-cards-pc {
+    display: flex;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+    column-gap: 10px;
+    row-gap: 60px;
+    display: none;
+
+}
+.repair-brands-card .circle-btn{
+    position: absolute;
+    bottom: 0;
+    left: calc(60 * var(--fz));
+    transform: translateY(50%);
+    visibility: hidden;
+    opacity: 0;
+}
+.repair-brands-card:hover {
+    border: 1px solid var(--carrot);
+}
+.repair-brands-card:hover .circle-btn {
+    visibility: visible;
+    opacity: 1;
+}
 @media (min-width:992px) {
     .carrot-btn {
         padding: calc(12 * var(--fz))  calc(60 * var(--fz));
@@ -276,6 +349,32 @@ body {
         padding: calc(12 * var(--fz))  calc(40 * var(--fz));
         font-size: calc(20 * var(--fz));
     }
+    .repair-brands-cards-mob {
+        display: none;
+    }
+    .repair-brands-cards-pc {
+        display: flex;
+    }
+    .repair-brands {
+        padding: calc(200 * var(--fz)) 0;
+        margin-bottom: calc(200 * var(--fz));
+    }
+    .repair-brands h3 {
+        text-align: left;
+        max-width: 650px;
+        font-size: calc(40 * var(--fz));
+        margin-bottom: 50px;
+    }
+    .repair-brands-card {
+        padding: calc(60 * var(--fz));
+        font-size: calc(42 * var(--fz));
+        max-width: 32%;
+        width: 100%;
+    }
+    .repair-brands-card .circle-btn {
+        width: calc(70 * var(--fz));
+        height: calc(70 * var(--fz));
+    }
 }
 @media (min-width:1200px) {
     .carrot-btn {
@@ -284,6 +383,16 @@ body {
     .dark-btn {
         padding: calc(12 * var(--fz))  calc(60 * var(--fz));
         font-size: calc(26 * var(--fz));
+    }
+    .repair-brands {
+        padding: calc(250 * var(--fz)) 0;
+        margin-bottom: calc(250 * var(--fz));
+    }
+    .repair-brands h3 {
+        text-align: left;
+        max-width: 650px;
+        font-size: calc(70 * var(--fz));
+        margin-bottom: 80px;
     }
 
 }

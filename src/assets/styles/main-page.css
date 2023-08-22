@@ -803,7 +803,7 @@
     font-size: calc(16 * var(--black));
     font-style: normal;
     font-weight: 500;
-    line-height: 125%; 
+    line-height: 125%;
     letter-spacing: -0.48px;
     color: var(--black);
     margin-bottom: calc(10 * var(--fz));
@@ -812,7 +812,7 @@
     font-size: calc(22 * var(--fz));
     font-style: normal;
     font-weight: 500;
-    line-height: 110%; 
+    line-height: 110%;
     letter-spacing: -0.66px;
     margin-top: 30px;
     margin-bottom: 15px;
@@ -1071,6 +1071,7 @@
     }
     .brands-inner {
         gap: 50px;
+        padding: calc(120 * var(--fz)) calc(60 * var(--fz));
     }
     .input-wrap input {
         font-size: calc(20 * var(--fz));
