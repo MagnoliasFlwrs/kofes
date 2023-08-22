@@ -1062,7 +1062,10 @@
     }
     .team {
         padding-top: 0;
-      }
+    }
+    .brands-inner {
+        gap: 50px;
+    }
 
 }
 @media (min-width:1200px) {
@@ -1217,5 +1220,8 @@
     }
     .repair-col h3 {
         font-size: calc(56 * var(--fz));
+    }
+    .brands-inner {
+        gap: 80px;
     }
 }
