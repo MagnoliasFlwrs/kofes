@@ -138,7 +138,9 @@ function addMaskFromInputCallBackForm(path, maskValue) {
 }
 console.log(window.location.host)
 
-addMaskFromInputCallBackForm('.input-wrap input[type="tel"]', '+7(___) ___-__-__')
+addMaskFromInputCallBackForm('.input-wrap input[name="form-tel"]', '+7(___) ___-__-__');
+addMaskFromInputCallBackForm('.input-wrap input[name="modal-cons-tel"]', '+7(___) ___-__-__');
+addMaskFromInputCallBackForm('.input-wrap input[name="modal-appl-tel"]', '+7(___) ___-__-__');
 
 
 
@@ -192,3 +194,18 @@ function closeModals() {
 }
 showModals();
 closeModals();
+
+// form animation
+
+const inputs = document.querySelectorAll('input');
+
+inputs.forEach(el=> {
+    el.addEventListener('change' , () => {
+        if (el.value) {
+            el.classList.add('input-vs-value');
+        } else {
+            el.classList.remove('input-vs-value');
+        }
+    })
+    
+})
