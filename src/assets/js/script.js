@@ -213,8 +213,20 @@ inputs.forEach(el=> {
 // show more
 const showMoreBtn = document.querySelector('.show-more-btn');
 const showMoreBody = document.querySelector('.show-more-body');
+const aboutShowMoreBtn = document.querySelector('.about-show-more-btn');
+const aboutShowMoreBody = document.querySelector('.about-show-more-body');
 
-showMoreBtn.addEventListener('click' , ()=> {
+showMoreBtn?.addEventListener('click' , ()=> {
     showMoreBody.classList.add('active');
     showMoreBtn.style.display="none";
+})
+aboutShowMoreBtn?.addEventListener('click' , ()=> {
+    aboutShowMoreBody.classList.toggle('active');
+    aboutShowMoreBtn.classList.toggle('active');
+    if (! aboutShowMoreBtn.classList.contains('active')) {
+        aboutShowMoreBtn.innerHTML = 'Свернуть'
+    }
+    if (aboutShowMoreBtn.classList.contains('active')) {
+        aboutShowMoreBtn.innerHTML = 'Развернуть'
+    }
 })
