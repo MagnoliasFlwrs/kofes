@@ -148,11 +148,13 @@ addMaskFromInputCallBackForm('.input-wrap input[name="modal-appl-tel"]', '+7(___
 
 const toApplicationBtn = document.querySelectorAll('.to-application');
 const toOrderBtn = document.querySelectorAll('.to-order');
+const toServModalBtn = document.querySelectorAll('.to-serv-modal');
 const applicationModal = document.querySelector('.modal-application');
 const orderModal = document.querySelector('.modal-order');
+const serviceModal = document.querySelector('.modal-services');
 const okMessage = document.querySelector('.send-ok-content');
 const overlay =  document.querySelector('.overlay');
-const closeBtns = document.querySelectorAll('.close-inner')
+const closeBtns = document.querySelectorAll('.close-inner');
 
 function showModals() {
     toApplicationBtn.forEach(el => {
@@ -164,6 +166,12 @@ function showModals() {
     toOrderBtn.forEach(el => {
         el.addEventListener('click' , () => {
             orderModal.classList.add('open-modal');
+            overlay.classList.add('open');
+        })
+    })
+    toServModalBtn.forEach(el => {
+        el.addEventListener('click' , () => {
+            serviceModal.classList.add('open-modal');
             overlay.classList.add('open');
         })
     })
@@ -179,6 +187,10 @@ function closeModals() {
                 e.target.closest('.modal-order').classList.remove('open-modal');
                 overlay.classList.remove('open')
             }
+            if(e.target.closest('.modal-services')) {
+                e.target.closest('.modal-services').classList.remove('open-modal');
+                overlay.classList.remove('open')
+            }
         })
     })
     overlay.addEventListener('click' , ()=> {
@@ -187,6 +199,10 @@ function closeModals() {
             overlay.classList.remove('open')
         }
         if(orderModal) {
+            orderModal.classList.remove('open-modal');
+            overlay.classList.remove('open')
+        }
+        if(serviceModal) {
             orderModal.classList.remove('open-modal');
             overlay.classList.remove('open')
         }
@@ -211,15 +227,11 @@ inputs.forEach(el=> {
 })
 
 // show more
-const showMoreBtn = document.querySelector('.show-more-btn');
+const showMoreBtns = document.querySelectorAll('.show-more-btn');
 const showMoreBody = document.querySelector('.show-more-body');
 const aboutShowMoreBtn = document.querySelector('.about-show-more-btn');
 const aboutShowMoreBody = document.querySelector('.about-show-more-body');
 
-showMoreBtn?.addEventListener('click' , ()=> {
-    showMoreBody.classList.add('active');
-    showMoreBtn.style.display="none";
-})
 aboutShowMoreBtn?.addEventListener('click' , ()=> {
     aboutShowMoreBody.classList.toggle('active');
     aboutShowMoreBtn.classList.toggle('active');
@@ -229,4 +241,30 @@ aboutShowMoreBtn?.addEventListener('click' , ()=> {
     if (aboutShowMoreBtn.classList.contains('active')) {
         aboutShowMoreBtn.innerHTML = 'Развернуть'
     }
+})
+showMoreBtns?.forEach(el => {
+    el.addEventListener('click' , (e) => {
+        e.target.closest('.content').querySelector('.show-more-body').classList.toggle('active');
+        el.classList.toggle('active');
+        el.style.display="none";
+    })
+})
+
+
+
+//custom-select
+
+const customSelect =  document.querySelector('.customselect');
+const customOptions = document.querySelectorAll('.customselect ul li');
+const customSelectBody = document.querySelector('.custom-select-body');
+
+customSelect.addEventListener('click' , ()=> {
+    customSelectBody.classList.toggle('open');
+})
+customOptions.forEach(el => {
+    el.addEventListener('click' , ()=> {
+        customSelect.querySelector('p').innerHTML = el.innerHTML;
+        customSelect.dataset.current = el.dataset.value;
+        // customSelectBody.classList.add('close');
+    })
 })
