@@ -1,0 +1,379 @@
+@import url(../../assets/styles/style.css);
+@import url(../../assets/styles/footer.css);
+@import url(../../assets/styles/header.css);
+@import url(../../assets/styles/modals.css);
+
+.hero-block {
+    padding: calc(19 * var(--fz)) 0 calc(30 * var(--fz));
+}
+.hero-block-inner {
+    padding: calc(30 * var(--fz));
+    border-radius: 20px;
+    background: var(--soft-gray, #F3F4F5);
+}
+.hero-block-inner h1 {
+    font-size: calc(40 * var(--fz));
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%; /* 44px */
+    letter-spacing: -1.32px;
+    color: var(--black);
+    margin-bottom: 15px;
+}
+.kofes-main {
+    padding: calc(30 * var(--fz));
+    border-radius: 20px;
+    background: var(--black-3, #212121);
+}
+.kofes-main .content {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+.kofes-main-row {
+    display: flex;
+    justify-content: space-between;
+}
+.kofes-main-row:last-child {
+    flex-direction: column;
+    gap: 10px;
+    color: #fff;
+}
+.kofes-main-col {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.kofes-main-col h3 {
+    font-size: calc(32 * var(--fz));
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%; /* 35.2px */
+    letter-spacing: -0.96px;
+}
+.kofes-main-col p {
+    font-size: calc(16 * var(--fz));
+    font-style: normal;
+    font-weight: 500;
+    line-height: 125%; /* 20px */
+    letter-spacing: -0.48px;
+}
+.kofes-main-row img:first-child {
+    width: calc(164 * var(--fz));
+    height: calc(54 * var(--fz));
+}
+.kofes-main-row img:last-child {
+    width: calc(85 * var(--fz));
+    height: calc(14 * var(--fz));
+}
+.kofes-numbers {
+    margin: calc(20 * var(--fz)) 0 calc(120 * var(--fz));
+    width: 100%;
+}
+.kofes-numbers-inner {
+    padding: calc(30 * var(--fz));
+    border-radius: 20px;
+    background-color: var(--carrot);
+}
+.kofes-numbers-inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 45px;
+}
+.cofes-numbers-card {
+    max-width: 50%;
+    width: 100%;
+}
+.cofes-numbers-card p {
+    font-size: calc(80 * var(--fz));
+    font-style: normal;
+    font-weight: 300;
+    line-height: 125%; /* 100px */
+    letter-spacing: -4px;
+    text-transform: uppercase;
+    color: #fff;
+}
+.cofes-numbers-card span {
+    font-size: calc(16 * var(--fz));
+    font-style: normal;
+    font-weight: 500;
+    line-height: 125%; /* 20px */
+    letter-spacing: -0.48px;
+    color: #fff;
+}
+.brand-banner {
+    padding-bottom: calc(120 * var(--fz));
+}
+.brand-banner-pc {
+    display: none;
+}
+.brand-banner-mob {
+    width: 100%;
+    height: calc(250 * var(--fz));
+    position: relative;
+    border-radius: 20px;
+}
+.brand-banner-pc {
+    height: calc(550 * var(--fz));
+    position: relative;
+    border-radius: 20px;
+}
+.brand-banner-mob::after , .brand-banner-pc::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, #161616 0%, rgba(133, 133, 133, 0.00) 100%);
+    border-radius: 20px;
+    z-index: 1;
+}
+.brand-banner-mob img , .brand-banner-pc img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.brand-banner-video-play svg {
+    width: calc(40 * var(--fz));
+    height: calc(40 * var(--fz));
+}
+.brand-banner-video-play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    cursor: pointer;
+}
+.team {
+    margin-bottom: calc(120 * var(--fz));
+}
+.team-inner {
+    border-radius: 20px;
+    background-color: var(--soft-gray);
+    padding: calc(30 * var(--fz));
+}
+.team-inner h2  {
+    font-size: calc(32 * var(--fz));
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%; /* 35.2px */
+    letter-spacing: -0.96px;
+    margin-bottom: 30px;
+}
+.team-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.team-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.team-card-image {
+    height: calc(328 * var(--fz));
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+.team-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.team-card p {
+    font-size: calc(14 * var(--fz));
+    font-style: normal;
+    font-weight: 500;
+    line-height: 125%;
+    color: var(--black);
+}
+.team-card .team-position {
+    color: var(--carrot);
+    margin-bottom: 5px;
+}
+.team-card .team-name {
+    font-size: calc(22 * var(--fz));
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%; /* 24.2px */
+    letter-spacing: -0.66px;
+    margin-bottom: 10px;
+}
+
+
+
+@media (min-width:768px) {
+    .cofes-numbers-card {
+        max-width: auto;
+        width: 100%;
+    }
+    .cofes-numbers-card p {
+        font-size: calc(150 * var(--fz));
+    }
+    .cofes-numbers-card span {
+        font-size: calc(26 * var(--fz));
+    }
+    .kofes-numbers-inner {
+        padding: calc(40 * var(--fz));
+    }
+    .team-cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: auto;
+    }
+    .team-card {
+        max-width: 48%;
+    }
+
+}
+
+@media (min-width:992px) {
+    .hero-block {
+        padding: calc(50 * var(--fz)) 0 calc(60 * var(--fz));
+    }
+    .hero-block-inner {
+        padding: calc(60 * var(--fz));
+    }
+    .hero-block-inner h1 {
+        font-size: calc(50 * var(--fz));
+        margin-bottom: 30px;
+        max-width: 75%;
+    }
+    .kofes-main {
+        padding: calc(60 * var(--fz));
+    }
+    .kofes-main .content {
+        gap: 80px;
+    }
+    .kofes-main-row {
+        display: flex;
+        justify-content: space-between;
+    }
+    .kofes-main-row:last-child {
+        flex-direction: row;
+        gap: 16px;
+    }
+    .kofes-main-row:last-child .kofes-main-col {
+        max-width: calc((100% - 16px)/2);
+        width: 100%;
+    }
+    .kofes-main-col {
+        gap: 20px;
+    }
+    .kofes-main-col h3 {
+        font-size: calc(42 * var(--fz));
+    }
+    .kofes-main-col p {
+        font-size: calc(20 * var(--fz));
+    }
+    .kofes-main-row img:first-child {
+        width: calc(264 * var(--fz));
+        height: calc(104 * var(--fz));
+        margin-top: 30px;
+    }
+    .kofes-main-row img:last-child {
+        width: calc(195 * var(--fz));
+        height: calc(34 * var(--fz));
+    }
+    .cofes-numbers-card p {
+        font-size: calc(200 * var(--fz));
+    }
+    .kofes-numbers-inner {
+        padding: calc(60 * var(--fz));
+    }
+    .kofes-numbers {
+        margin: calc(120 * var(--fz)) 0 calc(250 * var(--fz));
+    }
+    .brand-banner-pc {
+        display: block;
+    }
+    .brand-banner-mob {
+        display: none;
+    }
+    .brand-banner-video-play svg {
+        width: calc(80 * var(--fz));
+        height: calc(80 * var(--fz));
+    }
+    .brand-banner {
+        padding: 0;
+    }
+    .cofes-numbers-card {
+        max-width: 50%;
+        width: auto;
+    }
+    .team-card p {
+        font-size: calc(20 * var(--fz));
+
+    }
+    .team-card .team-position {
+        color: var(--carrot);
+        margin-bottom: 5px;
+    }
+    .team-card .team-name {
+        font-size: calc(32 * var(--fz));
+
+    }
+}
+
+@media (min-width:1200px) {
+    .hero-block-inner h1 {
+        font-size: calc(70 * var(--fz));
+    }
+    .kofes-main .content {
+        gap: 125px;
+    }
+    .kofes-main-col h3 {
+        font-size: calc(56 * var(--fz));
+    }
+    .kofes-main-row img:first-child {
+        width: calc((100% - 16px)/2);
+        height: auto;
+        margin-top: 50px;
+    }
+    .kofes-main-row img:last-child {
+        width: calc(277 * var(--fz));
+        height: calc(46 * var(--fz));
+    }
+    .brand-banner-pc {
+        height: calc(960 * var(--fz));
+    }
+    .brand-banner-video-play svg {
+        width: calc(144 * var(--fz));
+        height: calc(144 * var(--fz));
+    }
+    .team-inner h2  {
+        font-size: calc(70 * var(--fz));
+        margin-bottom: 80px;
+    }
+    .team-inner {
+        padding:calc(120 * var(--fz)) calc(60 * var(--fz));
+    }
+    .team-card {
+        max-width: calc((100% - 16px * 3)/4);
+    }
+    .team-cards {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 16px;
+    }
+    .team-card-image {
+        height: calc(428 * var(--fz));
+        width: 100%;
+        border-radius: 20px;
+        margin-bottom: 10px;
+    }
+    .team-card .team-name {
+        font-size: calc(42 * var(--fz));
+    }
+
+}

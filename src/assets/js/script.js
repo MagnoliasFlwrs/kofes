@@ -70,6 +70,22 @@ const teamSwiper = new Swiper('.team-swiper', {
       },
    });
 
+const contactsSwiper = new Swiper('.contacts-img-swiper', {
+slidesPerView: 2.3,
+spaceBetween: 16,
+freeMode: true,
+breakpoints: {
+    768: {
+        slidesPerView: 2.5,
+        spaceBetween: 20
+    }
+},
+navigation: {
+    nextEl: '.contacts-button-next',
+    prevEl: '.contacts-button-prev',
+    },
+});
+
 
 //    accordeon
 
@@ -223,7 +239,7 @@ inputs.forEach(el=> {
             el.classList.remove('input-vs-value');
         }
     })
-    
+
 })
 
 // show more

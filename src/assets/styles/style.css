@@ -54,6 +54,10 @@
 }
 a {
     text-decoration: none;
+    cursor: pointer;
+}
+button {
+    cursor: pointer;
 }
 ol, ul {
     list-style: none;
@@ -376,8 +380,8 @@ body {
     padding: 0 calc(30 * var(--fz)) ;
 }
 .dark-form-img-wrap img {
-    width: calc(106 * var(--fz));
-    height: calc(106 * var(--fz));
+    width: calc(126 * var(--fz));
+    height: calc(126 * var(--fz));
 }
 .dark-form-text h3{
     font-size: calc(30 * var(--fz));
