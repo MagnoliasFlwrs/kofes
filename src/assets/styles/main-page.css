@@ -370,6 +370,7 @@
     justify-content: center;
     align-items: center;
     padding: calc(22 * var(--fz));
+    cursor: pointer;
 }
 .brand-card img {
     width: 100%;
@@ -931,6 +932,11 @@
         height: calc(150 * var(--fz));
         padding: calc(35 * var(--fz));
     }
+    .brand-card:hover {
+        width: calc(160 * var(--fz));
+        height: calc(160 * var(--fz));
+        padding: calc(35 * var(--fz));
+    }
     .problems {
         padding-top: calc(120 * var(--fz));
     }
@@ -1119,6 +1125,11 @@
     .brand-card {
         width: calc(250 * var(--fz));
         height: calc(250 * var(--fz));
+        padding: calc(45 * var(--fz));
+    }
+    .brand-card:hover {
+        width: calc(260 * var(--fz));
+        height: calc(260 * var(--fz));
         padding: calc(45 * var(--fz));
     }
     .problems-card-head p {

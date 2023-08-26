@@ -219,7 +219,7 @@ function closeModals() {
             overlay.classList.remove('open')
         }
         if(serviceModal) {
-            orderModal.classList.remove('open-modal');
+            serviceModal.classList.remove('open-modal');
             overlay.classList.remove('open')
         }
     })
@@ -252,10 +252,10 @@ aboutShowMoreBtn?.addEventListener('click' , ()=> {
     aboutShowMoreBody.classList.toggle('active');
     aboutShowMoreBtn.classList.toggle('active');
     if (! aboutShowMoreBtn.classList.contains('active')) {
-        aboutShowMoreBtn.innerHTML = 'Свернуть'
+        aboutShowMoreBtn.innerHTML = 'Развернуть'
     }
     if (aboutShowMoreBtn.classList.contains('active')) {
-        aboutShowMoreBtn.innerHTML = 'Развернуть'
+        aboutShowMoreBtn.innerHTML = 'Свернуть'
     }
 })
 showMoreBtns?.forEach(el => {

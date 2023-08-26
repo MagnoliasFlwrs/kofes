@@ -22,7 +22,7 @@
     font-size: calc(16 * var(--fz));
     font-style: normal;
     font-weight: 500;
-    line-height: 125%; 
+    line-height: 125%;
     letter-spacing: -0.48px;
     color: #fff;
 }
@@ -55,11 +55,12 @@
     font-size: calc( 10 * var(--fz));
     font-style: normal;
     font-weight: 500;
-    line-height: 125%; 
+    line-height: 125%;
     color: #fff;
     display: flex;
     flex-direction: column;
     gap: calc(12 * var(--fz));
+
 }
 .footer-row-copy ul li:first-child {
     display: flex;
@@ -70,7 +71,7 @@
     font-size: calc( 10 * var(--fz));
     font-style: normal;
     font-weight: 500;
-    line-height: 125%; 
+    line-height: 125%;
     color: #fff;
 }
 .footer-row-copy ul {
@@ -81,6 +82,13 @@
 .footer-row-copy ul li a img {
     width: calc(58 * var(--fz));
     height: calc(26 * var(--fz));
+}
+.footer a:hover {
+    opacity: 0.6;
+}
+.footer-row .footer-contacts .footer-contacrs-phone a:hover {
+    color: #E3512E;
+    opacity: 1;
 }
 @media (min-width:992px) {
     .footer-row {

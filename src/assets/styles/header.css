@@ -318,7 +318,10 @@
     letter-spacing: -0.48px;
     color: var(--black);
 }
-.navigation-item li .link-text , .item-btn .navigation-phone-num .link-text{
+.navigation-phone-num:hover .link-text {
+    color: var(--carrot);
+}
+/* .navigation-item li .link-text , .item-btn .navigation-phone-num .link-text{
     color: transparent;
     position: relative;
 
@@ -379,7 +382,7 @@
     to {
         transform: rotate3d(-1,0,0,90deg)
     }
-}
+} */
 @media (min-width: 1200px) {
     .header {
         padding: calc(41 * var(--fz)) 0;
@@ -411,7 +414,7 @@
         display: flex;
         align-items: center;
     }
-    
+
 }
 @media (min-width:992px) {
     /* .navigation .dropdown-item , .navigation .item-btn ul {
@@ -438,7 +441,7 @@
         width: calc(292 * var(--fz));
         height: calc(40 * var(--fz));
     }
-    
+
 }
 
 @media (min-width: 738px) {
