@@ -7,997 +7,1002 @@
     <title>Главная</title>
 </head>
 <body>
-    <div class="overlay"></div>
-    <div class="modal modal-order ">
-        <div class="modal-close">
-            <div class="close-inner">
-                <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44" fill="none">
-                    <rect x="14.0587" y="13" width="23.9583" height="1.49739" rx="0.748697" transform="rotate(45 14.0587 13)" fill="#2E3331"/>
-                    <rect x="13" y="29.9409" width="23.9583" height="1.49739" rx="0.748697" transform="rotate(-45 13 29.9409)" fill="#2E3331"/>
-                    <rect x="1" y="1" width="42" height="42" rx="21" stroke="black" stroke-width="2"/>
-                  </svg>
+    <div id="scroll-container" class="scroll-container">
+        <div class="overlay"></div>
+        <div class="modal modal-order ">
+            <div class="modal-close">
+                <div class="close-inner">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44" fill="none">
+                        <rect x="14.0587" y="13" width="23.9583" height="1.49739" rx="0.748697" transform="rotate(45 14.0587 13)" fill="#2E3331"/>
+                        <rect x="13" y="29.9409" width="23.9583" height="1.49739" rx="0.748697" transform="rotate(-45 13 29.9409)" fill="#2E3331"/>
+                        <rect x="1" y="1" width="42" height="42" rx="21" stroke="black" stroke-width="2"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="modal-content">
+                <h3>Консультация <br> и заказ</h3>
+                <p>Оставьте заявку и наши специалисты свяжутся с Вами</p>
+                <form >
+                    <div class="input-wrap">
+                        <input type="text" name="modal-cons-name" required>
+                        <div class="label-box">
+                            <label class="custom-placeholder">Имя <span>*</span></label>
+                        </div>
+                    </div>
+                    <div class="input-wrap">
+                        <input type="tel" name="modal-cons-tel" required>
+                        <div class="label-box">
+                            <label class="custom-placeholder">Телефон <span>*</span></label>
+                        </div>
+                    </div>
+                    <div class="input-wrap">
+                        <input type="text" name="modal-cons-comm" required>
+                        <div class="label-box">
+                            <label class="custom-placeholder">Комментарий к заказу</label>
+                        </div>
+                    </div>
+                    <div class="submit-wrap">
+                        <button class="carrot-btn" type="submit">Отправить</button>
+                        <span>Согласен(а) с политикой обработки
+                            персональных данных и офертой</span>
+                    </div>
+
+                </form>
+
             </div>
         </div>
-        <div class="modal-content">
-            <h3>Консультация <br> и заказ</h3>
-            <p>Оставьте заявку и наши специалисты свяжутся с Вами</p>
-            <form >
-                <div class="input-wrap">
-                    <input type="text" name="modal-cons-name" required>
-                    <div class="label-box">
-                        <label class="custom-placeholder">Имя <span>*</span></label>
+        <div class="modal modal-application ">
+            <div class="modal-close">
+                <div class="close-inner">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44" fill="none">
+                        <rect x="14.0587" y="13" width="23.9583" height="1.49739" rx="0.748697" transform="rotate(45 14.0587 13)" fill="#2E3331"/>
+                        <rect x="13" y="29.9409" width="23.9583" height="1.49739" rx="0.748697" transform="rotate(-45 13 29.9409)" fill="#2E3331"/>
+                        <rect x="1" y="1" width="42" height="42" rx="21" stroke="black" stroke-width="2"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="modal-content">
+                <h3>Оставить заявку</h3>
+                <p>Оставьте заявку и наши специалисты свяжутся с Вами</p>
+                <form >
+                    <div class="input-wrap">
+                        <input type="text" name="modal-appl-name" required>
+                        <div class="label-box">
+                            <label class="custom-placeholder">Имя <span>*</span></label>
+                        </div>
                     </div>
-                </div>
-                <div class="input-wrap">
-                    <input type="tel" name="modal-cons-tel" required>
-                    <div class="label-box">
-                        <label class="custom-placeholder">Телефон <span>*</span></label>
+                    <div class="input-wrap">
+                        <input type="tel" name="modal-appl-tel" required>
+                        <div class="label-box">
+                            <label class="custom-placeholder">Телефон <span>*</span></label>
+                        </div>
                     </div>
-                </div>
-                <div class="input-wrap">
-                    <input type="text" name="modal-cons-comm" required>
-                    <div class="label-box">
-                        <label class="custom-placeholder">Комментарий к заказу</label>
+                    <div class="input-wrap">
+                        <input type="text" name="modal-appl-comm" required>
+                        <div class="label-box">
+                            <label class="custom-placeholder">Комментарий к заказу</label>
+                        </div>
                     </div>
-                </div>
-                <div class="submit-wrap">
-                    <button class="carrot-btn" type="submit">Отправить</button>
-                    <span>Согласен(а) с политикой обработки
-                        персональных данных и офертой</span>
-                </div>
+                    <div class="submit-wrap">
+                        <button class="carrot-btn" type="submit">Отправить</button>
+                        <span>Согласен(а) с политикой обработки
+                            персональных данных и офертой</span>
+                    </div>
 
-            </form>
+                </form>
 
-        </div>
-    </div>
-    <div class="modal modal-application ">
-        <div class="modal-close">
-            <div class="close-inner">
-                <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44" fill="none">
-                    <rect x="14.0587" y="13" width="23.9583" height="1.49739" rx="0.748697" transform="rotate(45 14.0587 13)" fill="#2E3331"/>
-                    <rect x="13" y="29.9409" width="23.9583" height="1.49739" rx="0.748697" transform="rotate(-45 13 29.9409)" fill="#2E3331"/>
-                    <rect x="1" y="1" width="42" height="42" rx="21" stroke="black" stroke-width="2"/>
-                  </svg>
             </div>
         </div>
-        <div class="modal-content">
-            <h3>Оставить заявку</h3>
-            <p>Оставьте заявку и наши специалисты свяжутся с Вами</p>
-            <form >
-                <div class="input-wrap">
-                    <input type="text" name="modal-appl-name" required>
-                    <div class="label-box">
-                        <label class="custom-placeholder">Имя <span>*</span></label>
-                    </div>
+        <div class="send-ok-message ">
+            <div class="modal-close">
+                <div class="close-inner">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44" fill="none">
+                        <rect x="14.0587" y="13" width="23.9583" height="1.49739" rx="0.748697" transform="rotate(45 14.0587 13)" fill="#2E3331"/>
+                        <rect x="13" y="29.9409" width="23.9583" height="1.49739" rx="0.748697" transform="rotate(-45 13 29.9409)" fill="#2E3331"/>
+                        <rect x="1" y="1" width="42" height="42" rx="21" stroke="black" stroke-width="2"/>
+                    </svg>
                 </div>
-                <div class="input-wrap">
-                    <input type="tel" name="modal-appl-tel" required>
-                    <div class="label-box">
-                        <label class="custom-placeholder">Телефон <span>*</span></label>
-                    </div>
-                </div>
-                <div class="input-wrap">
-                    <input type="text" name="modal-appl-comm" required>
-                    <div class="label-box">
-                        <label class="custom-placeholder">Комментарий к заказу</label>
-                    </div>
-                </div>
-                <div class="submit-wrap">
-                    <button class="carrot-btn" type="submit">Отправить</button>
-                    <span>Согласен(а) с политикой обработки
-                        персональных данных и офертой</span>
-                </div>
-
-            </form>
-
-        </div>
-    </div>
-    <div class="send-ok-message ">
-        <div class="modal-close">
-            <div class="close-inner">
-                <svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44" fill="none">
-                    <rect x="14.0587" y="13" width="23.9583" height="1.49739" rx="0.748697" transform="rotate(45 14.0587 13)" fill="#2E3331"/>
-                    <rect x="13" y="29.9409" width="23.9583" height="1.49739" rx="0.748697" transform="rotate(-45 13 29.9409)" fill="#2E3331"/>
-                    <rect x="1" y="1" width="42" height="42" rx="21" stroke="black" stroke-width="2"/>
-                  </svg>
+            </div>
+            <div class="send-ok-content">
+                <h3>Ваша заявка отправлена</h3>
+                <p>В ближайшее время наши специалисты
+                    свяжуться с Вами для уточнения деталей ремонта.</p>
+                <button class="carrot-btn">Продолжить</button>
             </div>
         </div>
-        <div class="send-ok-content">
-            <h3>Ваша заявка отправлена</h3>
-            <p>В ближайшее время наши специалисты
-                свяжуться с Вами для уточнения деталей ремонта.</p>
-            <button class="carrot-btn">Продолжить</button>
-        </div>
-    </div>
-    <header class="header">
-        <div class="content">
-            <div class="header-wrapper header-wrapper-desctop">
-                <a href="/" class="logo">
-                    <img src="./src/assets/images/logo.png" alt="logo" >
-                </a>
-                <nav class="navigation">
-                    <ul class="navigation-item dropdown-item">
-                        <li class="navigation-dropdown repair-dropdown">
-                            <a class="navigation-item-title " href="#">Типы ремонта</a>
-                            <ul class="navigation-dropdown-submenu">
-                                <li><a href="#">Не греет воду</a></li>
-                                <li><a href="#">Сбрасывает сухой перемолотый кофе</a></li>
-                                <li><a href="#">Подтекает</a></li>
-                                <li><a href="#">Не формирует отработанный кофе (влажный жмых)</a></li>
-                                <li><a href="#">Не включается</a></li>
-                                <li><a href="#">Нет пара</a></li>
-                                <li><a href="#">Не мелет кофе</a></li>
-                                <li><a href="#">Не наливает или плохо проливает кофе</a></li>
-                            </ul>
-                        </li>
-                        <li class="navigation-dropdown brands-dropdown">
-                            <a class="navigation-item-title" href="#">Бренды</a>
-                            <div class="brands-submenu">
-                                <div class="submenu-brands">
-                                    <ul>
-                                        <li><a href="#">Saeco</a></li>
-                                        <li><a href="#">Carimali</a></li>
-                                        <li><a href="#">Siemens</a></li>
-                                        <li><a href="#">Jura</a></li>
-                                        <li><a href="#">SanMarino</a></li>
-                                        <li><a href="#">Nivona</a></li>
-                                        <li><a href="#">SanMarino</a></li>
-                                        <li><a href="#">Nivona</a></li>
-                                    </ul>
-                                    <ul>
-                                        <li><a href="#">Saeco</a></li>
-                                        <li><a href="#">Carimali</a></li>
-                                        <li><a href="#">Siemens</a></li>
-                                        <li><a href="#">Jura</a></li>
-                                        <li><a href="#">SanMarino</a></li>
-                                        <li><a href="#">Nivona</a></li>
-                                        <li><a href="#">SanMarino</a></li>
-                                        <li><a href="#">Nivona</a></li>
-                                    </ul>
+        <header class="header">
+            <div class="content">
+                <div class="header-wrapper header-wrapper-desctop">
+                    <a href="/" class="logo">
+                        <img src="./src/assets/images/logo.png" alt="logo" >
+                    </a>
+                    <nav class="navigation">
+                        <ul class="navigation-item dropdown-item">
+                            <li class="navigation-dropdown repair-dropdown">
+                                <a class="navigation-item-title " href="#">Типы ремонта</a>
+                                <ul class="navigation-dropdown-submenu">
+                                    <li><a href="#">Не греет воду</a></li>
+                                    <li><a href="#">Сбрасывает сухой перемолотый кофе</a></li>
+                                    <li><a href="#">Подтекает</a></li>
+                                    <li><a href="#">Не формирует отработанный кофе (влажный жмых)</a></li>
+                                    <li><a href="#">Не включается</a></li>
+                                    <li><a href="#">Нет пара</a></li>
+                                    <li><a href="#">Не мелет кофе</a></li>
+                                    <li><a href="#">Не наливает или плохо проливает кофе</a></li>
+                                </ul>
+                            </li>
+                            <li class="navigation-dropdown brands-dropdown">
+                                <a class="navigation-item-title" href="#">Бренды</a>
+                                <div class="brands-submenu">
+                                    <div class="submenu-brands">
+                                        <ul>
+                                            <li><a href="#">Saeco</a></li>
+                                            <li><a href="#">Carimali</a></li>
+                                            <li><a href="#">Siemens</a></li>
+                                            <li><a href="#">Jura</a></li>
+                                            <li><a href="#">SanMarino</a></li>
+                                            <li><a href="#">Nivona</a></li>
+                                            <li><a href="#">SanMarino</a></li>
+                                            <li><a href="#">Nivona</a></li>
+                                        </ul>
+                                        <ul>
+                                            <li><a href="#">Saeco</a></li>
+                                            <li><a href="#">Carimali</a></li>
+                                            <li><a href="#">Siemens</a></li>
+                                            <li><a href="#">Jura</a></li>
+                                            <li><a href="#">SanMarino</a></li>
+                                            <li><a href="#">Nivona</a></li>
+                                            <li><a href="#">SanMarino</a></li>
+                                            <li><a href="#">Nivona</a></li>
+                                        </ul>
 
+                                    </div>
+                                    <a class="to-all-brands" href="#">
+                                        Смотреть все бренды
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="23" viewBox="0 0 22 23" fill="none">
+                                            <g clip-path="url(#clip0_3868_27057)">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.00001 13.5C5.00001 13.6621 5.06158 13.8175 5.17119 13.9321C5.2808 14.0466 5.42946 14.111 5.58447 14.111L19.3695 14.111L15.6909 17.9556C15.5812 18.0703 15.5195 18.2259 15.5195 18.3882C15.5195 18.5505 15.5812 18.7061 15.6909 18.8208C15.8007 18.9355 15.9495 19 16.1047 19C16.2599 19 16.4088 18.9355 16.5185 18.8208L21.1942 13.9326C21.2486 13.8758 21.2918 13.8084 21.3213 13.7342C21.3507 13.66 21.3659 13.5804 21.3659 13.5C21.3659 13.4196 21.3507 13.34 21.3213 13.2658C21.2918 13.1916 21.2486 13.1242 21.1942 13.0674L16.5185 8.17919C16.4642 8.12238 16.3997 8.07732 16.3287 8.04657C16.2577 8.01582 16.1816 8 16.1047 8C15.9495 8 15.8007 8.06446 15.6909 8.17919C15.5812 8.29393 15.5195 8.44954 15.5195 8.6118C15.5195 8.77406 15.5812 8.92967 15.6909 9.0444L19.3695 12.889L5.58447 12.889C5.42946 12.889 5.2808 12.9534 5.17119 13.0679C5.06158 13.1825 5.00001 13.3379 5.00001 13.5Z" fill="#E55938"/>
+                                            </g>
+                                            <defs>
+                                            <clipPath id="clip0_3868_27057">
+                                                <rect width="23" height="22" fill="white" transform="translate(22) rotate(90)"/>
+                                            </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </a>
                                 </div>
-                                <a class="to-all-brands" href="#">
-                                    Смотреть все бренды
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="23" viewBox="0 0 22 23" fill="none">
-                                        <g clip-path="url(#clip0_3868_27057)">
-                                          <path fill-rule="evenodd" clip-rule="evenodd" d="M5.00001 13.5C5.00001 13.6621 5.06158 13.8175 5.17119 13.9321C5.2808 14.0466 5.42946 14.111 5.58447 14.111L19.3695 14.111L15.6909 17.9556C15.5812 18.0703 15.5195 18.2259 15.5195 18.3882C15.5195 18.5505 15.5812 18.7061 15.6909 18.8208C15.8007 18.9355 15.9495 19 16.1047 19C16.2599 19 16.4088 18.9355 16.5185 18.8208L21.1942 13.9326C21.2486 13.8758 21.2918 13.8084 21.3213 13.7342C21.3507 13.66 21.3659 13.5804 21.3659 13.5C21.3659 13.4196 21.3507 13.34 21.3213 13.2658C21.2918 13.1916 21.2486 13.1242 21.1942 13.0674L16.5185 8.17919C16.4642 8.12238 16.3997 8.07732 16.3287 8.04657C16.2577 8.01582 16.1816 8 16.1047 8C15.9495 8 15.8007 8.06446 15.6909 8.17919C15.5812 8.29393 15.5195 8.44954 15.5195 8.6118C15.5195 8.77406 15.5812 8.92967 15.6909 9.0444L19.3695 12.889L5.58447 12.889C5.42946 12.889 5.2808 12.9534 5.17119 13.0679C5.06158 13.1825 5.00001 13.3379 5.00001 13.5Z" fill="#E55938"/>
+                            </li>
+                            <li><a class="navigation-item-title link-text" href="#">Услуги и цены</a></li>
+                        </ul>
+                        <div class="navigation-item item-btn">
+                            <ul>
+                                <li><a class="navigation-item-title link-text" href="#">Доставка и оплата</a></li>
+                                <li><a class="navigation-item-title link-text" href="#">Контакты</a></li>
+                            </ul>
+                            <a href="tel:+78127166688" class="navigation-phone-num">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="19" viewBox="0 0 18 19" fill="none">
+                                    <path d="M5.69473 17.24L7.63473 14.4996C8.01922 13.954 7.87306 13.1846 7.30803 12.7848L5.92765 11.8075C5.95596 11.726 5.98565 11.6415 6.01728 11.5527C6.30242 10.7376 6.69349 9.62195 7.58308 8.36613C8.47439 7.10675 9.3981 6.36623 10.0723 5.82501C10.1437 5.76784 10.2127 5.71299 10.2779 5.65931L11.2033 6.31539L11.6593 6.63776C12.2252 7.03817 12.9991 6.91948 13.3852 6.37481L15.3254 3.6343C15.7108 3.08975 15.5646 2.31994 14.9987 1.91953L14.2226 1.37349L14.2078 1.39457C13.8878 1.2217 13.5307 1.09259 13.1562 1.01511C12.8005 0.945497 12.4682 0.921111 12.1426 0.939673C9.52807 1.06892 7.38721 2.64003 4.75384 6.36035C1.11409 11.5029 2.05124 14.985 2.09355 15.1349C2.19018 15.4606 2.32414 15.7656 2.50531 16.068C2.70074 16.3926 2.94091 16.6863 3.20982 16.9305L3.19949 16.9471L3.96804 17.5033C4.53364 17.9028 5.30793 17.7846 5.69473 17.24Z" fill="#E55938"/>
+                                </svg>
+                                <span class="link-text">+ 7 812 716-66-88</span>
+                            </a>
+                                <!-- <button class="burger"></button> -->
+                                <span class="burger"></span>
+                        </div>
+                        <div class="mobile-menu">
+                            <div class="mobile-head">
+                                <a href="/" class="logo">
+                                    <img src="./src/assets/images/logo.png" alt="logo" >
+                                </a>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                                    <rect x="8.94678" y="8.27246" width="15.2462" height="0.952887" rx="0.476443" transform="rotate(45 8.94678 8.27246)" fill="#2E3331"/>
+                                    <rect x="8.27246" y="19.0532" width="15.2462" height="0.952887" rx="0.476443" transform="rotate(-45 8.27246 19.0532)" fill="#2E3331"/>
+                                    <rect x="1" y="1" width="26" height="26" rx="13" stroke="black" stroke-width="2"/>
+                                </svg>
+                            </div>
+                            <div class="mobile-inner">
+                                <ul class="mobile-inner-list list-1">
+                                    <li class="dropdown-inner">
+                                        <a class="mobile-list-title mobile-dropdown-item" href="#">Типы ремонта</a>
+                                        <ul class="mobile-submenu-repair">
+                                            <li>
+                                                <a href="#">Не греет воду</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Выдает ошибку</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Сбрасывает сухой перемолотый кофе</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Подтекает</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Не формирует отработанный кофе
+                                                    (влажный жмых)</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Не включается</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Нет пара</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Не мелет кофе</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Не наливает или плохо проливает кофе</a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-inner">
+                                        <a class="mobile-list-title mobile-dropdown-item" href="#">Бренды</a>
+                                        <ul class="mobile-submenu-brands">
+                                            <li>
+                                                <a href="#">Saeco</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Carimali</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Siemens</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Jura</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">SanMarino</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Nivona</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Jura</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Saeco</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">Смотреть все бренды
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="20" viewBox="0 0 18 20" fill="none">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2.00035 10.7826C2.00035 10.9235 2.05073 11.0587 2.1404 11.1583C2.23008 11.258 2.35171 11.3139 2.47854 11.3139L13.7572 11.3139L10.7475 14.657C10.6577 14.7568 10.6072 14.8921 10.6072 15.0332C10.6072 15.1743 10.6577 15.3096 10.7475 15.4094C10.8373 15.5092 10.959 15.5652 11.086 15.5652C11.213 15.5652 11.3348 15.5092 11.4246 15.4094L15.2501 11.1588C15.2947 11.1094 15.33 11.0508 15.3541 10.9862C15.3782 10.9217 15.3906 10.8525 15.3906 10.7826C15.3906 10.7127 15.3782 10.6435 15.3541 10.579C15.33 10.5144 15.2947 10.4558 15.2501 10.4064L11.4246 6.15582C11.3801 6.10642 11.3273 6.06723 11.2693 6.0405C11.2112 6.01376 11.1489 6 11.086 6C10.959 6 10.8373 6.05605 10.7475 6.15582C10.6577 6.25559 10.6072 6.3909 10.6072 6.532C10.6072 6.67309 10.6577 6.80841 10.7475 6.90818L13.7572 10.2513L2.47854 10.2513C2.35171 10.2513 2.23008 10.3073 2.1404 10.4069C2.05073 10.5065 2.00035 10.6417 2.00035 10.7826Z" fill="#E55938"/>
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a class="mobile-list-title" href="#">Услуги и цены</a></li>
+                                </ul>
+                                <ul class="mobile-inner-list list-2">
+                                    <li>
+                                        <a class="mobile-list-title" href="#">Доставка и оплата</a>
+                                    </li>
+                                    <li><a class="mobile-list-title" href="#">Контакты</a></li>
+                                </ul>
+                                <ul class="mobile-contacts">
+                                    <li>
+                                        <a href="tel:+78127166688">+7 (812) 716-66-88</a>
+                                    </li>
+                                    <li>
+                                        <a href="mailto:">info@kofes.ru</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="banner">
+                <div class="content">
+                    <h1>Ремонт и сервис кофемашин всех видов с гарантией</h1>
+                    <div class="banner-wrapper">
+                        <div class="mobile-banner">
+                            <div class="banner-video">
+                                <div class="banner-video-play">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                                        <circle cx="20" cy="20" r="20" fill="#E55938"/>
+                                        <path d="M23.333 20.1392L18.1247 23.1462L18.1247 17.1322L23.333 20.1392Z" fill="white"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="banner-content">
+                                <h2>Ремонт и сервис кофемашин всех видов с гарантией</h2>
+                                <p>Собственный сервисный центр в Санкт-Петербурге.
+                                    Работаем без посредников</p>
+                                <button class="to-application carrot-btn ">Заявка на ремонт</button>
+                            </div>
+                        </div>
+                        <div class="desktop-banner">
+                            <div class="desktop-banner-content">
+                                <h2>Ремонт и сервис кофемашин <br> всех видов с гарантией</h2>
+                                <p>Собственный сервисный центр в Санкт-Петербурге.<br>
+                                    Работаем без посредников</p>
+                                <button class="carrot-btn to-application">Заявка на ремонт</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <div class="staff">
+                <div class="content">
+                    <div class="staff-inner">
+                        <div class="staff-photos">
+                            <h3>Квалифицированные мастера с большим опытом работы</h3>
+                            <div class="swiper staff-swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="./src/assets/images/main-page/staff-2.png" alt="staff-photo">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./src/assets/images/main-page/staff-2.png" alt="staff-photo">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./src/assets/images/main-page/staff-3.png" alt="staff-photo">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./src/assets/images/main-page/staff-4.png" alt="staff-photo">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./src/assets/images/main-page/staff-3.png" alt="staff-photo">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="./src/assets/images/main-page/staff-4.png" alt="staff-photo">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="staff-about">
+                            <h3>Ремонтируем кофемашины
+                                с 2009 года</h3>
+                                <div class="staff-about-date">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="70" height="13" viewBox="0 0 70 13" fill="none">
+                                        <path d="M6.65218 9.65229C5.75054 9.65229 5.00049 9.37469 4.40205 8.81948C3.80361 8.25687 3.50439 7.56101 3.50439 6.73191C3.50439 5.9028 3.80361 5.21064 4.40205 4.65544C5.00049 4.09283 5.75054 3.81152 6.65218 3.81152C7.24264 3.81152 7.77326 3.94477 8.24403 4.21127C8.7148 4.47037 9.06589 4.822 9.29728 5.26616L8.42356 5.73254C8.27196 5.43643 8.03657 5.19954 7.71741 5.02187C7.40622 4.84421 7.05114 4.75537 6.65218 4.75537C6.05374 4.75537 5.55106 4.94414 5.14412 5.32168C4.74516 5.69922 4.54568 6.1693 4.54568 6.73191C4.54568 7.28711 4.74516 7.75348 5.14412 8.13102C5.55106 8.50856 6.05374 8.69733 6.65218 8.69733C7.05114 8.69733 7.41021 8.6122 7.72937 8.44194C8.04854 8.26427 8.29191 8.02739 8.45947 7.73128L9.34516 8.20875C9.08983 8.64551 8.72278 8.99715 8.24403 9.26365C7.76528 9.52274 7.23466 9.65229 6.65218 9.65229Z" fill="#FF8164"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M6.42621 11.8153C9.23263 11.8153 11.5077 9.54025 11.5077 6.73383C11.5077 3.92742 9.23263 1.65237 6.42621 1.65237C3.6198 1.65237 1.34475 3.92742 1.34475 6.73383C1.34475 9.54025 3.6198 11.8153 6.42621 11.8153ZM6.42621 12.5746C9.65198 12.5746 12.267 9.9596 12.267 6.73383C12.267 3.50807 9.65198 0.893066 6.42621 0.893066C3.20045 0.893066 0.585449 3.50807 0.585449 6.73383C0.585449 9.9596 3.20045 12.5746 6.42621 12.5746Z" fill="#FF8164"/>
+                                        <path d="M16.1689 10.7251V9.89774L18.858 7.15428C19.5765 6.43576 19.9358 5.81884 19.9358 5.30354C19.9358 4.87533 19.8051 4.54147 19.5438 4.30196C19.2826 4.06245 18.9632 3.9427 18.5858 3.9427C17.8673 3.9427 17.3447 4.28381 17.0181 4.96605L16.1689 4.46526C16.4085 3.97173 16.7387 3.59795 17.1596 3.34393C17.5878 3.0899 18.0596 2.96289 18.5749 2.96289C19.2136 2.96289 19.7688 3.17337 20.2406 3.59432C20.7123 4.01528 20.9482 4.58139 20.9482 5.29265C20.9482 6.06198 20.4946 6.90026 19.5874 7.80749L17.6387 9.74532H21.0897V10.7251H16.1689Z" fill="#FF8164"/>
+                                        <path d="M26.6809 9.78887C26.1656 10.5074 25.4435 10.8667 24.5145 10.8667C23.5855 10.8667 22.8633 10.5074 22.348 9.78887C21.8327 9.07035 21.5751 8.11232 21.5751 6.91477C21.5751 5.71723 21.8327 4.7592 22.348 4.04068C22.8633 3.32215 23.5855 2.96289 24.5145 2.96289C25.4435 2.96289 26.1656 3.32215 26.6809 4.04068C27.1962 4.7592 27.4539 5.71723 27.4539 6.91477C27.4539 8.11232 27.1962 9.07035 26.6809 9.78887ZM23.0883 9.10301C23.4222 9.61831 23.8976 9.87597 24.5145 9.87597C25.1314 9.87597 25.6068 9.61831 25.9406 9.10301C26.2818 8.5877 26.4523 7.85829 26.4523 6.91477C26.4523 5.97126 26.2818 5.24185 25.9406 4.72654C25.6068 4.20398 25.1314 3.9427 24.5145 3.9427C23.8976 3.9427 23.4222 4.20035 23.0883 4.71565C22.7545 5.23096 22.5875 5.964 22.5875 6.91477C22.5875 7.85829 22.7545 8.5877 23.0883 9.10301Z" fill="#FF8164"/>
+                                        <path d="M33.2117 9.78887C32.6964 10.5074 31.9742 10.8667 31.0452 10.8667C30.1162 10.8667 29.3941 10.5074 28.8788 9.78887C28.3635 9.07035 28.1058 8.11232 28.1058 6.91477C28.1058 5.71723 28.3635 4.7592 28.8788 4.04068C29.3941 3.32215 30.1162 2.96289 31.0452 2.96289C31.9742 2.96289 32.6964 3.32215 33.2117 4.04068C33.727 4.7592 33.9847 5.71723 33.9847 6.91477C33.9847 8.11232 33.727 9.07035 33.2117 9.78887ZM29.6191 9.10301C29.9529 9.61831 30.4283 9.87597 31.0452 9.87597C31.6622 9.87597 32.1375 9.61831 32.4714 9.10301C32.8125 8.5877 32.9831 7.85829 32.9831 6.91477C32.9831 5.97126 32.8125 5.24185 32.4714 4.72654C32.1375 4.20398 31.6622 3.9427 31.0452 3.9427C30.4283 3.9427 29.9529 4.20035 29.6191 4.71565C29.2852 5.23096 29.1183 5.964 29.1183 6.91477C29.1183 7.85829 29.2852 8.5877 29.6191 9.10301Z" fill="#FF8164"/>
+                                        <path d="M39.6989 5.52127C39.6989 6.10916 39.5429 6.62083 39.2308 7.0563H39.2417L36.7813 10.7251H35.6382L37.4454 8.05788C37.2857 8.0724 37.1623 8.07965 37.0752 8.07965C36.3059 8.07965 35.6745 7.84378 35.1809 7.37202C34.6946 6.893 34.4515 6.27609 34.4515 5.52127C34.4515 4.76646 34.6946 4.15317 35.1809 3.68142C35.6745 3.2024 36.3059 2.96289 37.0752 2.96289C37.8445 2.96289 38.4723 3.2024 38.9586 3.68142C39.4521 4.15317 39.6989 4.76646 39.6989 5.52127ZM35.8994 4.36728C35.6019 4.65759 35.4531 5.04226 35.4531 5.52127C35.4531 6.00029 35.6019 6.38858 35.8994 6.68615C36.2043 6.97647 36.5962 7.12162 37.0752 7.12162C37.5542 7.12162 37.9425 6.97647 38.2401 6.68615C38.5449 6.38858 38.6973 6.00029 38.6973 5.52127C38.6973 5.04226 38.5485 4.65759 38.251 4.36728C37.9534 4.07697 37.5615 3.93181 37.0752 3.93181C36.5962 3.93181 36.2043 4.07697 35.8994 4.36728Z" fill="#FF8164"/>
+                                        <path d="M40.4946 7.84015V6.92566H47.0811V7.84015H40.4946Z" fill="#FF8164"/>
+                                        <path d="M47.9616 10.7251V9.89774L50.6506 7.15428C51.3691 6.43576 51.7284 5.81884 51.7284 5.30354C51.7284 4.87533 51.5978 4.54147 51.3365 4.30196C51.0752 4.06245 50.7559 3.9427 50.3785 3.9427C49.6599 3.9427 49.1374 4.28381 48.8108 4.96605L47.9616 4.46526C48.2011 3.97173 48.5313 3.59795 48.9523 3.34393C49.3805 3.0899 49.8523 2.96289 50.3676 2.96289C51.0063 2.96289 51.5615 3.17337 52.0332 3.59432C52.505 4.01528 52.7409 4.58139 52.7409 5.29265C52.7409 6.06198 52.2873 6.90026 51.38 7.80749L49.4313 9.74532H52.8824V10.7251H47.9616Z" fill="#FF8164"/>
+                                        <path d="M58.4736 9.78887C57.9583 10.5074 57.2361 10.8667 56.3071 10.8667C55.3781 10.8667 54.656 10.5074 54.1407 9.78887C53.6254 9.07035 53.3677 8.11232 53.3677 6.91477C53.3677 5.71723 53.6254 4.7592 54.1407 4.04068C54.656 3.32215 55.3781 2.96289 56.3071 2.96289C57.2361 2.96289 57.9583 3.32215 58.4736 4.04068C58.9889 4.7592 59.2466 5.71723 59.2466 6.91477C59.2466 8.11232 58.9889 9.07035 58.4736 9.78887ZM54.881 9.10301C55.2148 9.61831 55.6902 9.87597 56.3071 9.87597C56.924 9.87597 57.3994 9.61831 57.7333 9.10301C58.0744 8.5877 58.245 7.85829 58.245 6.91477C58.245 5.97126 58.0744 5.24185 57.7333 4.72654C57.3994 4.20398 56.924 3.9427 56.3071 3.9427C55.6902 3.9427 55.2148 4.20035 54.881 4.71565C54.5471 5.23096 54.3802 5.964 54.3802 6.91477C54.3802 7.85829 54.5471 8.5877 54.881 9.10301Z" fill="#FF8164"/>
+                                        <path d="M59.6623 10.7251V9.89774L62.3513 7.15428C63.0698 6.43576 63.4291 5.81884 63.4291 5.30354C63.4291 4.87533 63.2985 4.54147 63.0372 4.30196C62.7759 4.06245 62.4565 3.9427 62.0791 3.9427C61.3606 3.9427 60.8381 4.28381 60.5115 4.96605L59.6623 4.46526C59.9018 3.97173 60.232 3.59795 60.653 3.34393C61.0812 3.0899 61.5529 2.96289 62.0683 2.96289C62.7069 2.96289 63.2622 3.17337 63.7339 3.59432C64.2057 4.01528 64.4416 4.58139 64.4416 5.29265C64.4416 6.06198 63.9879 6.90026 63.0807 7.80749L61.132 9.74532H64.5831V10.7251H59.6623Z" fill="#FF8164"/>
+                                        <path d="M68.0187 6.22891C68.5993 6.33778 69.0747 6.58817 69.4449 6.98009C69.815 7.37202 70.0001 7.86918 70.0001 8.47158C70.0001 9.21187 69.7461 9.79613 69.238 10.2243C68.73 10.6526 68.1131 10.8667 67.3873 10.8667C66.8067 10.8667 66.2913 10.736 65.8414 10.4747C65.3914 10.2062 65.072 9.82153 64.8833 9.32074L65.7325 8.81995C65.9575 9.52396 66.5091 9.87597 67.3873 9.87597C67.859 9.87597 68.2437 9.75258 68.5413 9.50582C68.8388 9.25905 68.9876 8.9143 68.9876 8.47158C68.9876 8.02885 68.8388 7.6841 68.5413 7.43734C68.2437 7.18331 67.859 7.0563 67.3873 7.0563H67.126L66.7232 6.43576L68.4868 4.05156H65.1011V3.10442H69.6735V3.99713L68.0187 6.22891Z" fill="#FF8164"/>
+                                    </svg>
+                                </div>
+                                <img src="./src/assets/images/main-page/staff-logo.png" alt="kofes-logo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="proxima">
+                <div class="content">
+                    <div class="proxima-inner">
+                        <div class="proxima-col">
+                            <h3>Официальный сервисный центр
+                                Dr. Coffee Proxima</h3>
+                            <ul>
+                                <li>запчасти;</li>
+                                <li>обучение мастера;</li>
+                                <li>официальный сервисный центр;</li>
+                            </ul>
+                        </div>
+                        <div class="proxima-col">
+                            <img src="./src/assets/images/main-page/proxima.png" alt="proxima-photo">
+                        </div>
+                        <button class="circle-btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M1.12497 8.99998C1.12497 9.14916 1.18423 9.29224 1.28972 9.39773C1.39521 9.50321 1.53829 9.56248 1.68747 9.56248L14.9546 9.56248L11.4142 13.1017C11.3086 13.2073 11.2493 13.3506 11.2493 13.5C11.2493 13.6493 11.3086 13.7926 11.4142 13.8982C11.5198 14.0038 11.6631 14.0632 11.8125 14.0632C11.9618 14.0632 12.1051 14.0038 12.2107 13.8982L16.7107 9.39823C16.7631 9.34598 16.8047 9.2839 16.833 9.21557C16.8614 9.14723 16.876 9.07397 16.876 8.99998C16.876 8.92599 16.8614 8.85273 16.833 8.78439C16.8047 8.71605 16.7631 8.65398 16.7107 8.60173L12.2107 4.10173C12.1584 4.04943 12.0963 4.00794 12.028 3.97964C11.9597 3.95134 11.8864 3.93677 11.8125 3.93677C11.6631 3.93677 11.5198 3.99611 11.4142 4.10173C11.3086 4.20735 11.2493 4.35061 11.2493 4.49998C11.2493 4.64935 11.3086 4.79261 11.4142 4.89823L14.9546 8.43748L1.68747 8.43748C1.53829 8.43748 1.39521 8.49674 1.28972 8.60223C1.18423 8.70772 1.12497 8.85079 1.12497 8.99998Z" fill="white"/>
+                        </svg></button>
+                    </div>
+                </div>
+            </div>
+            <div class="search">
+                <div class="content">
+                    <div class="search-inner">
+                        <h3>
+                            Выберите бренд вашей кофемашины или кофемолки
+                        </h3>
+                        <div class="search-wrapper">
+                            <div class="search-field">
+                                <input type="text" placeholder="Укажите бренд">
+                                <button class="circle-btn" type="submit">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
+                                        <g clip-path="url(#clip0_3658_27660)">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0.875195 7.5001C0.875195 7.62442 0.921288 7.74365 1.00334 7.83156C1.08538 7.91947 1.19666 7.96885 1.3127 7.96885L11.6316 7.96885L8.87794 10.9182C8.79579 11.0062 8.74964 11.1256 8.74964 11.2501C8.74964 11.3746 8.79579 11.494 8.87794 11.582C8.9601 11.67 9.07152 11.7194 9.18769 11.7194C9.30387 11.7194 9.41529 11.67 9.49744 11.582L12.9974 7.83198C13.0382 7.78844 13.0705 7.73671 13.0926 7.67976C13.1146 7.62281 13.126 7.56176 13.126 7.5001C13.126 7.43845 13.1146 7.3774 13.0926 7.32045C13.0705 7.2635 13.0382 7.21177 12.9974 7.16823L9.49745 3.41823C9.45677 3.37465 9.40848 3.34007 9.35533 3.31649C9.30218 3.2929 9.24522 3.28076 9.1877 3.28076C9.07152 3.28076 8.9601 3.33021 8.87794 3.41823C8.79579 3.50625 8.74964 3.62563 8.74964 3.7501C8.74964 3.87458 8.79579 3.99396 8.87794 4.08198L11.6316 7.03135L1.3127 7.03135C1.19666 7.03135 1.08538 7.08074 1.00334 7.16865C0.921288 7.25656 0.875195 7.37578 0.875195 7.5001Z" fill="white"/>
                                         </g>
                                         <defs>
-                                          <clipPath id="clip0_3868_27057">
-                                            <rect width="23" height="22" fill="white" transform="translate(22) rotate(90)"/>
-                                          </clipPath>
+                                        <clipPath id="clip0_3658_27660">
+                                            <rect width="15" height="14" fill="white" transform="translate(14) rotate(90)"/>
+                                        </clipPath>
                                         </defs>
-                                      </svg>
-                                </a>
+                                    </svg>
+                                    </button>
                             </div>
-                        </li>
-                        <li><a class="navigation-item-title link-text" href="#">Услуги и цены</a></li>
-                    </ul>
-                    <div class="navigation-item item-btn">
-                        <ul>
-                            <li><a class="navigation-item-title link-text" href="#">Доставка и оплата</a></li>
-                            <li><a class="navigation-item-title link-text" href="#">Контакты</a></li>
-                        </ul>
-                        <a href="tel:+78127166688" class="navigation-phone-num">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="19" viewBox="0 0 18 19" fill="none">
-                                <path d="M5.69473 17.24L7.63473 14.4996C8.01922 13.954 7.87306 13.1846 7.30803 12.7848L5.92765 11.8075C5.95596 11.726 5.98565 11.6415 6.01728 11.5527C6.30242 10.7376 6.69349 9.62195 7.58308 8.36613C8.47439 7.10675 9.3981 6.36623 10.0723 5.82501C10.1437 5.76784 10.2127 5.71299 10.2779 5.65931L11.2033 6.31539L11.6593 6.63776C12.2252 7.03817 12.9991 6.91948 13.3852 6.37481L15.3254 3.6343C15.7108 3.08975 15.5646 2.31994 14.9987 1.91953L14.2226 1.37349L14.2078 1.39457C13.8878 1.2217 13.5307 1.09259 13.1562 1.01511C12.8005 0.945497 12.4682 0.921111 12.1426 0.939673C9.52807 1.06892 7.38721 2.64003 4.75384 6.36035C1.11409 11.5029 2.05124 14.985 2.09355 15.1349C2.19018 15.4606 2.32414 15.7656 2.50531 16.068C2.70074 16.3926 2.94091 16.6863 3.20982 16.9305L3.19949 16.9471L3.96804 17.5033C4.53364 17.9028 5.30793 17.7846 5.69473 17.24Z" fill="#E55938"/>
-                              </svg>
-                              <span class="link-text">+ 7 812 716-66-88</span>
-                        </a>
-                            <!-- <button class="burger"></button> -->
-                            <span class="burger"></span>
+                            <!-- результаты поиска -->
+                            <div class="search-results">
+                                <ul class="search-pozitive">
+                                    <li><a href="#">Saeco</a> </li>
+                                    <li><a href="#">Philips Saeco</a> </li>
+                                    <li><a href="#">Sacco</a> </li>
+                                </ul>
+                                <div class="search-negative">
+                                    <p>По вашему запросу ничего не найдено</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="mobile-menu">
-                        <div class="mobile-head">
-                            <a href="/" class="logo">
-                                <img src="./src/assets/images/logo.png" alt="logo" >
+                </div>
+            </div>
+            <div class="brands">
+                <div class="content">
+                    <div class="brands-inner">
+                        <h3>Популярные бренды</h3>
+                        <div class="brands-cards">
+                            <a href="#" class="brand-card">
+                                <img src="./src/assets/images/main-page/brands/bosch-logo.png" alt="brand-logo">
                             </a>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
-                                <rect x="8.94678" y="8.27246" width="15.2462" height="0.952887" rx="0.476443" transform="rotate(45 8.94678 8.27246)" fill="#2E3331"/>
-                                <rect x="8.27246" y="19.0532" width="15.2462" height="0.952887" rx="0.476443" transform="rotate(-45 8.27246 19.0532)" fill="#2E3331"/>
-                                <rect x="1" y="1" width="26" height="26" rx="13" stroke="black" stroke-width="2"/>
-                              </svg>
+                            <a href="#" class="brand-card">
+                                <img src="./src/assets/images/main-page/brands/electra-logo.png" alt="brand-logo">
+                            </a>
+                            <a href="#" class="brand-card">
+                                <img src="./src/assets/images/main-page/brands/necta-logo.png" alt="brand-logo">
+                            </a>
+                            <a href="#" class="brand-card">
+                                <img src="./src/assets/images/main-page/brands/j-logo.png" alt="brand-logo">
+                            </a>
+                            <a href="#" class="brand-card">
+                                <img src="./src/assets/images/main-page/brands/nivina-logo.png" alt="brand-logo">
+                            </a>
+                            <a href="#" class="brand-card">
+                                <img src="./src/assets/images/main-page/brands/bosch-logo.png" alt="brand-logo">
+                            </a>
+                            <a href="#" class="brand-card">
+                                <img src="./src/assets/images/main-page/brands/saeco-logo.png" alt="brand-logo">
+                            </a>
+                            <a href="#" class="brand-card">
+                                <img src="./src/assets/images/main-page/brands/san-marino-logo.png" alt="brand-logo">
+                            </a>
+                            <a href="#" class="brand-card">
+                                <img src="./src/assets/images/main-page/brands/siemens-logo.png" alt="brand-logo">
+                            </a>
+                            <a href="#" class="brand-card">
+                                <img src="./src/assets/images/main-page/brands/necta-logo.png" alt="brand-logo">
+                            </a>
+                            <a href="#" class="brand-card">
+                                <img src="./src/assets/images/main-page/brands/electra-logo.png" alt="brand-logo">
+                            </a>
+                            <a href="#" class="brand-card">
+                                <img src="./src/assets/images/main-page/brands/bosch-logo.png" alt="brand-logo">
+                            </a>
                         </div>
-                        <div class="mobile-inner">
-                            <ul class="mobile-inner-list list-1">
-                                <li class="dropdown-inner">
-                                    <a class="mobile-list-title mobile-dropdown-item" href="#">Типы ремонта</a>
-                                    <ul class="mobile-submenu-repair">
-                                        <li>
-                                            <a href="#">Не греет воду</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Выдает ошибку</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Сбрасывает сухой перемолотый кофе</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Подтекает</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Не формирует отработанный кофе
-                                                (влажный жмых)</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Не включается</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Нет пара</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Не мелет кофе</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Не наливает или плохо проливает кофе</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="dropdown-inner">
-                                    <a class="mobile-list-title mobile-dropdown-item" href="#">Бренды</a>
-                                    <ul class="mobile-submenu-brands">
-                                        <li>
-                                            <a href="#">Saeco</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Carimali</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Siemens</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Jura</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">SanMarino</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Nivona</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Jura</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Saeco</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Смотреть все бренды
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="20" viewBox="0 0 18 20" fill="none">
-                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.00035 10.7826C2.00035 10.9235 2.05073 11.0587 2.1404 11.1583C2.23008 11.258 2.35171 11.3139 2.47854 11.3139L13.7572 11.3139L10.7475 14.657C10.6577 14.7568 10.6072 14.8921 10.6072 15.0332C10.6072 15.1743 10.6577 15.3096 10.7475 15.4094C10.8373 15.5092 10.959 15.5652 11.086 15.5652C11.213 15.5652 11.3348 15.5092 11.4246 15.4094L15.2501 11.1588C15.2947 11.1094 15.33 11.0508 15.3541 10.9862C15.3782 10.9217 15.3906 10.8525 15.3906 10.7826C15.3906 10.7127 15.3782 10.6435 15.3541 10.579C15.33 10.5144 15.2947 10.4558 15.2501 10.4064L11.4246 6.15582C11.3801 6.10642 11.3273 6.06723 11.2693 6.0405C11.2112 6.01376 11.1489 6 11.086 6C10.959 6 10.8373 6.05605 10.7475 6.15582C10.6577 6.25559 10.6072 6.3909 10.6072 6.532C10.6072 6.67309 10.6577 6.80841 10.7475 6.90818L13.7572 10.2513L2.47854 10.2513C2.35171 10.2513 2.23008 10.3073 2.1404 10.4069C2.05073 10.5065 2.00035 10.6417 2.00035 10.7826Z" fill="#E55938"/>
-                                                  </svg>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li><a class="mobile-list-title" href="#">Услуги и цены</a></li>
-                            </ul>
-                            <ul class="mobile-inner-list list-2">
-                                <li>
-                                    <a class="mobile-list-title" href="#">Доставка и оплата</a>
-                                </li>
-                                <li><a class="mobile-list-title" href="#">Контакты</a></li>
-                            </ul>
-                            <ul class="mobile-contacts">
-                                <li>
-                                    <a href="tel:+78127166688">+7 (812) 716-66-88</a>
-                                </li>
-                                <li>
-                                    <a href="mailto:">info@kofes.ru</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
-            </div>
-        </div>
-    </header>
-    <main>
-        <section class="banner">
-            <div class="content">
-                <h1>Ремонт и сервис кофемашин всех видов с гарантией</h1>
-                <div class="banner-wrapper">
-                    <div class="mobile-banner">
-                        <div class="banner-video">
-                            <div class="banner-video-play">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
-                                    <circle cx="20" cy="20" r="20" fill="#E55938"/>
-                                    <path d="M23.333 20.1392L18.1247 23.1462L18.1247 17.1322L23.333 20.1392Z" fill="white"/>
-                                  </svg>
-                            </div>
-                        </div>
-                        <div class="banner-content">
-                            <h2>Ремонт и сервис кофемашин всех видов с гарантией</h2>
-                            <p>Собственный сервисный центр в Санкт-Петербурге.
-                                Работаем без посредников</p>
-                            <button class="to-application carrot-btn ">Заявка на ремонт</button>
-                        </div>
-                    </div>
-                    <div class="desktop-banner">
-                        <div class="desktop-banner-content">
-                            <h2>Ремонт и сервис кофемашин <br> всех видов с гарантией</h2>
-                            <p>Собственный сервисный центр в Санкт-Петербурге.<br>
-                                Работаем без посредников</p>
-                            <button class="carrot-btn to-application">Заявка на ремонт</button>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-        <div class="staff">
-            <div class="content">
-                <div class="staff-inner">
-                    <div class="staff-photos">
-                        <h3>Квалифицированные мастера с большим опытом работы</h3>
-                        <div class="swiper staff-swiper">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <img src="./src/assets/images/main-page/staff-2.png" alt="staff-photo">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="./src/assets/images/main-page/staff-2.png" alt="staff-photo">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="./src/assets/images/main-page/staff-3.png" alt="staff-photo">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="./src/assets/images/main-page/staff-4.png" alt="staff-photo">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="./src/assets/images/main-page/staff-3.png" alt="staff-photo">
-                                </div>
-                                <div class="swiper-slide">
-                                    <img src="./src/assets/images/main-page/staff-4.png" alt="staff-photo">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="staff-about">
-                        <h3>Ремонтируем кофемашины
-                            с 2009 года</h3>
-                            <div class="staff-about-date">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="70" height="13" viewBox="0 0 70 13" fill="none">
-                                    <path d="M6.65218 9.65229C5.75054 9.65229 5.00049 9.37469 4.40205 8.81948C3.80361 8.25687 3.50439 7.56101 3.50439 6.73191C3.50439 5.9028 3.80361 5.21064 4.40205 4.65544C5.00049 4.09283 5.75054 3.81152 6.65218 3.81152C7.24264 3.81152 7.77326 3.94477 8.24403 4.21127C8.7148 4.47037 9.06589 4.822 9.29728 5.26616L8.42356 5.73254C8.27196 5.43643 8.03657 5.19954 7.71741 5.02187C7.40622 4.84421 7.05114 4.75537 6.65218 4.75537C6.05374 4.75537 5.55106 4.94414 5.14412 5.32168C4.74516 5.69922 4.54568 6.1693 4.54568 6.73191C4.54568 7.28711 4.74516 7.75348 5.14412 8.13102C5.55106 8.50856 6.05374 8.69733 6.65218 8.69733C7.05114 8.69733 7.41021 8.6122 7.72937 8.44194C8.04854 8.26427 8.29191 8.02739 8.45947 7.73128L9.34516 8.20875C9.08983 8.64551 8.72278 8.99715 8.24403 9.26365C7.76528 9.52274 7.23466 9.65229 6.65218 9.65229Z" fill="#FF8164"/>
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.42621 11.8153C9.23263 11.8153 11.5077 9.54025 11.5077 6.73383C11.5077 3.92742 9.23263 1.65237 6.42621 1.65237C3.6198 1.65237 1.34475 3.92742 1.34475 6.73383C1.34475 9.54025 3.6198 11.8153 6.42621 11.8153ZM6.42621 12.5746C9.65198 12.5746 12.267 9.9596 12.267 6.73383C12.267 3.50807 9.65198 0.893066 6.42621 0.893066C3.20045 0.893066 0.585449 3.50807 0.585449 6.73383C0.585449 9.9596 3.20045 12.5746 6.42621 12.5746Z" fill="#FF8164"/>
-                                    <path d="M16.1689 10.7251V9.89774L18.858 7.15428C19.5765 6.43576 19.9358 5.81884 19.9358 5.30354C19.9358 4.87533 19.8051 4.54147 19.5438 4.30196C19.2826 4.06245 18.9632 3.9427 18.5858 3.9427C17.8673 3.9427 17.3447 4.28381 17.0181 4.96605L16.1689 4.46526C16.4085 3.97173 16.7387 3.59795 17.1596 3.34393C17.5878 3.0899 18.0596 2.96289 18.5749 2.96289C19.2136 2.96289 19.7688 3.17337 20.2406 3.59432C20.7123 4.01528 20.9482 4.58139 20.9482 5.29265C20.9482 6.06198 20.4946 6.90026 19.5874 7.80749L17.6387 9.74532H21.0897V10.7251H16.1689Z" fill="#FF8164"/>
-                                    <path d="M26.6809 9.78887C26.1656 10.5074 25.4435 10.8667 24.5145 10.8667C23.5855 10.8667 22.8633 10.5074 22.348 9.78887C21.8327 9.07035 21.5751 8.11232 21.5751 6.91477C21.5751 5.71723 21.8327 4.7592 22.348 4.04068C22.8633 3.32215 23.5855 2.96289 24.5145 2.96289C25.4435 2.96289 26.1656 3.32215 26.6809 4.04068C27.1962 4.7592 27.4539 5.71723 27.4539 6.91477C27.4539 8.11232 27.1962 9.07035 26.6809 9.78887ZM23.0883 9.10301C23.4222 9.61831 23.8976 9.87597 24.5145 9.87597C25.1314 9.87597 25.6068 9.61831 25.9406 9.10301C26.2818 8.5877 26.4523 7.85829 26.4523 6.91477C26.4523 5.97126 26.2818 5.24185 25.9406 4.72654C25.6068 4.20398 25.1314 3.9427 24.5145 3.9427C23.8976 3.9427 23.4222 4.20035 23.0883 4.71565C22.7545 5.23096 22.5875 5.964 22.5875 6.91477C22.5875 7.85829 22.7545 8.5877 23.0883 9.10301Z" fill="#FF8164"/>
-                                    <path d="M33.2117 9.78887C32.6964 10.5074 31.9742 10.8667 31.0452 10.8667C30.1162 10.8667 29.3941 10.5074 28.8788 9.78887C28.3635 9.07035 28.1058 8.11232 28.1058 6.91477C28.1058 5.71723 28.3635 4.7592 28.8788 4.04068C29.3941 3.32215 30.1162 2.96289 31.0452 2.96289C31.9742 2.96289 32.6964 3.32215 33.2117 4.04068C33.727 4.7592 33.9847 5.71723 33.9847 6.91477C33.9847 8.11232 33.727 9.07035 33.2117 9.78887ZM29.6191 9.10301C29.9529 9.61831 30.4283 9.87597 31.0452 9.87597C31.6622 9.87597 32.1375 9.61831 32.4714 9.10301C32.8125 8.5877 32.9831 7.85829 32.9831 6.91477C32.9831 5.97126 32.8125 5.24185 32.4714 4.72654C32.1375 4.20398 31.6622 3.9427 31.0452 3.9427C30.4283 3.9427 29.9529 4.20035 29.6191 4.71565C29.2852 5.23096 29.1183 5.964 29.1183 6.91477C29.1183 7.85829 29.2852 8.5877 29.6191 9.10301Z" fill="#FF8164"/>
-                                    <path d="M39.6989 5.52127C39.6989 6.10916 39.5429 6.62083 39.2308 7.0563H39.2417L36.7813 10.7251H35.6382L37.4454 8.05788C37.2857 8.0724 37.1623 8.07965 37.0752 8.07965C36.3059 8.07965 35.6745 7.84378 35.1809 7.37202C34.6946 6.893 34.4515 6.27609 34.4515 5.52127C34.4515 4.76646 34.6946 4.15317 35.1809 3.68142C35.6745 3.2024 36.3059 2.96289 37.0752 2.96289C37.8445 2.96289 38.4723 3.2024 38.9586 3.68142C39.4521 4.15317 39.6989 4.76646 39.6989 5.52127ZM35.8994 4.36728C35.6019 4.65759 35.4531 5.04226 35.4531 5.52127C35.4531 6.00029 35.6019 6.38858 35.8994 6.68615C36.2043 6.97647 36.5962 7.12162 37.0752 7.12162C37.5542 7.12162 37.9425 6.97647 38.2401 6.68615C38.5449 6.38858 38.6973 6.00029 38.6973 5.52127C38.6973 5.04226 38.5485 4.65759 38.251 4.36728C37.9534 4.07697 37.5615 3.93181 37.0752 3.93181C36.5962 3.93181 36.2043 4.07697 35.8994 4.36728Z" fill="#FF8164"/>
-                                    <path d="M40.4946 7.84015V6.92566H47.0811V7.84015H40.4946Z" fill="#FF8164"/>
-                                    <path d="M47.9616 10.7251V9.89774L50.6506 7.15428C51.3691 6.43576 51.7284 5.81884 51.7284 5.30354C51.7284 4.87533 51.5978 4.54147 51.3365 4.30196C51.0752 4.06245 50.7559 3.9427 50.3785 3.9427C49.6599 3.9427 49.1374 4.28381 48.8108 4.96605L47.9616 4.46526C48.2011 3.97173 48.5313 3.59795 48.9523 3.34393C49.3805 3.0899 49.8523 2.96289 50.3676 2.96289C51.0063 2.96289 51.5615 3.17337 52.0332 3.59432C52.505 4.01528 52.7409 4.58139 52.7409 5.29265C52.7409 6.06198 52.2873 6.90026 51.38 7.80749L49.4313 9.74532H52.8824V10.7251H47.9616Z" fill="#FF8164"/>
-                                    <path d="M58.4736 9.78887C57.9583 10.5074 57.2361 10.8667 56.3071 10.8667C55.3781 10.8667 54.656 10.5074 54.1407 9.78887C53.6254 9.07035 53.3677 8.11232 53.3677 6.91477C53.3677 5.71723 53.6254 4.7592 54.1407 4.04068C54.656 3.32215 55.3781 2.96289 56.3071 2.96289C57.2361 2.96289 57.9583 3.32215 58.4736 4.04068C58.9889 4.7592 59.2466 5.71723 59.2466 6.91477C59.2466 8.11232 58.9889 9.07035 58.4736 9.78887ZM54.881 9.10301C55.2148 9.61831 55.6902 9.87597 56.3071 9.87597C56.924 9.87597 57.3994 9.61831 57.7333 9.10301C58.0744 8.5877 58.245 7.85829 58.245 6.91477C58.245 5.97126 58.0744 5.24185 57.7333 4.72654C57.3994 4.20398 56.924 3.9427 56.3071 3.9427C55.6902 3.9427 55.2148 4.20035 54.881 4.71565C54.5471 5.23096 54.3802 5.964 54.3802 6.91477C54.3802 7.85829 54.5471 8.5877 54.881 9.10301Z" fill="#FF8164"/>
-                                    <path d="M59.6623 10.7251V9.89774L62.3513 7.15428C63.0698 6.43576 63.4291 5.81884 63.4291 5.30354C63.4291 4.87533 63.2985 4.54147 63.0372 4.30196C62.7759 4.06245 62.4565 3.9427 62.0791 3.9427C61.3606 3.9427 60.8381 4.28381 60.5115 4.96605L59.6623 4.46526C59.9018 3.97173 60.232 3.59795 60.653 3.34393C61.0812 3.0899 61.5529 2.96289 62.0683 2.96289C62.7069 2.96289 63.2622 3.17337 63.7339 3.59432C64.2057 4.01528 64.4416 4.58139 64.4416 5.29265C64.4416 6.06198 63.9879 6.90026 63.0807 7.80749L61.132 9.74532H64.5831V10.7251H59.6623Z" fill="#FF8164"/>
-                                    <path d="M68.0187 6.22891C68.5993 6.33778 69.0747 6.58817 69.4449 6.98009C69.815 7.37202 70.0001 7.86918 70.0001 8.47158C70.0001 9.21187 69.7461 9.79613 69.238 10.2243C68.73 10.6526 68.1131 10.8667 67.3873 10.8667C66.8067 10.8667 66.2913 10.736 65.8414 10.4747C65.3914 10.2062 65.072 9.82153 64.8833 9.32074L65.7325 8.81995C65.9575 9.52396 66.5091 9.87597 67.3873 9.87597C67.859 9.87597 68.2437 9.75258 68.5413 9.50582C68.8388 9.25905 68.9876 8.9143 68.9876 8.47158C68.9876 8.02885 68.8388 7.6841 68.5413 7.43734C68.2437 7.18331 67.859 7.0563 67.3873 7.0563H67.126L66.7232 6.43576L68.4868 4.05156H65.1011V3.10442H69.6735V3.99713L68.0187 6.22891Z" fill="#FF8164"/>
-                                  </svg>
-                            </div>
-                            <img src="./src/assets/images/main-page/staff-logo.png" alt="kofes-logo">
+                        <a class="carrot-btn" href="#">Смотреть все бренды</a>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="proxima">
-            <div class="content">
-                <div class="proxima-inner">
-                    <div class="proxima-col">
-                        <h3>Официальный сервисный центр
-                            Dr. Coffee Proxima</h3>
-                        <ul>
-                            <li>запчасти;</li>
-                            <li>обучение мастера;</li>
-                            <li>официальный сервисный центр;</li>
-                        </ul>
-                    </div>
-                    <div class="proxima-col">
-                        <img src="./src/assets/images/main-page/proxima.png" alt="proxima-photo">
-                    </div>
-                    <button class="circle-btn">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.12497 8.99998C1.12497 9.14916 1.18423 9.29224 1.28972 9.39773C1.39521 9.50321 1.53829 9.56248 1.68747 9.56248L14.9546 9.56248L11.4142 13.1017C11.3086 13.2073 11.2493 13.3506 11.2493 13.5C11.2493 13.6493 11.3086 13.7926 11.4142 13.8982C11.5198 14.0038 11.6631 14.0632 11.8125 14.0632C11.9618 14.0632 12.1051 14.0038 12.2107 13.8982L16.7107 9.39823C16.7631 9.34598 16.8047 9.2839 16.833 9.21557C16.8614 9.14723 16.876 9.07397 16.876 8.99998C16.876 8.92599 16.8614 8.85273 16.833 8.78439C16.8047 8.71605 16.7631 8.65398 16.7107 8.60173L12.2107 4.10173C12.1584 4.04943 12.0963 4.00794 12.028 3.97964C11.9597 3.95134 11.8864 3.93677 11.8125 3.93677C11.6631 3.93677 11.5198 3.99611 11.4142 4.10173C11.3086 4.20735 11.2493 4.35061 11.2493 4.49998C11.2493 4.64935 11.3086 4.79261 11.4142 4.89823L14.9546 8.43748L1.68747 8.43748C1.53829 8.43748 1.39521 8.49674 1.28972 8.60223C1.18423 8.70772 1.12497 8.85079 1.12497 8.99998Z" fill="white"/>
-                      </svg></button>
-                </div>
-            </div>
-        </div>
-        <div class="search">
-            <div class="content">
-                <div class="search-inner">
-                    <h3>
-                        Выберите бренд вашей кофемашины или кофемолки
-                    </h3>
-                    <div class="search-wrapper">
-                        <div class="search-field">
-                            <input type="text" placeholder="Укажите бренд">
-                            <button class="circle-btn" type="submit">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
-                                    <g clip-path="url(#clip0_3658_27660)">
-                                      <path fill-rule="evenodd" clip-rule="evenodd" d="M0.875195 7.5001C0.875195 7.62442 0.921288 7.74365 1.00334 7.83156C1.08538 7.91947 1.19666 7.96885 1.3127 7.96885L11.6316 7.96885L8.87794 10.9182C8.79579 11.0062 8.74964 11.1256 8.74964 11.2501C8.74964 11.3746 8.79579 11.494 8.87794 11.582C8.9601 11.67 9.07152 11.7194 9.18769 11.7194C9.30387 11.7194 9.41529 11.67 9.49744 11.582L12.9974 7.83198C13.0382 7.78844 13.0705 7.73671 13.0926 7.67976C13.1146 7.62281 13.126 7.56176 13.126 7.5001C13.126 7.43845 13.1146 7.3774 13.0926 7.32045C13.0705 7.2635 13.0382 7.21177 12.9974 7.16823L9.49745 3.41823C9.45677 3.37465 9.40848 3.34007 9.35533 3.31649C9.30218 3.2929 9.24522 3.28076 9.1877 3.28076C9.07152 3.28076 8.9601 3.33021 8.87794 3.41823C8.79579 3.50625 8.74964 3.62563 8.74964 3.7501C8.74964 3.87458 8.79579 3.99396 8.87794 4.08198L11.6316 7.03135L1.3127 7.03135C1.19666 7.03135 1.08538 7.08074 1.00334 7.16865C0.921288 7.25656 0.875195 7.37578 0.875195 7.5001Z" fill="white"/>
-                                    </g>
-                                    <defs>
-                                      <clipPath id="clip0_3658_27660">
-                                        <rect width="15" height="14" fill="white" transform="translate(14) rotate(90)"/>
-                                      </clipPath>
-                                    </defs>
-                                  </svg>
-                                </button>
-                        </div>
-                        <!-- результаты поиска -->
-                        <div class="search-results">
-                            <ul class="search-pozitive">
-                                <li><a href="#">Saeco</a> </li>
-                                <li><a href="#">Philips Saeco</a> </li>
-                                <li><a href="#">Sacco</a> </li>
-                            </ul>
-                            <div class="search-negative">
-                                <p>По вашему запросу ничего не найдено</p>
+            <div class="problems">
+                <div class="content">
+                    <div class="problems-cards-mobile">
+                        <div class="problems-card">
+                            <div class="problems-card-head">
+                                <p>Подтекает</p>
+                                <img src="./src/assets/images/main-page/problems-icons/icon1.png" alt="icon">
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="brands">
-            <div class="content">
-                <div class="brands-inner">
-                    <h3>Популярные бренды</h3>
-                    <div class="brands-cards">
-                        <a href="#" class="brand-card">
-                            <img src="./src/assets/images/main-page/brands/bosch-logo.png" alt="brand-logo">
-                        </a>
-                        <a href="#" class="brand-card">
-                            <img src="./src/assets/images/main-page/brands/electra-logo.png" alt="brand-logo">
-                        </a>
-                        <a href="#" class="brand-card">
-                            <img src="./src/assets/images/main-page/brands/necta-logo.png" alt="brand-logo">
-                        </a>
-                        <a href="#" class="brand-card">
-                            <img src="./src/assets/images/main-page/brands/j-logo.png" alt="brand-logo">
-                        </a>
-                        <a href="#" class="brand-card">
-                            <img src="./src/assets/images/main-page/brands/nivina-logo.png" alt="brand-logo">
-                        </a>
-                        <a href="#" class="brand-card">
-                            <img src="./src/assets/images/main-page/brands/bosch-logo.png" alt="brand-logo">
-                        </a>
-                        <a href="#" class="brand-card">
-                            <img src="./src/assets/images/main-page/brands/saeco-logo.png" alt="brand-logo">
-                        </a>
-                        <a href="#" class="brand-card">
-                            <img src="./src/assets/images/main-page/brands/san-marino-logo.png" alt="brand-logo">
-                        </a>
-                        <a href="#" class="brand-card">
-                            <img src="./src/assets/images/main-page/brands/siemens-logo.png" alt="brand-logo">
-                        </a>
-                        <a href="#" class="brand-card">
-                            <img src="./src/assets/images/main-page/brands/necta-logo.png" alt="brand-logo">
-                        </a>
-                        <a href="#" class="brand-card">
-                            <img src="./src/assets/images/main-page/brands/electra-logo.png" alt="brand-logo">
-                        </a>
-                        <a href="#" class="brand-card">
-                            <img src="./src/assets/images/main-page/brands/bosch-logo.png" alt="brand-logo">
-                        </a>
-                    </div>
-                    <a class="carrot-btn" href="#">Смотреть все бренды</a>
-                </div>
-            </div>
-        </div>
-        <div class="problems">
-            <div class="content">
-                <div class="problems-cards-mobile">
-                    <div class="problems-card">
-                        <div class="problems-card-head">
-                            <p>Подтекает</p>
-                            <img src="./src/assets/images/main-page/problems-icons/icon1.png" alt="icon">
-                        </div>
-                        <div class="problems-card-info">
-                            <ul>
-                                <li>Чистка дренажа</li>
-                                <li>Обслуживание центрального
-                                    заварочного устройства</li>
-                                <li>Восстановление герметичности гидросистемы</li>
-                                <li>Замена хамутов, манжетов, сальников гидросистемы</li>
-                                <li>Замена переходников гидросистемы</li>
-                                <li>Замена бойлера</li>
-                            </ul>
-                            <div class="problems-card-price-inner">
-                                <p class="problems-card-price">
-                                    от <span>900</span> руб.
-                                </p>
-                                <button type="button" class="to-order dark-border-btn">Заказать</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="problems-card">
-                        <div class="problems-card-head">
-                            <p>Не наливает или плохо проливает кофе</p>
-                            <img src="./src/assets/images/main-page/problems-icons/icon2.png" alt="icon">
-                        </div>
-                        <div class="problems-card-info">
-                            <ul>
-                                <li>Чистка от кофейных масел</li>
-                                <li>Обслуживание центрального заварочного устройства</li>
-                                <li>Механическая чистка кофеводов</li>
-                                <li>Ремонт или замена помпы</li>
-                                <li>Декальцинация</li>
-                                <li>Настройка фракции и дозы кофе</li>
-                            </ul>
-                            <div class="problems-card-price-inner">
-                                <p class="problems-card-price">
-                                    от <span>900</span> руб.
-                                </p>
-                                <button type="button" class="to-order dark-border-btn">Заказать</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="problems-card">
-                        <div class="problems-card-head">
-                            <p>Не греет воду</p>
-                            <img src="./src/assets/images/main-page/problems-icons/icon3.png" alt="icon">
-                        </div>
-                        <div class="problems-card-info">
-                            <ul>
-                                <li>Замена термодатчиков/термопредохранителя бойлера</li>
-                                <li>Замена бойлера</li>
-                                <li>Замена тэна бойлера</li>
-                                <li>Ремонт/замена платы</li>
-                                <li>Декальцинация</li>
-                            </ul>
-                            <div class="problems-card-price-inner">
-                                <p class="problems-card-price">
-                                    от <span>900</span> руб.
-                                </p>
-                                <button type="button" class=" to-order dark-border-btn">Заказать</button>
-                            </div>
-                        </div>
-                    </div>
-                    <a class="carrot-btn" href="#">Посмотреть все</a>
-                </div>
-                <div class="problems-cards-pc">
-                    <div class="problems-card">
-                        <div class="problems-card-head">
-                            <p>Подтекает</p>
-                            <img src="./src/assets/images/main-page/problems-icons/icon1.png" alt="icon">
-                        </div>
-                        <div class="problems-card-info">
-                            <ul>
-                                <li>Чистка дренажа</li>
-                                <li>Обслуживание центрального
-                                    заварочного устройства</li>
-                                <li>Восстановление герметичности гидросистемы</li>
-                                <li>Замена хамутов, манжетов, сальников гидросистемы</li>
-                                <li>Замена переходников гидросистемы</li>
-                                <li>Замена бойлера</li>
-                            </ul>
-                            <div class="problems-card-price-inner">
-                                <p class="problems-card-price">
-                                    от <span>900</span> руб.
-                                </p>
-                                <button type="button" class="to-order dark-border-btn">Заказать</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="problems-card">
-                        <div class="problems-card-head">
-                            <p>Не наливает или плохо проливает кофе</p>
-                            <img src="./src/assets/images/main-page/problems-icons/icon2.png" alt="icon">
-                        </div>
-                        <div class="problems-card-info">
-                            <ul>
-                                <li>Чистка от кофейных масел</li>
-                                <li>Обслуживание центрального заварочного устройства</li>
-                                <li>Механическая чистка кофеводов</li>
-                                <li>Ремонт или замена помпы</li>
-                                <li>Декальцинация</li>
-                                <li>Настройка фракции и дозы кофе</li>
-                            </ul>
-                            <div class="problems-card-price-inner">
-                                <p class="problems-card-price">
-                                    от <span>900</span> руб.
-                                </p>
-                                <button type="button" class="to-order dark-border-btn">Заказать</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="problems-card">
-                        <div class="problems-card-head">
-                            <p>Не греет воду</p>
-                            <img src="./src/assets/images/main-page/problems-icons/icon3.png" alt="icon">
-                        </div>
-                        <div class="problems-card-info">
-                            <ul>
-                                <li>Замена термодатчиков/термопредохранителя бойлера</li>
-                                <li>Замена бойлера</li>
-                                <li>Замена тэна бойлера</li>
-                                <li>Ремонт/замена платы</li>
-                                <li>Декальцинация</li>
-                            </ul>
-                            <div class="problems-card-price-inner">
-                                <p class="problems-card-price">
-                                    от <span>900</span> руб.
-                                </p>
-                                <button type="button" class="to-order dark-border-btn">Заказать</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="problems-card">
-                        <div class="problems-card-head">
-                            <p>Не включается</p>
-                            <img src="./src/assets/images/main-page/problems-icons/icon4.png" alt="icon">
-                        </div>
-                        <div class="problems-card-info">
-                            <ul>
-                                <li>Ремонт/замена модуля управления</li>
-                                <li>Замена датчиков температуры</li>
-                                <li>Комплексная чистка</li>
-                                <li>Замена микровыключателей</li>
-                            </ul>
-                            <div class="problems-card-price-inner">
-                                <p class="problems-card-price">
-                                    от <span>900</span> руб.
-                                </p>
-                                <button type="button" class="to-order dark-border-btn">Заказать</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="problems-card">
-                        <div class="problems-card-head">
-                            <p>Не мелет кофе</p>
-                            <img src="./src/assets/images/main-page/problems-icons/icon5.png" alt="icon">
-                        </div>
-                        <div class="problems-card-info">
-                            <ul>
-                                <li>Переборка и чистка корзины кофемолки</li>
-                                <li>Замена жерновов кофемолки</li>
-                                <li>Чистка дозатора кофе</li>
-                                <li>Ремонт кофемолки</li>
-                            </ul>
-                            <div class="problems-card-price-inner">
-                                <p class="problems-card-price">
-                                    от <span>900</span> руб.
-                                </p>
-                                <button type="button" class="to-order dark-border-btn">Заказать</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="problems-card">
-                        <div class="problems-card-head">
-                            <p>Выдает ошибку</p>
-                            <img src="./src/assets/images/main-page/problems-icons/icon6.png" alt="icon">
-                        </div>
-                        <div class="problems-card-info">
-                            <ul>
-                                <li>Ремонт/замена модуля управления</li>
-                                <li>Замена датчиков температуры</li>
-                                <li>Комплексная чистка</li>
-                                <li>Замена микровыключателей</li>
-                            </ul>
-                            <div class="problems-card-price-inner">
-                                <p class="problems-card-price">
-                                    от <span>900</span> руб.
-                                </p>
-                                <button type="button" class="to-order dark-border-btn">Заказать</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="problems-card">
-                        <div class="problems-card-head">
-                            <p>Нет пара</p>
-                            <img src="./src/assets/images/main-page/problems-icons/icon7.png" alt="icon">
-                        </div>
-                        <div class="problems-card-info">
-                            <ul>
-                                <li>Декальцинация</li>
-                                <li>Замена электромагнитного клапана</li>
-                                <li>Замена пароблока</li>
-                                <li>Чистка пароотвода</li>
-                                <li>Замена крана вода/пар</li>
-                                <li>Замена датчика температуры</li>
-                            </ul>
-                            <div class="problems-card-price-inner">
-                                <p class="problems-card-price">
-                                    от <span>900</span> руб.
-                                </p>
-                                <button type="button" class="to-order dark-border-btn">Заказать</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="problems-card">
-                        <div class="problems-card-head">
-                            <p>Сбрасывает сухой перемолотый кофе</p>
-                            <img src="./src/assets/images/main-page/problems-icons/icon8.png" alt="icon">
-                        </div>
-                        <div class="problems-card-info">
-                            <ul>
-                                <li>Настройка кофемолки</li>
-                                <li>Ремонт редуктора центрального заварочного устройства</li>
-                                <li>Обслуживание центрального заварочного устройства</li>
-                                <li>Ремонт кофемолки</li>
-                            </ul>
-                            <div class="problems-card-price-inner">
-                                <p class="problems-card-price">
-                                    от <span>900</span> руб.
-                                </p>
-                                <button type="button" class="to-order dark-border-btn">Заказать</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="problems-card">
-                        <div class="problems-card-head">
-                            <p>Не формируется отработанный кофе</p>
-                            <img src="./src/assets/images/main-page/problems-icons/icon9.png" alt="icon">
-                        </div>
-                        <div class="problems-card-info">
-                            <ul>
-                                <li>Замена жерновов</li>
-                                <li>Чистка и настройка кофемолки</li>
-                                <li>Обслуживание центрального заварочного устройства</li>
-                                <li>Чистка дозатора кофе</li>
-                                <li>Калибровка кофемолки</li>
-                            </ul>
-                            <div class="problems-card-price-inner">
-                                <p class="problems-card-price">
-                                    от <span>900</span> руб.
-                                </p>
-                                <button type="button" class="to-order dark-border-btn">Заказать</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-        <div class="dark-form">
-            <div class="content">
-                <div class="dark-form-inner">
-                    <div class="dark-form-img-wrap">
-                        <img src="./src/assets/images/main-page/dark-form-img.png" alt="dark-form-img">
-                        <div class="dark-form-text">
-                            <h3>Другая проблема?</h3>
-                            <p>Оставьте заявку и наши специалисты
-                            свяжутся с Вами и сразу отправится на вызов!</p>
-                        </div>
-                    </div>
-                    <div class="form-wrap">
-                        <div class="form">
-                            <div class="input-wrap">
-                                <input type="tel" name="form-tel" required>
-                                <div class="label-box">
-                                    <label class="custom-placeholder">Телефон <span>*</span></label>
-                                </div>
-
-                            </div>
-                            <div class="input-wrap">
-                                <input type="text" name="form-text">
-                                <div class="label-box">
-                                    <label class="custom-placeholder">Опишите проблему</label>
-                                </div>
-                            </div>
-                            <div class="input-wrap">
-                                <button class="carrot-btn" type="submit">Отправить</button>
-                                <span>Согласен(а) с политикой обработки персональных данных и офертой</span>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="faq-accord">
-            <div class="content">
-                <div class="faq-accord-wrapper">
-                    <h3>Часто задаваемые вопросы</h3>
-                    <div class="accordion-container">
-                        <div class="acc-col">
-                            <div class="box">
-                                <div class="label">
-                                  <p>Что в первую очередь
-                                      проверяется при диагностике кофемашины?</p>
-                                </div>
-                                <div class="acc-content" >
-                                  <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis harum minima temporibus, ut numquam ea quam dolor voluptatem praesentium voluptate eum. Quia perferendis autem cumque ab id, dignissimos sapiente dolores!
-                                  </p>
-                                </div>
-                              </div>
-                              <div class="box">
-                                <div class="label">
-                                  <p>Сколько по времени длится
-                                      ремонт. Есть ли у вас срочный
-                                      ремонт? </p>
-                                </div>
-                                <div class="acc-content">
-                                  <p>
-                                      Мы выполняем услуги срочного ремонта. Длительность ремонта складывается из комплекса работ, которые осуществляются в нашем сервисном центре "КофеС". Наша компания обладает всеми необходимыми инструментами и профессиональным оборудование для ремонта кофемашин. Если вы захотите сравнивать нас с конкурентами, мы можем гордо отметить что наш склад запчастей находится непосредственно в сервисном центре, а комплектующие поставляются напрямую от производителя.
-                                  </p>
-                                </div>
-                              </div>
-                              <div class="box">
-                                <div class="label">
-                                  <p>Какие комплектующие вы устанавливаете на кофемашины?</p>
-                                </div>
-                                <div class="acc-content">
-                                  <p>
-                                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quisquam eum laborum, quia harum excepturi placeat repudiandae nesciunt consequatur. Suscipit laudantium nemo dolorum nihil neque ipsum modi vel! Atque, provident!
-                                  </p>
-                                </div>
-                              </div>
-                        </div>
-
-                        <div class="acc-col">
-                            <div class="box">
-                                <div class="label">
-                                  <p>Как формируется цена
-                                      на ремонт кофемашины? </p>
-                                </div>
-                                <div class="acc-content">
-                                  <p>
-                                      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur consectetur maxime explicabo quo autem vero, perspiciatis exercitationem saepe, consequuntur consequatur quidem doloremque sapiente, vitae praesentium dolores quis aperiam eveniet facilis.
-                                  </p>
-                                </div>
-                              </div>
-                              <div class="box">
-                                  <div class="label">
-                                      <p>Какие виды ремонта выполняете?</p>
-                                  </div>
-                                  <div class="acc-content">
-                                    <p>
-                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur consectetur maxime explicabo quo autem vero, perspiciatis exercitationem saepe, consequuntur consequatur quidem doloremque sapiente, vitae praesentium dolores quis aperiam eveniet facilis.
+                            <div class="problems-card-info">
+                                <ul>
+                                    <li>Чистка дренажа</li>
+                                    <li>Обслуживание центрального
+                                        заварочного устройства</li>
+                                    <li>Восстановление герметичности гидросистемы</li>
+                                    <li>Замена хамутов, манжетов, сальников гидросистемы</li>
+                                    <li>Замена переходников гидросистемы</li>
+                                    <li>Замена бойлера</li>
+                                </ul>
+                                <div class="problems-card-price-inner">
+                                    <p class="problems-card-price">
+                                        от <span>900</span> руб.
                                     </p>
-                                  </div>
+                                    <button type="button" class="to-order dark-border-btn">Заказать</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="problems-card">
+                            <div class="problems-card-head">
+                                <p>Не наливает или плохо проливает кофе</p>
+                                <img src="./src/assets/images/main-page/problems-icons/icon2.png" alt="icon">
+                            </div>
+                            <div class="problems-card-info">
+                                <ul>
+                                    <li>Чистка от кофейных масел</li>
+                                    <li>Обслуживание центрального заварочного устройства</li>
+                                    <li>Механическая чистка кофеводов</li>
+                                    <li>Ремонт или замена помпы</li>
+                                    <li>Декальцинация</li>
+                                    <li>Настройка фракции и дозы кофе</li>
+                                </ul>
+                                <div class="problems-card-price-inner">
+                                    <p class="problems-card-price">
+                                        от <span>900</span> руб.
+                                    </p>
+                                    <button type="button" class="to-order dark-border-btn">Заказать</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="problems-card">
+                            <div class="problems-card-head">
+                                <p>Не греет воду</p>
+                                <img src="./src/assets/images/main-page/problems-icons/icon3.png" alt="icon">
+                            </div>
+                            <div class="problems-card-info">
+                                <ul>
+                                    <li>Замена термодатчиков/термопредохранителя бойлера</li>
+                                    <li>Замена бойлера</li>
+                                    <li>Замена тэна бойлера</li>
+                                    <li>Ремонт/замена платы</li>
+                                    <li>Декальцинация</li>
+                                </ul>
+                                <div class="problems-card-price-inner">
+                                    <p class="problems-card-price">
+                                        от <span>900</span> руб.
+                                    </p>
+                                    <button type="button" class=" to-order dark-border-btn">Заказать</button>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carrot-btn" href="#">Посмотреть все</a>
+                    </div>
+                    <div class="problems-cards-pc">
+                        <div class="problems-card">
+                            <div class="problems-card-head">
+                                <p>Подтекает</p>
+                                <img src="./src/assets/images/main-page/problems-icons/icon1.png" alt="icon">
+                            </div>
+                            <div class="problems-card-info">
+                                <ul>
+                                    <li>Чистка дренажа</li>
+                                    <li>Обслуживание центрального
+                                        заварочного устройства</li>
+                                    <li>Восстановление герметичности гидросистемы</li>
+                                    <li>Замена хамутов, манжетов, сальников гидросистемы</li>
+                                    <li>Замена переходников гидросистемы</li>
+                                    <li>Замена бойлера</li>
+                                </ul>
+                                <div class="problems-card-price-inner">
+                                    <p class="problems-card-price">
+                                        от <span>900</span> руб.
+                                    </p>
+                                    <button type="button" class="to-order dark-border-btn">Заказать</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="problems-card">
+                            <div class="problems-card-head">
+                                <p>Не наливает или плохо проливает кофе</p>
+                                <img src="./src/assets/images/main-page/problems-icons/icon2.png" alt="icon">
+                            </div>
+                            <div class="problems-card-info">
+                                <ul>
+                                    <li>Чистка от кофейных масел</li>
+                                    <li>Обслуживание центрального заварочного устройства</li>
+                                    <li>Механическая чистка кофеводов</li>
+                                    <li>Ремонт или замена помпы</li>
+                                    <li>Декальцинация</li>
+                                    <li>Настройка фракции и дозы кофе</li>
+                                </ul>
+                                <div class="problems-card-price-inner">
+                                    <p class="problems-card-price">
+                                        от <span>900</span> руб.
+                                    </p>
+                                    <button type="button" class="to-order dark-border-btn">Заказать</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="problems-card">
+                            <div class="problems-card-head">
+                                <p>Не греет воду</p>
+                                <img src="./src/assets/images/main-page/problems-icons/icon3.png" alt="icon">
+                            </div>
+                            <div class="problems-card-info">
+                                <ul>
+                                    <li>Замена термодатчиков/термопредохранителя бойлера</li>
+                                    <li>Замена бойлера</li>
+                                    <li>Замена тэна бойлера</li>
+                                    <li>Ремонт/замена платы</li>
+                                    <li>Декальцинация</li>
+                                </ul>
+                                <div class="problems-card-price-inner">
+                                    <p class="problems-card-price">
+                                        от <span>900</span> руб.
+                                    </p>
+                                    <button type="button" class="to-order dark-border-btn">Заказать</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="problems-card">
+                            <div class="problems-card-head">
+                                <p>Не включается</p>
+                                <img src="./src/assets/images/main-page/problems-icons/icon4.png" alt="icon">
+                            </div>
+                            <div class="problems-card-info">
+                                <ul>
+                                    <li>Ремонт/замена модуля управления</li>
+                                    <li>Замена датчиков температуры</li>
+                                    <li>Комплексная чистка</li>
+                                    <li>Замена микровыключателей</li>
+                                </ul>
+                                <div class="problems-card-price-inner">
+                                    <p class="problems-card-price">
+                                        от <span>900</span> руб.
+                                    </p>
+                                    <button type="button" class="to-order dark-border-btn">Заказать</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="problems-card">
+                            <div class="problems-card-head">
+                                <p>Не мелет кофе</p>
+                                <img src="./src/assets/images/main-page/problems-icons/icon5.png" alt="icon">
+                            </div>
+                            <div class="problems-card-info">
+                                <ul>
+                                    <li>Переборка и чистка корзины кофемолки</li>
+                                    <li>Замена жерновов кофемолки</li>
+                                    <li>Чистка дозатора кофе</li>
+                                    <li>Ремонт кофемолки</li>
+                                </ul>
+                                <div class="problems-card-price-inner">
+                                    <p class="problems-card-price">
+                                        от <span>900</span> руб.
+                                    </p>
+                                    <button type="button" class="to-order dark-border-btn">Заказать</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="problems-card">
+                            <div class="problems-card-head">
+                                <p>Выдает ошибку</p>
+                                <img src="./src/assets/images/main-page/problems-icons/icon6.png" alt="icon">
+                            </div>
+                            <div class="problems-card-info">
+                                <ul>
+                                    <li>Ремонт/замена модуля управления</li>
+                                    <li>Замена датчиков температуры</li>
+                                    <li>Комплексная чистка</li>
+                                    <li>Замена микровыключателей</li>
+                                </ul>
+                                <div class="problems-card-price-inner">
+                                    <p class="problems-card-price">
+                                        от <span>900</span> руб.
+                                    </p>
+                                    <button type="button" class="to-order dark-border-btn">Заказать</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="problems-card">
+                            <div class="problems-card-head">
+                                <p>Нет пара</p>
+                                <img src="./src/assets/images/main-page/problems-icons/icon7.png" alt="icon">
+                            </div>
+                            <div class="problems-card-info">
+                                <ul>
+                                    <li>Декальцинация</li>
+                                    <li>Замена электромагнитного клапана</li>
+                                    <li>Замена пароблока</li>
+                                    <li>Чистка пароотвода</li>
+                                    <li>Замена крана вода/пар</li>
+                                    <li>Замена датчика температуры</li>
+                                </ul>
+                                <div class="problems-card-price-inner">
+                                    <p class="problems-card-price">
+                                        от <span>900</span> руб.
+                                    </p>
+                                    <button type="button" class="to-order dark-border-btn">Заказать</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="problems-card">
+                            <div class="problems-card-head">
+                                <p>Сбрасывает сухой перемолотый кофе</p>
+                                <img src="./src/assets/images/main-page/problems-icons/icon8.png" alt="icon">
+                            </div>
+                            <div class="problems-card-info">
+                                <ul>
+                                    <li>Настройка кофемолки</li>
+                                    <li>Ремонт редуктора центрального заварочного устройства</li>
+                                    <li>Обслуживание центрального заварочного устройства</li>
+                                    <li>Ремонт кофемолки</li>
+                                </ul>
+                                <div class="problems-card-price-inner">
+                                    <p class="problems-card-price">
+                                        от <span>900</span> руб.
+                                    </p>
+                                    <button type="button" class="to-order dark-border-btn">Заказать</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="problems-card">
+                            <div class="problems-card-head">
+                                <p>Не формируется отработанный кофе</p>
+                                <img src="./src/assets/images/main-page/problems-icons/icon9.png" alt="icon">
+                            </div>
+                            <div class="problems-card-info">
+                                <ul>
+                                    <li>Замена жерновов</li>
+                                    <li>Чистка и настройка кофемолки</li>
+                                    <li>Обслуживание центрального заварочного устройства</li>
+                                    <li>Чистка дозатора кофе</li>
+                                    <li>Калибровка кофемолки</li>
+                                </ul>
+                                <div class="problems-card-price-inner">
+                                    <p class="problems-card-price">
+                                        от <span>900</span> руб.
+                                    </p>
+                                    <button type="button" class="to-order dark-border-btn">Заказать</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="dark-form">
+                <div class="content">
+                    <div class="dark-form-inner">
+                        <div class="dark-form-img-wrap">
+                            <img src="./src/assets/images/main-page/dark-form-img.png" alt="dark-form-img">
+                            <div class="dark-form-text">
+                                <h3>Другая проблема?</h3>
+                                <p>Оставьте заявку и наши специалисты
+                                свяжутся с Вами и сразу отправится на вызов!</p>
+                            </div>
+                        </div>
+                        <div class="form-wrap">
+                            <div class="form">
+                                <div class="input-wrap">
+                                    <input type="tel" name="form-tel" required>
+                                    <div class="label-box">
+                                        <label class="custom-placeholder">Телефон <span>*</span></label>
+                                    </div>
+
+                                </div>
+                                <div class="input-wrap">
+                                    <input type="text" name="form-text">
+                                    <div class="label-box">
+                                        <label class="custom-placeholder">Опишите проблему</label>
+                                    </div>
+                                </div>
+                                <div class="input-wrap">
+                                    <button class="carrot-btn" type="submit">Отправить</button>
+                                    <span>Согласен(а) с политикой обработки персональных данных и офертой</span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="faq-accord">
+                <div class="content">
+                    <div class="faq-accord-wrapper">
+                        <h3>Часто задаваемые вопросы</h3>
+                        <div class="accordion-container">
+                            <div class="acc-col">
+                                <div class="box">
+                                    <div class="label">
+                                    <p>Что в первую очередь
+                                        проверяется при диагностике кофемашины?</p>
+                                    </div>
+                                    <div class="acc-content" >
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis harum minima temporibus, ut numquam ea quam dolor voluptatem praesentium voluptate eum. Quia perferendis autem cumque ab id, dignissimos sapiente dolores!
+                                    </p>
+                                    </div>
                                 </div>
                                 <div class="box">
-                                  <div class="label">
-                                      <p>Какие предоставляете гарантии?</p>
-                                  </div>
-                                  <div class="acc-content">
+                                    <div class="label">
+                                    <p>Сколько по времени длится
+                                        ремонт. Есть ли у вас срочный
+                                        ремонт? </p>
+                                    </div>
+                                    <div class="acc-content">
+                                    <p>
+                                        Мы выполняем услуги срочного ремонта. Длительность ремонта складывается из комплекса работ, которые осуществляются в нашем сервисном центре "КофеС". Наша компания обладает всеми необходимыми инструментами и профессиональным оборудование для ремонта кофемашин. Если вы захотите сравнивать нас с конкурентами, мы можем гордо отметить что наш склад запчастей находится непосредственно в сервисном центре, а комплектующие поставляются напрямую от производителя.
+                                    </p>
+                                    </div>
+                                </div>
+                                <div class="box">
+                                    <div class="label">
+                                    <p>Какие комплектующие вы устанавливаете на кофемашины?</p>
+                                    </div>
+                                    <div class="acc-content">
+                                    <p>
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quisquam eum laborum, quia harum excepturi placeat repudiandae nesciunt consequatur. Suscipit laudantium nemo dolorum nihil neque ipsum modi vel! Atque, provident!
+                                    </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="acc-col">
+                                <div class="box">
+                                    <div class="label">
+                                    <p>Как формируется цена
+                                        на ремонт кофемашины? </p>
+                                    </div>
+                                    <div class="acc-content">
                                     <p>
                                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur consectetur maxime explicabo quo autem vero, perspiciatis exercitationem saepe, consequuntur consequatur quidem doloremque sapiente, vitae praesentium dolores quis aperiam eveniet facilis.
                                     </p>
-                                  </div>
+                                    </div>
                                 </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="team">
-            <div class="content">
-                <div class="team-inner">
-                    <div class="swiper team-swiper">
-                        <div class="team-row">
-                            <h3>Ваша команда мастеров</h3>
-                            <div class="team-arrows">
-                                <div class="team-button-prev arrow-btn ">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
-                                        <g clip-path="url(#clip0_3684_27987)">
-                                          <path fill-rule="evenodd" clip-rule="evenodd" d="M14.0624 7.50002C14.0624 7.3757 14.013 7.25647 13.9251 7.16856C13.8372 7.08065 13.7179 7.03127 13.5936 7.03127L2.53767 7.03127L5.48799 4.08189C5.57601 3.99387 5.62545 3.8745 5.62545 3.75002C5.62545 3.62554 5.57601 3.50616 5.48799 3.41814C5.39997 3.33012 5.28059 3.28068 5.15611 3.28068C5.03163 3.28068 4.91225 3.33012 4.82424 3.41814L1.07424 7.16814C1.03058 7.21169 0.995949 7.26341 0.972318 7.32036C0.948687 7.37731 0.936523 7.43836 0.936523 7.50002C0.936523 7.56168 0.948687 7.62273 0.972318 7.67967C0.995949 7.73662 1.03058 7.78835 1.07424 7.83189L4.82424 11.5819C4.86782 11.6255 4.91956 11.66 4.9765 11.6836C5.03344 11.7072 5.09448 11.7194 5.15611 11.7194C5.28059 11.7194 5.39997 11.6699 5.48799 11.5819C5.57601 11.4939 5.62545 11.3745 5.62545 11.25C5.62545 11.1255 5.57601 11.0062 5.48799 10.9181L2.53767 7.96877L13.5936 7.96877C13.7179 7.96877 13.8372 7.91938 13.9251 7.83147C14.013 7.74357 14.0624 7.62434 14.0624 7.50002Z" fill="white"/>
-                                        </g>
-                                        <defs>
-                                          <clipPath id="clip0_3684_27987">
-                                            <rect width="15" height="15" fill="white" transform="translate(0 15) rotate(-90)"/>
-                                          </clipPath>
-                                        </defs>
-                                      </svg>
-                                </div>
-                                <div class="team-button-next arrow-btn ">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
-                                        <g clip-path="url(#clip0_3684_27990)">
-                                          <path fill-rule="evenodd" clip-rule="evenodd" d="M0.937639 7.49998C0.937639 7.6243 0.987024 7.74353 1.07493 7.83144C1.16284 7.91935 1.28207 7.96873 1.40639 7.96873L12.4623 7.96873L9.51201 10.9181C9.42399 11.0061 9.37455 11.1255 9.37455 11.25C9.37455 11.3745 9.42399 11.4938 9.51201 11.5819C9.60003 11.6699 9.71941 11.7193 9.84389 11.7193C9.96837 11.7193 10.0877 11.6699 10.1758 11.5819L13.9258 7.83186C13.9694 7.78831 14.0041 7.73659 14.0277 7.67964C14.0513 7.62269 14.0635 7.56164 14.0635 7.49998C14.0635 7.43832 14.0513 7.37727 14.0277 7.32033C14.0041 7.26338 13.9694 7.21165 13.9258 7.16811L10.1758 3.41811C10.1322 3.37452 10.0804 3.33995 10.0235 3.31637C9.96656 3.29278 9.90552 3.28064 9.84389 3.28064C9.71941 3.28064 9.60003 3.33009 9.51201 3.41811C9.424 3.50613 9.37455 3.6255 9.37455 3.74998C9.37455 3.87446 9.42399 3.99384 9.51201 4.08186L12.4623 7.03123L1.40639 7.03123C1.28207 7.03123 1.16284 7.08062 1.07493 7.16853C0.987024 7.25643 0.937639 7.37566 0.937639 7.49998Z" fill="white"/>
-                                        </g>
-                                        <defs>
-                                          <clipPath id="clip0_3684_27990">
-                                            <rect width="15" height="15" fill="white" transform="translate(15) rotate(90)"/>
-                                          </clipPath>
-                                        </defs>
-                                      </svg>
-                                </div>
+                                <div class="box">
+                                    <div class="label">
+                                        <p>Какие виды ремонта выполняете?</p>
+                                    </div>
+                                    <div class="acc-content">
+                                        <p>
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur consectetur maxime explicabo quo autem vero, perspiciatis exercitationem saepe, consequuntur consequatur quidem doloremque sapiente, vitae praesentium dolores quis aperiam eveniet facilis.
+                                        </p>
+                                    </div>
+                                    </div>
+                                    <div class="box">
+                                    <div class="label">
+                                        <p>Какие предоставляете гарантии?</p>
+                                    </div>
+                                    <div class="acc-content">
+                                        <p>
+                                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur consectetur maxime explicabo quo autem vero, perspiciatis exercitationem saepe, consequuntur consequatur quidem doloremque sapiente, vitae praesentium dolores quis aperiam eveniet facilis.
+                                        </p>
+                                    </div>
+                                    </div>
                             </div>
                         </div>
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide"><img src="./src/assets/images/main-page/team/team1.png" alt="team-image"></div>
-                            <div class="swiper-slide"><img src="./src/assets/images/main-page/team/team2.png" alt="team-image"></div>
-                            <div class="swiper-slide"><img src="./src/assets/images/main-page/team/team3.png" alt="team-image"></div>
-                            <div class="swiper-slide"><img src="./src/assets/images/main-page/team/team1.png" alt="team-image"></div>
-                            <div class="swiper-slide"><img src="./src/assets/images/main-page/team/team2.png" alt="team-image"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="team">
+                <div class="content">
+                    <div class="team-inner">
+                        <div class="swiper team-swiper">
+                            <div class="team-row">
+                                <h3>Ваша команда мастеров</h3>
+                                <div class="team-arrows">
+                                    <div class="team-button-prev arrow-btn ">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+                                            <g clip-path="url(#clip0_3684_27987)">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M14.0624 7.50002C14.0624 7.3757 14.013 7.25647 13.9251 7.16856C13.8372 7.08065 13.7179 7.03127 13.5936 7.03127L2.53767 7.03127L5.48799 4.08189C5.57601 3.99387 5.62545 3.8745 5.62545 3.75002C5.62545 3.62554 5.57601 3.50616 5.48799 3.41814C5.39997 3.33012 5.28059 3.28068 5.15611 3.28068C5.03163 3.28068 4.91225 3.33012 4.82424 3.41814L1.07424 7.16814C1.03058 7.21169 0.995949 7.26341 0.972318 7.32036C0.948687 7.37731 0.936523 7.43836 0.936523 7.50002C0.936523 7.56168 0.948687 7.62273 0.972318 7.67967C0.995949 7.73662 1.03058 7.78835 1.07424 7.83189L4.82424 11.5819C4.86782 11.6255 4.91956 11.66 4.9765 11.6836C5.03344 11.7072 5.09448 11.7194 5.15611 11.7194C5.28059 11.7194 5.39997 11.6699 5.48799 11.5819C5.57601 11.4939 5.62545 11.3745 5.62545 11.25C5.62545 11.1255 5.57601 11.0062 5.48799 10.9181L2.53767 7.96877L13.5936 7.96877C13.7179 7.96877 13.8372 7.91938 13.9251 7.83147C14.013 7.74357 14.0624 7.62434 14.0624 7.50002Z" fill="white"/>
+                                            </g>
+                                            <defs>
+                                            <clipPath id="clip0_3684_27987">
+                                                <rect width="15" height="15" fill="white" transform="translate(0 15) rotate(-90)"/>
+                                            </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </div>
+                                    <div class="team-button-next arrow-btn ">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15" fill="none">
+                                            <g clip-path="url(#clip0_3684_27990)">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0.937639 7.49998C0.937639 7.6243 0.987024 7.74353 1.07493 7.83144C1.16284 7.91935 1.28207 7.96873 1.40639 7.96873L12.4623 7.96873L9.51201 10.9181C9.42399 11.0061 9.37455 11.1255 9.37455 11.25C9.37455 11.3745 9.42399 11.4938 9.51201 11.5819C9.60003 11.6699 9.71941 11.7193 9.84389 11.7193C9.96837 11.7193 10.0877 11.6699 10.1758 11.5819L13.9258 7.83186C13.9694 7.78831 14.0041 7.73659 14.0277 7.67964C14.0513 7.62269 14.0635 7.56164 14.0635 7.49998C14.0635 7.43832 14.0513 7.37727 14.0277 7.32033C14.0041 7.26338 13.9694 7.21165 13.9258 7.16811L10.1758 3.41811C10.1322 3.37452 10.0804 3.33995 10.0235 3.31637C9.96656 3.29278 9.90552 3.28064 9.84389 3.28064C9.71941 3.28064 9.60003 3.33009 9.51201 3.41811C9.424 3.50613 9.37455 3.6255 9.37455 3.74998C9.37455 3.87446 9.42399 3.99384 9.51201 4.08186L12.4623 7.03123L1.40639 7.03123C1.28207 7.03123 1.16284 7.08062 1.07493 7.16853C0.987024 7.25643 0.937639 7.37566 0.937639 7.49998Z" fill="white"/>
+                                            </g>
+                                            <defs>
+                                            <clipPath id="clip0_3684_27990">
+                                                <rect width="15" height="15" fill="white" transform="translate(15) rotate(90)"/>
+                                            </clipPath>
+                                            </defs>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="./src/assets/images/main-page/team/team1.png" alt="team-image"></div>
+                                <div class="swiper-slide"><img src="./src/assets/images/main-page/team/team2.png" alt="team-image"></div>
+                                <div class="swiper-slide"><img src="./src/assets/images/main-page/team/team3.png" alt="team-image"></div>
+                                <div class="swiper-slide"><img src="./src/assets/images/main-page/team/team1.png" alt="team-image"></div>
+                                <div class="swiper-slide"><img src="./src/assets/images/main-page/team/team2.png" alt="team-image"></div>
+                            </div>
                         </div>
-                      </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="repair">
+            <div class="repair">
+                <div class="content">
+                    <div class="repair-inner">
+                        <div class="repair-col">
+                            <h3>Где отремонтировать
+                                кофемашину
+                                в Санкт-Петербурге</h3>
+                        </div>
+                        <div class="repair-col">
+                            <p>Сложно представить начало дня без чашки ароматного кофе. Бодрящий и вкусный напиток стал частью жизни современного человека. Дома, на работе, в кофейне его предпочитают готовить с помощью специальной техники, которая создает неповторимые вкусовые сочетания.</p>
+                            <p>Высокотехнологичные аппараты нуждаются в периодической диагностике и ремонте, которые продлевают период использования оборудования, минимизируют затраты на обслуживание.</p>
+                            <p>Провести профессиональный осмотр и диагностические процедуры стоит в таких случаях:</p>
+                            <ul>
+                                <li>подтёки в узлах устройства;</li>
+                                <li>налив кофе стал затрудненным;</li>
+                                <li>аппарат перестал греть воду;</li>
+                                <li>на панели управления высвечивается ошибка;</li>
+                                <li>агрегат не включается.</li>
+                            </ul>
+                            <p>Проблемы становятся причиной выхода устройства из строя,
+                                что в итоге приводят к дорогому ремонту.</p>
+                            <h4>Восстановительные мероприятия</h4>
+                            <p>Производить ремонт кофемашин должны только квалифицированные мастера, имеющие опыт работы с оборудованием. Специалисты проводят комплексную диагностику, готовы при необходимости быстро отремонтировать технику, предоставив
+                                гарантии на выполненные работы.</p>
+                            <p>Частые причины неисправностей:</p>
+                            <ul>
+                                <li>нарушение герметичности гидросистемы;</li>
+                                <li>засорение фильтрующих устройств;</li>
+                                <li>поломка механических элементов;</li>
+                                <li>выход из строя нагревателя;</li>
+                                <li>проблемы с платой управления и т.д.</li>
+                            </ul>
+                            <p>После всех восстановительных или ремонтных работ мастер обязательно проверит работоспособность кофемашины и настроит ее на требуемый пользователю режим.</p>
+                            <h4>Цены на ремонт кофемашин</h4>
+                            <p>Стоимость обслуживания рассчитывается персонально и зависит от таких факторов:</p>
+                            <ul>
+                                <li>срочность работ;</li>
+                                <li>особенности поломки;</li>
+                                <li>бренд техники;</li>
+                                <li>необходимость замены деталей.</li>
+                            </ul>
+                            <p>Вашей кофемашине нужен срочный ремонт в СПб? Звоните по указанным на сайте телефонам и специалист сразу отправится на вызов!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
             <div class="content">
-                <div class="repair-inner">
-                    <div class="repair-col">
-                        <h3>Где отремонтировать
-                            кофемашину
-                            в Санкт-Петербурге</h3>
-                    </div>
-                    <div class="repair-col">
-                        <p>Сложно представить начало дня без чашки ароматного кофе. Бодрящий и вкусный напиток стал частью жизни современного человека. Дома, на работе, в кофейне его предпочитают готовить с помощью специальной техники, которая создает неповторимые вкусовые сочетания.</p>
-                        <p>Высокотехнологичные аппараты нуждаются в периодической диагностике и ремонте, которые продлевают период использования оборудования, минимизируют затраты на обслуживание.</p>
-                        <p>Провести профессиональный осмотр и диагностические процедуры стоит в таких случаях:</p>
-                        <ul>
-                            <li>подтёки в узлах устройства;</li>
-                            <li>налив кофе стал затрудненным;</li>
-                            <li>аппарат перестал греть воду;</li>
-                            <li>на панели управления высвечивается ошибка;</li>
-                            <li>агрегат не включается.</li>
-                        </ul>
-                        <p>Проблемы становятся причиной выхода устройства из строя,
-                            что в итоге приводят к дорогому ремонту.</p>
-                        <h4>Восстановительные мероприятия</h4>
-                        <p>Производить ремонт кофемашин должны только квалифицированные мастера, имеющие опыт работы с оборудованием. Специалисты проводят комплексную диагностику, готовы при необходимости быстро отремонтировать технику, предоставив
-                            гарантии на выполненные работы.</p>
-                        <p>Частые причины неисправностей:</p>
-                        <ul>
-                            <li>нарушение герметичности гидросистемы;</li>
-                            <li>засорение фильтрующих устройств;</li>
-                            <li>поломка механических элементов;</li>
-                            <li>выход из строя нагревателя;</li>
-                            <li>проблемы с платой управления и т.д.</li>
-                        </ul>
-                        <p>После всех восстановительных или ремонтных работ мастер обязательно проверит работоспособность кофемашины и настроит ее на требуемый пользователю режим.</p>
-                        <h4>Цены на ремонт кофемашин</h4>
-                        <p>Стоимость обслуживания рассчитывается персонально и зависит от таких факторов:</p>
-                        <ul>
-                            <li>срочность работ;</li>
-                            <li>особенности поломки;</li>
-                            <li>бренд техники;</li>
-                            <li>необходимость замены деталей.</li>
-                        </ul>
-                        <p>Вашей кофемашине нужен срочный ремонт в СПб? Звоните по указанным на сайте телефонам и специалист сразу отправится на вызов!</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
-    <footer class="footer">
-        <div class="content">
-            <div class="footer-inner">
-                <div class="footer-container">
-                    <a href="/" class="footer-logo">
-                        <img src="./src/assets/images/logo-white.png" alt="footer-logo">
-                    </a>
-                </div>
-
-                <div class="footer-row footer-container">
-                    <ul>
-                        <li><a href="#">Типы ремонта</a></li>
-                        <li><a href="#">Бренды</a></li>
-                        <li><a href="#">Услуги и цены</a></li>
-                    </ul>
-                    <ul>
-                        <li><a href="#">О нас</a></li>
-                        <li><a href="#">Доставка и оплата</a></li>
-                        <li><a href="#">Статьи</a></li>
-                        <li><a href="#">Контакты</a></li>
-                    </ul>
-                    <ul class="footer-contacts">
-                        <li class="footer-contacrs-phone">
-                            <a href="tel:+78127166688" class="footer-phone">
-                            +7 (812) 716-66-88
+                <div class="footer-inner">
+                    <div class="footer-container">
+                        <a href="/" class="footer-logo">
+                            <img src="./src/assets/images/logo-white.png" alt="footer-logo">
                         </a>
-                        </li>
-                        <li><a href="mailto:info@kofes.ru">info@kofes.ru</a></li>
-                        <li><p>г. Санкт-Петербург, <br>Латышских стрелков, 31</p></li>
-                    </ul>
-                </div>
-                <div class="footer-row-copy footer-container">
-                    <p>© 2020 "Kofevspb". Все права защищены</p>
-                    <ul>
-                        <li>
-                            <a href="#">Пользовательское соглашение</a>
-                            <a href="#">Политика конфеденциальности</a>
-                        </li>
-                        <li>
-                            <a href="#">
-                            <img src="./src/assets/images/design-logo.png" alt="design-logo">
+                    </div>
+
+                    <div class="footer-row footer-container">
+                        <ul>
+                            <li><a href="#">Типы ремонта</a></li>
+                            <li><a href="#">Бренды</a></li>
+                            <li><a href="#">Услуги и цены</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">О нас</a></li>
+                            <li><a href="#">Доставка и оплата</a></li>
+                            <li><a href="#">Статьи</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                        <ul class="footer-contacts">
+                            <li class="footer-contacrs-phone">
+                                <a href="tel:+78127166688" class="footer-phone">
+                                +7 (812) 716-66-88
                             </a>
-                        </li>
-                    </ul>
+                            </li>
+                            <li><a href="mailto:info@kofes.ru">info@kofes.ru</a></li>
+                            <li><p>г. Санкт-Петербург, <br>Латышских стрелков, 31</p></li>
+                        </ul>
+                    </div>
+                    <div class="footer-row-copy footer-container">
+                        <p>© 2020 "Kofevspb". Все права защищены</p>
+                        <ul>
+                            <li>
+                                <a href="#">Пользовательское соглашение</a>
+                                <a href="#">Политика конфеденциальности</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                <img src="./src/assets/images/design-logo.png" alt="design-logo">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
+        </footer>
+    </div>
+    <script src="./src/assets/js/gsap.min.js"></script>
+    <script src="./src/assets/js/scrollTrigger.min.js"></script>
+    <script src="./src/assets/js/smoothScroll.min.js"></script>
     <script src="./src/assets/js/swiper-bundle.min.js"></script>
     <script src="./src/assets/js/script.js"></script>
 </body>
