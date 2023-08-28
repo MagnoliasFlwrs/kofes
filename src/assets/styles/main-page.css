@@ -127,7 +127,7 @@
 }
 .element-show .staff-photos {
     transition: background-color .5s ease 1s;
-    background-color: var(--soft-gray); 
+    background-color: var(--soft-gray);
 }
 .staff-photos h3 , .search-inner h3{
     font-size: calc(30 * var(--fz));
@@ -233,14 +233,12 @@
     width: 100%;
     height: 100%;
     object-fit: contain;
-    opacity: 0;
 }
 .proxima-inner .circle-btn {
     position: absolute;
     left: 50%;
     bottom: 0;
     transform: translate(-50% , 50%);
-    opacity: 0;
 }
 .search {
     padding-top: calc(120 * var(--fz)) ;
@@ -905,14 +903,12 @@
     .proxima-col img {
         height: calc(280 * var(--fz));
         object-fit: contain;
-        opacity: 0;
     }
     .proxima-inner .circle-btn {
         position: absolute;
         left: 50%;
         bottom: 50%;
         transform: translateY(50%);
-        opacity: 0;
     }
     .proxima-col ul li::before , .problems-card-info ul li::before {
         margin-right: 20px;
