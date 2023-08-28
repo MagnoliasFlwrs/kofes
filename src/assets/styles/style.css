@@ -52,6 +52,7 @@
     --text-gray:#848484;
     --soft-gray:#F3F4F5;
 }
+
 a {
     text-decoration: none;
     cursor: pointer;
@@ -64,6 +65,22 @@ ol, ul {
     margin: 0;
     padding: 0;
 }
+html {
+    position: relative;
+}
+.smooth-scroll {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.smooth-scrollbar {
+position: absolute;
+top: 0;
+left: 0;
+width: 1px;
+}
+  
 /* @media (min-width: 768px) {
     :root {
         --fz:.13021vw ;
