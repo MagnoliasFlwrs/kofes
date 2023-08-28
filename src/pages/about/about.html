@@ -374,20 +374,25 @@
                 </div>
             </div>
         </div>
-        <div class="kofes-main">
+        <div class="kofes-main element-animation">
             <div class="content">
-                <div class="kofes-main-row">
-                    <img src="../../assets/images/about/kofes.png" alt="kofes-logo">
-                    <img src="../../assets/images/about/date.png" alt="kofes-date">
+                <div class="kofes-main-row anim-content">
+                    <img class="anim-content" src="../../assets/images/about/kofes.png" alt="kofes-logo">
+                    <img class="anim-content" src="../../assets/images/about/date.png" alt="kofes-date">
                 </div>
-                <div class="kofes-main-row">
+                <div class="kofes-main-row ">
                     <div class="kofes-main-col">
-                        <h3>Группы компаний<br>
-                            «КофеС»
+                        <h3 class="title-anim ">
+                            <span class="text-wrapper">
+                              <span class="text">Группы компаний</span>
+                            </span>
+                            <span class="text-wrapper">
+                                <span class="text">«КофеС»</span>
+                              </span>
                         </h3>
 
                     </div>
-                    <div class="kofes-main-col">
+                    <div class="kofes-main-col anim-content">
                         <p>Компания Kofes осуществляет полный комплекс технического обслуживания кофемашин – от диагностики до замены сложных комплектующих. Специалисты компании – высококвалифицированные мастера, которые знакомы с особенностями техники мировых брендов.</p>
                         <p>Чиним все виды кофемашин – профессиональные, автоматические, полуавтоматические, капсульные, рожковые. Выдаем гарантии на оказанные услуги, консультируем по правилам эксплуатации оборудования.</p>
                         <p>У нас есть свой сервисный центр и на время ремонта профессионального оборудования мы предоставляем замену.
@@ -397,19 +402,19 @@
                 </div>
             </div>
         </div>
-        <div class="kofes-numbers">
+        <div class="kofes-numbers element-animation">
             <div class="content">
                 <div class="kofes-numbers-inner">
-                    <div class="cofes-numbers-card">
+                    <div class="cofes-numbers-card anim-content">
                         <p>13</p>
                         <span>лет в кофейном бизнесе</span>
                     </div>
-                    <div class="cofes-numbers-card">
+                    <div class="cofes-numbers-card anim-content">
                         <p>25</p>
                         <span>человек
                             в команде</span>
                     </div>
-                    <div class="cofes-numbers-card">
+                    <div class="cofes-numbers-card anim-content">
                         <p>3000+</p>
                         <span>кофемашин продано
                             и передано в аренду</span>
@@ -417,9 +422,9 @@
                 </div>
             </div>
         </div>
-        <div class="brand-banner">
+        <div class="brand-banner element-animation">
             <div class="content">
-                <div class="brand-banner-mob">
+                <div class="brand-banner-mob anim-content">
                     <img src="../../assets/images/main-page/banner-mobile.png" alt="banner-image">
                     <div class="content">
                         <div class="brand-banner-video-play">
@@ -431,7 +436,7 @@
                     </div>
                 </div>
             </div>
-            <div class="brand-banner-pc">
+            <div class="brand-banner-pc anim-content">
                 <img src="../../assets/images/main-page/banner.png" alt="banner-image">
                 <div class="brand-banner-video-play">
                     <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
@@ -441,11 +446,18 @@
                 </div>
             </div>
         </div>
-        <div class="team">
+        <div class="team element-animation">
             <div class="content">
                 <div class="team-inner">
-                    <h2>Наша команда</h2>
-                    <div class="team-cards">
+                    <h2 class="title-anim ">
+                        <span class="text-wrapper">
+                          <span class="text">Наша команда</span>
+                        </span>
+                        <span class="text-wrapper">
+                            <span class="text">«КофеС»</span>
+                          </span>
+                    </h2>
+                    <div class="team-cards anim-content">
                         <div class="team-card">
                             <div class="team-card-image">
                                 <img src="../../assets/images/about/team1.png" alt="team-img">
@@ -540,6 +552,9 @@
             </div>
         </div>
     </footer>
+    <script src="../../assets/js/gsap.min.js"></script>
+    <script src="../../assets/js/scrollTrigger.min.js"></script>
+    <script src="../../assets/js/smoothScroll.min.js"></script>
     <script src="../../assets/js/swiper-bundle.min.js"></script>
     <script src="../../assets/js/script.js"></script>
 </body>

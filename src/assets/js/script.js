@@ -304,26 +304,24 @@ customOptions.forEach(el => {
     const options = {
         root: null,
         rootMargin: '0px',
-        threshold: 0.2
+        threshold: 0
     }
     const observer = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('element-show');
-                console.log(entry.target)
-                entry.target.querySelector('.title-anim').classList.add('active');
-                const contentArr = document.querySelectorAll('.anim-content');
-                if (contentArr) {
-                    setTimeout(()=> {
-                        contentArr.forEach(el => {
-                            el.classList.add('show-content');
-                        })
-                    }, 2000)
-                }
-                // contentArr.forEach(el => {
-                //     el.classList.add('show-content');
-                // })
-                // setTimeout(()=>{ entry.target.querySelector('.title-anim').classList.add('active');} ,1000);
+                setTimeout(() => {
+                    entry.target.querySelector('.title-anim')?.classList.add('active');
+                    const contentArr = document.querySelectorAll('.anim-content');
+                    if (contentArr) {
+                        setTimeout(()=> {
+                            contentArr.forEach(el => {
+                                el.classList.add('show-content');
+                            })
+                        }, 2000)
+                    }
+                } , 1000)
+                
                 observer.unobserve(entry.target);
             }
         })
