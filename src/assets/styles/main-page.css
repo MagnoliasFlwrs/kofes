@@ -120,9 +120,14 @@
 }
 .staff-photos {
     width: 100%;
-    background-color: var(--soft-gray);
+    background-color: transparent;
+    /* background-color: var(--soft-gray); */
     border-radius: 20px;
     padding: calc(30 * var(--fz)) 0;
+}
+.element-show .staff-photos {
+    transition: background-color .5s ease 1s;
+    background-color: var(--soft-gray); 
 }
 .staff-photos h3 , .search-inner h3{
     font-size: calc(30 * var(--fz));
@@ -186,6 +191,10 @@
     color: #fff;
     position: relative;
 }
+/* .element-show .proxima-inner {
+    transition: background-color .5s ease 1s;
+    background-color: var(--black-3, #212121);
+} */
 .proxima-col h3  {
     font-size: calc(30 * var(--fz));
     font-style: normal;

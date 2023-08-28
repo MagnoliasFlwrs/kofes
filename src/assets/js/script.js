@@ -286,102 +286,75 @@ customOptions.forEach(el => {
 })
 
 
+// function onEntry(entry) {
+//     entry.forEach(change => {
+//       if (change.isIntersecting) {
+//         change.target.classList.add('element-show');
+//       }
+//     });
+//   }
+//   let options = { threshold: [0.2] };
+//   let observer = new IntersectionObserver(onEntry, options);
+//   let elements = document.querySelectorAll('.element-animation');
+//   for (let elm of elements) {
+//     observer.observe(elm);
+//   }
 
+  window.onload = () => {
+    const options = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.2
+    }
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('element-show');
+                console.log(entry.target)
+                entry.target.querySelector('.title-anim').classList.add('active');
+                const contentArr = document.querySelectorAll('.anim-content');
+                if (contentArr) {
+                    setTimeout(()=> {
+                        contentArr.forEach(el => {
+                            el.classList.add('show-content');
+                        })
+                    }, 2000)
+                }
+                // contentArr.forEach(el => {
+                //     el.classList.add('show-content');
+                // })
+                // setTimeout(()=>{ entry.target.querySelector('.title-anim').classList.add('active');} ,1000);
+                observer.unobserve(entry.target);
+            }
+        })
+    }, options)
+    let elements = document.querySelectorAll('.element-animation');
+    console.log(elements)
+    elements.forEach(i => {
+        observer.observe(i)
+    })
+}
 
 // smooth-scroll
 
-// var html = document.documentElement;
-// var body = document.body;
+(function() { 
+	let isSafari = (function() { 
+		let ua = navigator.userAgent; 
+		if (/safari/gi.test(ua) && !/chrome/gi.test(ua)) return true; else return false; })(); 
+		if (!isSafari) { 
+			SmoothScroll ({ 
+				animationTime: 1000, 
+				stepSize: 150, 
+				accelerationDelta: 30, 
+				accelerationMax: 2, 
+				keyboardSupport: true, 
+				arrowScroll: 50, 
+				pulseAlgorithm: true, 
+				pulseScale: 5, 
+				pulseNormalize: 1, 
+				fixedBackground : true, 
+				touchpadSupport: true 
+			}) 
+		} 
+	}());
 
-// var scroller = {
-//   target: document.querySelector("#scroll-container"),
-//   ease: 0.02, // <= scroll speed
-//   endY: 0,
-//   y: 0,
-//   resizeRequest: 1,
-//   scrollRequest: 0,
-// };
-
-// var requestId = null;
-
-// TweenLite.set(scroller.target, {
-//   rotation: 0.01,
-//   force3D: true
-// });
-
-// window.addEventListener("load", onLoad);
-
-// function onLoad() {
-//   updateScroller();
-//   window.focus();
-//   window.addEventListener("resize", onResize);
-//   document.addEventListener("scroll", onScroll);
-// }
-
-// function updateScroller() {
-
-//   var resized = scroller.resizeRequest > 0;
-
-//   if (resized) {
-//     var height = scroller.target.clientHeight;
-//     body.style.height = height + "px";
-//     scroller.resizeRequest = 0;
-//   }
-
-//   var scrollY = window.pageYOffset || html.scrollTop || body.scrollTop || 0;
-
-//   scroller.endY = scrollY;
-//   scroller.y += (scrollY - scroller.y) * scroller.ease;
-
-//   if (Math.abs(scrollY - scroller.y) < 0.05 || resized) {
-//     scroller.y = scrollY;
-//     scroller.scrollRequest = 0;
-//   }
-
-//   TweenLite.set(scroller.target, {
-//     y: -scroller.y
-//   });
-
-//   requestId = scroller.scrollRequest > 0 ? requestAnimationFrame(updateScroller) : null;
-// }
-
-function onScroll() {
-  scroller.scrollRequest++;
-  if (!requestId) {
-    requestId = requestAnimationFrame(updateScroller);
-  }
-}
-
-function onResize() {
-  scroller.resizeRequest++;
-  if (!requestId) {
-    requestId = requestAnimationFrame(updateScroller);
-  }
-}
-
-const smoothCoef = 0.09;
-const smoothScroll = document.querySelector(".smooth-scroll");
-const smoothScrollBar = document.querySelector(".smooth-scrollbar");
-
-function onResize(e) {
-  smoothScrollBar.style.height = smoothScroll.offsetHeight + "px";
-}
-
-window.addEventListener("resize", onResize);
-onResize();
-
-let prevY = window.scrollY;
-let curY = window.scrollY;
-let y = window.scrollY;
-let dy;
-
-function loop(now) {
-  curY = window.scrollY;
-  dy = curY - prevY;
-  y = Math.abs(dy) < 1 ? curY : y + dy * smoothCoef;
-  prevY = y;
-  smoothScroll.style.transform = `translate3d(0,${-y}px,0)`;
-
-  requestAnimationFrame(loop);
-}
-requestAnimationFrame(loop);
