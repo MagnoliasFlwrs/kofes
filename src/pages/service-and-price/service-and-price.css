@@ -9,7 +9,11 @@
 .hero-block-inner {
     padding: calc(30 * var(--fz));
     border-radius: 20px;
-    background: var(--soft-gray, #F3F4F5);
+    background: transparent;
+}
+.element-show .hero-block-inner {
+    transition: background-color .5s ease 1s;
+    background-color: var(--soft-gray);
 }
 .hero-block-inner h1 {
     font-size: calc(44 * var(--fz));
@@ -131,7 +135,10 @@
 .service .problems-inner h2 {
     color: #000;
 }
-
+.element-show .dark-form-inner {
+    transition: .5s ease .5s;
+    background-color:  #303030;
+}
 
 
 @media (min-width:992px) {

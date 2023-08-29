@@ -149,8 +149,12 @@
 .staff-about {
     width: 100%;
     padding: calc(30 * var(--fz)) ;
-    background-color: var(--carrot);
+    background-color: transparent;
     border-radius: 20px;
+}
+.element-show .staff-about {
+    transition: background-color .5s ease 1s;
+    background-color: var(--carrot);
 }
 .staff-about-date {
     width: 100%;
@@ -211,7 +215,7 @@
 }
 .proxima-col ul li {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     font-size: calc(16 * var(--fz));
     font-style: normal;
     font-weight: 500;
@@ -227,7 +231,6 @@
     border-radius: 50px;
     margin-right: 10px;
     flex-shrink: 0;
-    margin-top: 5px;
 }
 .proxima-col img {
     width: 100%;
@@ -594,7 +597,7 @@
     flex-direction: column;
     gap: calc(15 * var(--fz));
 }
-.input-wrap:last-child span {
+.input-wrap:last-child .agreement {
     font-size: calc(14 * var(--fz));
     font-style: normal;
     font-weight: 500;
@@ -737,8 +740,12 @@
 }
 .team-inner {
     border-radius: 20px;
-    background-color: var(--soft-gray, #F3F4F5);
+    background-color: transparent;
     padding: calc(30 * var(--fz)) 0 calc(30 * var(--fz)) calc(30 * var(--fz));
+}
+.element-show .team-inner {
+    background-color: var(--soft-gray, #F3F4F5);
+    transition: background-color .5s ease 1s;
 }
 .team-row {
     display: flex;
@@ -806,8 +813,12 @@
 }
 .repair-col:last-child {
     border-radius: 20px;
-    background: #F8F8F8;
+    background-color: transparent;
     padding: calc(30 * var(--fz));
+}
+.element-show .repair-col:last-child {
+    background-color: #F8F8F8;
+    transition: background-color .5s ease 1s;
 }
 .repair-col p , .repair-col ul li {
     font-size: calc(16 * var(--fz));
@@ -844,6 +855,9 @@
     margin-right: 10px;
     border-radius: 100%;
     flex-shrink: 0;
+}
+.staff-swiper .swiper-wrapper {
+    width: 700px;
 }
 
 @media (min-width:768px) {
@@ -1221,7 +1235,7 @@
         flex-direction: row;
         gap: 15px;
     }
-    .dark-form-inner .form-wrap .input-wrap:last-child span {
+    .dark-form-inner .form-wrap .input-wrap:last-child .agreement {
         font-size: calc(18 * var(--fz));
         font-style: normal;
         font-weight: 400;

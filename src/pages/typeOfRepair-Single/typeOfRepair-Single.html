@@ -292,12 +292,12 @@
         </div>
     </header>
     <main>
-        <div class="hero-block">
+        <div class="hero-block element-animation">
             <div class="content">
                 <div class="hero-block-inner">
                     <div class="hero-block-col">
                         <div class="hero-main-content">
-                            <ul class="breadcrumbs">
+                            <ul class="breadcrumbs anim-content">
                                 <li>
                                     <a href="/">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="7" height="8" viewBox="0 0 7 8" fill="none">
@@ -317,8 +317,15 @@
                                     <a href="#">У кофемашины нет пара</a>
                                 </li>
                             </ul>
-                            <h1>Кофемашина <br> не греет воду</h1>
-                            <p>Чаще всего данная проблема связана с перегревом бойлера,
+                            <h1 class="title-anim ">
+                                <span class="text-wrapper ">
+                                  <span class="text">Кофемашина</span>
+                                </span>
+                                <span class="text-wrapper ">
+                                    <span class="text">не греет воду</span>
+                                  </span>
+                            </h1>
+                            <p class="anim-content">Чаще всего данная проблема связана с перегревом бойлера,
                                 со скачком напряжения либо с неисправностью силовой
                                 платы или платы управления. Также проблема может быть
                                 связана с отложениями кальция в бойлере и контуре гидросистемы.</p>
@@ -326,14 +333,17 @@
                     </div>
                     <div class="hero-block-col">
                         <div class="hero-block-price">
-                            <h3>Стоимость ремонта кофемашины</h3>
-                            <p>от <span>16 000</span>руб.</p>
-                            <button class="to-order dark-btn ">Заказать</button>
+                            <h3 class="anim-content">Стоимость ремонта кофемашины</h3>
+                            <p class="anim-content">от <span>16 000</span>руб.</p>
+                            <button class="to-order dark-btn anim-content btn">
+                                <span class="btn-text link-text">Заказать</span>
+                                <span class="btn-fill"></span>
+                            </button>
                         </div>
                         <div class="hero-block-consult">
-                            <p>Получить бесплатную
+                            <p class="anim-content">Получить бесплатную
                                 консультацию по телефону:</p>
-                            <a href="tel:+78127166688">
+                            <a class="anim-content" href="tel:+78127166688">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
                                     <path d="M8.98007 26.5986L12.0394 22.277C12.6457 21.4167 12.4152 20.2033 11.5242 19.5729L9.34738 18.0317C9.39202 17.9032 9.43884 17.7701 9.48871 17.63C9.93837 16.3446 10.5551 14.5852 11.9579 12.6049C13.3635 10.6189 14.8201 9.4511 15.8833 8.59761C15.996 8.50746 16.1047 8.42096 16.2075 8.33632L17.6669 9.37093L18.386 9.87929C19.2783 10.5107 20.4988 10.3235 21.1076 9.46463L24.1673 5.14295C24.775 4.28422 24.5444 3.07026 23.6521 2.43883L22.4281 1.57775L22.4048 1.611C21.9001 1.33839 21.3371 1.13478 20.7465 1.0126C20.1855 0.902823 19.6615 0.864368 19.148 0.89364C15.0251 1.09746 11.649 3.57504 7.49632 9.44183C1.75658 17.5514 3.23442 23.0425 3.30115 23.2789C3.45353 23.7925 3.66478 24.2736 3.95048 24.7503C4.25866 25.2623 4.63741 25.7254 5.06147 26.1106L5.04517 26.1368L6.25715 27.0139C7.14907 27.6437 8.3701 27.4574 8.98007 26.5986Z" fill="#F0F2F5"/>
                                     </svg>
@@ -344,10 +354,18 @@
                 </div>
             </div>
         </div>
-        <div class="advantages">
+        <div class="advantages element-animation">
             <div class="content">
-                <h2>Наши <br> преимущества</h2>
-                <div class="advantages-inner">
+                <h2 class="title-anim ">
+                    <span class="text-wrapper ">
+                      <span class="text">Наши</span>
+                    </span>
+                    <span class="text-wrapper ">
+                        <span class="text">преимущества</span>
+                      </span>
+                </h2>
+
+                <div class="advantages-inner anim-content">
                     <div class="advantages-cards">
                         <div class="advantages-card">
                             <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
@@ -383,9 +401,13 @@
                         </div>
                     </div>
                     <div class="form-wrap">
-                        <h3>Нужна консультация?</h3>
-                        <p>Оставьте заявку и наши специалисты свяжутся с Вами</p>
-                        <div class="form">
+                        <h3 class="title-anim ">
+                            <span class="text-wrapper ">
+                              <span class="text">Нужна консультация?</span>
+                            </span>
+                        </h3>
+                        <p class="anim-content">Оставьте заявку и наши специалисты свяжутся с Вами</p>
+                        <div class="form anim-content">
                             <div class="input-wrap">
                                 <input type="tel" name="form-tel" required>
                                 <div class="label-box">
@@ -400,18 +422,28 @@
                                 </div>
                             </div>
                             <div class="input-wrap">
-                                <button class="carrot-btn" type="submit">Отправить</button>
-                                <span>Согласен(а) с политикой обработки персональных данных и офертой</span>
+                                <button class="carrot-btn btn anim-content">
+                                    <span class="btn-text link-text">Отправить</span>
+                                    <span class="btn-fill"></span>
+                                </button>
+                                <span class="agreement">Согласен(а) с политикой обработки персональных данных и офертой</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="other-problems">
+        <div class="other-problems element-animation">
             <div class="content">
-                <h2>Иные проблемы <br> с кофемашинами</h2>
-                <div class="other-problems-cards">
+                <h2 class="title-anim ">
+                    <span class="text-wrapper ">
+                      <span class="text">Иные проблемы</span>
+                    </span>
+                    <span class="text-wrapper ">
+                        <span class="text">с кофемашинами</span>
+                      </span>
+                </h2>
+                <div class="other-problems-cards anim-content">
                     <a class="other-problems-card">
                         <p>Сбрасывает сухой перемолотый кофе</p>
                         <img src="../../assets/images/types-of-repair-single/icon1.png" alt="type-of-repair-icon">
@@ -487,14 +519,18 @@
                 </div>
                 <div class="dark-form-inner">
                     <div class="dark-form-img-wrap">
-                        <img src="../../assets/images/main-page/dark-form-img.png" alt="dark-form-img">
+                        <img class="anim-content" src="../../assets/images/main-page/dark-form-img.png" alt="dark-form-img">
                         <div class="dark-form-text">
-                            <h3>Другая проблема?</h3>
-                            <p>Оставьте заявку и наши специалисты
+                            <h3 class="title-anim ">
+                                <span class="text-wrapper ">
+                                  <span class="text">Другая проблема?</span>
+                                </span>
+                            </h3>
+                            <p class="anim-content">Оставьте заявку и наши специалисты
                             свяжутся с Вами и сразу отправится на вызов!</p>
                         </div>
                     </div>
-                    <div class="form-wrap">
+                    <div class="form-wrap anim-content">
                         <div class="form">
                             <div class="input-wrap">
                                 <input type="tel" name="form-tel" required>
@@ -510,8 +546,11 @@
                                 </div>
                             </div>
                             <div class="input-wrap">
-                                <button class="carrot-btn" type="submit">Отправить</button>
-                                <span>Согласен(а) с политикой обработки персональных данных и офертой</span>
+                                <button class="carrot-btn btn to-serv-modal anim-content">
+                                    <span class="btn-text link-text">Отправить</span>
+                                    <span class="btn-fill"></span>
+                                </button>
+                                <span class="agreement">Согласен(а) с политикой обработки персональных данных и офертой</span>
                             </div>
                         </div>
 
@@ -519,11 +558,15 @@
                 </div>
             </div>
         </div>
-        <div class="brands">
+        <div class="brands element-animation">
             <div class="content">
                 <div class="brands-inner">
-                    <h3>Популярные бренды</h3>
-                    <div class="brands-cards">
+                    <h3 class="title-anim ">
+                        <span class="text-wrapper ">
+                          <span class="text">Популярные бренды</span>
+                        </span>
+                    </h3>
+                    <div class="brands-cards anim-content">
                         <div class="brand-card">
                             <img src="../../assets/images/main-page/brands/bosch-logo.png" alt="brand-logo">
                         </div>
@@ -561,14 +604,21 @@
                             <img src="../../assets/images/main-page/brands/bosch-logo.png" alt="brand-logo">
                         </div>
                     </div>
-                    <a class="carrot-btn" href="#">Смотреть все бренды</a>
+                    <a href="#" class="carrot-btn btn anim-content">
+                        <span class="btn-text link-text">Смотреть все бренды</span>
+                        <span class="btn-fill"></span>
+                    </a>
                 </div>
             </div>
         </div>
-        <div class="repair-brands">
+        <div class="repair-brands element-animation">
             <div class="content">
-                <h3>Ремонт кофемашин</h3>
-                <div class="repair-brands-cards-mob">
+                <h3 class="title-anim ">
+                    <span class="text-wrapper ">
+                      <span class="text">Ремонт кофемашин</span>
+                    </span>
+                </h3>
+                <div class="repair-brands-cards-mob anim-content">
                     <a href="#" class="repair-brands-card">
                         La Marzocco
                     </a>
@@ -607,7 +657,7 @@
                     </div>
 
                 </div>
-                <div class="repair-brands-cards-pc">
+                <div class="repair-brands-cards-pc anim-content">
                     <a href="#" class="repair-brands-card">
                         La Marzocco
                         <span class="circle-btn">
@@ -748,6 +798,9 @@
             </div>
         </div>
     </footer>
+    <script src="../../assets/js/gsap.min.js"></script>
+    <script src="../../assets/js/scrollTrigger.min.js"></script>
+    <script src="../../assets/js/smoothScroll.min.js"></script>
     <script src="../../assets/js/swiper-bundle.min.js"></script>
     <script src="../../assets/js/script.js"></script>
 </body>

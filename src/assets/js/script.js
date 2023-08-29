@@ -39,7 +39,6 @@ headerAnimLinks.forEach(el => {
 const swiper = new Swiper('.staff-swiper', {
     slidesPerView: 2,
     loop: true,
-    centeredSlides: true,
     spaceBetween: 16,
     speed: 2000,
     freeMode: true,
@@ -50,7 +49,7 @@ const swiper = new Swiper('.staff-swiper', {
     breakpoints: {
         768: {
           slidesPerView: 3,
-          spaceBetween: 20
+          spaceBetween: 30
         }
       }
 });
@@ -286,67 +285,68 @@ customOptions.forEach(el => {
 })
 
 
-// function onEntry(entry) {
-//     entry.forEach(change => {
-//       if (change.isIntersecting) {
-//         change.target.classList.add('element-show');
-//       }
-//     });
-//   }
-//   let options = { threshold: [0.2] };
-//   let observer = new IntersectionObserver(onEntry, options);
-//   let elements = document.querySelectorAll('.element-animation');
-//   for (let elm of elements) {
-//     observer.observe(elm);
-//   }
+function onEntry(entry) {
+    entry.forEach(change => {
+      if (change.isIntersecting) {
+        change.target.classList.add('element-show');
+      }
+    });
+  }
+  let options = { threshold: [0] };
+  let observer = new IntersectionObserver(onEntry, options);
+  let elements = document.querySelectorAll('.element-animation');
+  for (let elm of elements) {
+    observer.observe(elm);
+  }
 
-//   window.onload = () => {
-//     const options = {
-//         root: null,
-//         rootMargin: '0px',
-//         threshold: 0
-//     }
-//     const observer = new IntersectionObserver((entries, observer) => {
-//         entries.forEach(entry => {
-//             if (entry.isIntersecting) {
-//                 entry.target.classList.add('element-show');
-//                 setTimeout(() => {
-//                     entry.target.querySelector('.title-anim')?.classList.add('active');
-//                     const contentArr = document.querySelectorAll('.anim-content');
-//                     if (contentArr) {
-//                         setTimeout(()=> {
-//                             contentArr.forEach(el => {
-//                                 el.classList.add('show-content');
-//                             })
-//                         }, 2000)
-//                     }
-//                 } , 1000)
+  window.onload = () => {
+    const options = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0
+    }
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('element-show');
+                setTimeout(() => {
+                    const contentArr = document.querySelectorAll('.anim-content');
+                    if (contentArr) {
+                        setTimeout(()=> {
+                            contentArr.forEach(el => {
+                                el.classList.add('show-content');
+                            })
+                        }, 2000)
+                    }
+                } , 1000)
 
-//                 observer.unobserve(entry.target);
-//             }
-//         })
-//     }, options)
-//     let elements = document.querySelectorAll('.element-animation');
-//     console.log(elements)
-//     elements.forEach(i => {
-//         observer.observe(i)
-//     })
-// }
+                observer.unobserve(entry.target);
+            }
+        })
+    }, options)
+    let elements = document.querySelectorAll('.element-animation');
+    console.log(elements)
+    elements.forEach(i => {
+        observer.observe(i)
+    })
+}
 const animateBlocks =  document.querySelectorAll('.element-animation');
 
 animateBlocks.forEach(el=> {
-    let currentTitle =  el.querySelector('.title-anim');
+    let currentTitle =  el.querySelectorAll('.title-anim');
     let currentAnimContent = el.querySelectorAll('.anim-content');
 
     const timeline=gsap.timeline({
         scrollTrigger:{
           trigger: el,
-          start: "top 45%",
+          start: "top 80%",
         }
       })
       timeline.from(currentTitle,{
         y:150,
-        opacity:0
+        opacity:0,
+        delay:.3,
+        duration:.6,
       }).from(currentAnimContent,{
         duration:.6,
         opacity:0,
@@ -357,25 +357,58 @@ animateBlocks.forEach(el=> {
 // smooth-scroll
 
 
-	let isSafari = (function() {
-		let ua = navigator.userAgent;
-		if (/safari/gi.test(ua) && !/chrome/gi.test(ua)) return true; else return false; })();
-		if (!isSafari) {
-			SmoothScroll ({
-				animationTime: 1000,
-				stepSize: 150,
-				accelerationDelta: 30,
-				accelerationMax: 2,
-				keyboardSupport: true,
-				arrowScroll: 50,
-				pulseAlgorithm: true,
-				pulseScale: 5,
-				pulseNormalize: 1,
-				fixedBackground : true,
-				touchpadSupport: true
-			})
-		}
-    
+let isSafari = (function() {
+let ua = navigator.userAgent;
+if (/safari/gi.test(ua) && !/chrome/gi.test(ua)) return true; else return false; })();
+if (!isSafari) {
+    SmoothScroll ({
+        animationTime: 1000,
+        stepSize: 150,
+        accelerationDelta: 30,
+        accelerationMax: 2,
+        keyboardSupport: true,
+        arrowScroll: 50,
+        pulseAlgorithm: true,
+        pulseScale: 5,
+        pulseNormalize: 1,
+        fixedBackground : true,
+        touchpadSupport: true
+    })
+}
+        
+gsap.set('.btn-fill' ,  {
+    y: "76%",
+})
+let btns = document.querySelectorAll('.btn');
+console.log(btns)
+btns.forEach((btn) => {
+    btn.addEventListener('mouseenter' , ()=> {
+        btn.classList.add('hover');
+        if (btn.querySelectorAll('.btn-fill').length) {
+            gsap.to(btn.querySelectorAll('.btn-fill') , .45, {
+                startAt: {y: "76%"},
+                    y: "0%",
+                    ease: Power2.easeInOut,
+            })
+            btn.parentNode.classList.remove('not-active');
+        }
+    })
+    btn.addEventListener('mouseleave' , ()=> {
+        btn.classList.remove('hover');
+        if (btn.querySelectorAll('.btn-fill')) {
+            gsap.to(btn.querySelector('.btn-fill') , .45, {
+                startAt: {y: "76%"},
+                    y: "-76%",
+                    ease: Power2.easeInOut,
+            })
+        }
+        btn.parentNode.classList.remove('not-active');
+    })
+})
+
+
+
+
 let vh = window.innerHeight * 0.01;
 document.documentElement.style.setProperty('--vh', `${vh}px`);
 window.addEventListener('resize', () => {

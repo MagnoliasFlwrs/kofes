@@ -350,10 +350,10 @@
         </div>
     </header>
     <main>
-        <div class="hero-block">
+        <div class="hero-block element-animation">
             <div class="content">
                 <div class="hero-block-inner">
-                    <ul class="breadcrumbs">
+                    <ul class="breadcrumbs anim-content">
                         <li>
                             <a href="/">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="7" height="8" viewBox="0 0 7 8" fill="none">
@@ -370,59 +370,69 @@
                             <a href="#">Доставка и оплата</a>
                         </li>
                     </ul>
-                    <h1>Доставка по <br>
-                        Санкт-Петербургу</h1>
+                    <h1 class="title-anim ">
+                        <span class="text-wrapper ">
+                          <span class="text">Доставка по</span>
+                        </span>
+                        <span class="text-wrapper ">
+                            <span class="text">Санкт-Петербургу</span>
+                          </span>
+                    </h1>
                 </div>
             </div>
         </div>
-        <div class="delivery">
+        <div class="delivery element-animation">
             <div class="content">
                 <div class="delivery-inner">
                     <div class="delivery-col">
                         <div class="delivery-text-inner">
-                            <div class="delivery-text">
+                            <div class="delivery-text anim-content">
                                 <p>Самовывоз — <span>бесплатно</span></p>
                                 <p>Адрес: Свердловская набережная, 58.</p>
                                 <p>Время работы: Пн. - Пт. с 11:00 до 18:00</p>
                             </div>
-                            <div class="delivery-text">
+                            <div class="delivery-text anim-content">
                                 <p>Выезд водителя по Санкт-Петербургу (забрать/привезти оборудование)
                                     — 450 руб.*</p>
                             </div>
-                            <div class="delivery-text">
+                            <div class="delivery-text anim-content">
                                 <p>Доставка осуществляется в будние дни
                                     с 11 до 18 часов. В выходные и общепраздничные дни доставка не производится.</p>
                             </div>
-                            <div class="line"></div>
-                            <p class="delivery-comment"><span>*</span> Условия действуют в пределах зоны обслуживания № 1. Выезд водителя на адрес, находящийся в зоне обслуживания № 2
+                            <div class="line anim-content"></div>
+                            <p class="delivery-comment anim-content"><span>*</span> Условия действуют в пределах зоны обслуживания № 1. Выезд водителя на адрес, находящийся в зоне обслуживания № 2
                                 оплачивается по тарифу: 450 руб. + 30 р/км</p>
                         </div>
                     </div>
                     <div class="delivery-map">
-                        <img src="../../assets/images/map.png" alt="map">
+                        <img class="anim-content" src="../../assets/images/map.png" alt="map">
                     </div>
                 </div>
             </div>
         </div>
-        <div class="payment">
+        <div class="payment element-animation">
             <div class="content">
-                <h2>Оплата</h2>
+                <h2 class="title-anim ">
+                    <span class="text-wrapper ">
+                      <span class="text">Оплата</span>
+                    </span>
+                </h2>
                 <div class="payment-wrapper">
                     <div class="payment-col">
-                        <h4>Для физических лиц</h4>
-                        <ul>
+                        <h4 class="anim-content">Для физических лиц</h4>
+                        <ul class="anim-content">
                             <li>Наличными или банковской картой при самовывозе</li>
                             <li>Наличными по факту доставки нашим курьером</li>
                         </ul>
                     </div>
                     <div class="payment-col">
-                        <h4>Для юридических лиц</h4>
-                        <ul>
+                        <h4 class="anim-content">Для юридических лиц</h4>
+                        <ul class="anim-content">
                             <li>Путем перевода средств на расчетный счет нашей компании. (без НДС)</li>
                             <li>Наличными или банковской картой при самовывозе</li>
                             <li>Наличными по факту доставки нашим курьером.</li>
                         </ul>
-                        <p>ИНН 470314017160 ОГРНИП 315784700065610</p>
+                        <p class="anim-content">ИНН 470314017160 ОГРНИП 315784700065610</p>
                     </div>
                 </div>
             </div>
@@ -476,6 +486,9 @@
             </div>
         </div>
     </footer>
+    <script src="../../assets/js/gsap.min.js"></script>
+    <script src="../../assets/js/scrollTrigger.min.js"></script>
+    <script src="../../assets/js/smoothScroll.min.js"></script>
     <script src="../../assets/js/swiper-bundle.min.js"></script>
     <script src="../../assets/js/script.js"></script>
 </body>

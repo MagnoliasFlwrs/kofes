@@ -41,7 +41,10 @@
                     </div>
                 </div>
                 <div class="submit-wrap">
-                    <button class="carrot-btn" type="submit">Отправить</button>
+                    <button class="carrot-btn btn anim-content">
+                        <span class="btn-text link-text">Отправить</span>
+                        <span class="btn-fill"></span>
+                    </button>
                     <span>Согласен(а) с политикой обработки
                         персональных данных и офертой</span>
                 </div>
@@ -83,7 +86,10 @@
                     </div>
                 </div>
                 <div class="submit-wrap">
-                    <button class="carrot-btn" type="submit">Отправить</button>
+                    <button class="carrot-btn btn anim-content">
+                        <span class="btn-text link-text">Отправить</span>
+                        <span class="btn-fill"></span>
+                    </button>
                     <span>Согласен(а) с политикой обработки
                         персональных данных и офертой</span>
                 </div>
@@ -106,7 +112,10 @@
             <h3>Ваша заявка отправлена</h3>
             <p>В ближайшее время наши специалисты
                 свяжуться с Вами для уточнения деталей ремонта.</p>
-            <button class="carrot-btn">Продолжить</button>
+                <button class="carrot-btn btn anim-content">
+                    <span class="btn-text link-text">Продолжить</span>
+                    <span class="btn-fill"></span>
+                </button>
         </div>
     </div>
     <header class="header">
@@ -292,7 +301,7 @@
         </div>
     </header>
     <main>
-        <section class="banner">
+        <section class="banner element-animation">
             <div class="content">
                 <h1>Ремонт и сервис кофемашин всех видов с гарантией</h1>
                 <div class="banner-wrapper">
@@ -306,7 +315,7 @@
                             </div>
                         </div>
                         <div class="banner-content">
-                            <h2>
+                            <h2 class="title-anim">
                                 <span class="text-wrapper">
                                   <span class="text">Ремонт и сервис кофемашин</span>
                                 </span>
@@ -322,8 +331,8 @@
                     </div>
                     <div class="desktop-banner">
                         <div class="desktop-banner-content">
-                            <h2>
-                                <span class="text-wrapper">
+                            <h2 class="title-anim ">
+                                <span class="text-wrapper ">
                                   <span class="text">Ремонт и сервис кофемашин</span>
                                 </span>
                                 
@@ -331,9 +340,13 @@
                                   <span class="text">всех видов с гарантией</span>
                                 </span>
                             </h2>
-                            <p>Собственный сервисный центр в Санкт-Петербурге.<br>
+                            <p class="anim-content">Собственный сервисный центр в Санкт-Петербурге.<br>
                                 Работаем без посредников</p>
-                            <button class="carrot-btn to-application">Заявка на ремонт</button>
+                            <!-- <button class="carrot-btn to-application anim-content">Заявка на ремонт</button> -->
+                            <button class="carrot-btn btn to-application anim-content">
+                                <span class="btn-text link-text">Заявка на ремонт</span>
+                                <span class="btn-fill"></span>
+                            </button>
                         </div>
                     </div>
 
@@ -370,13 +383,19 @@
                                 <div class="swiper-slide">
                                     <img src="./src/assets/images/main-page/staff-4.png" alt="staff-photo">
                                 </div>
+                                <div class="swiper-slide">
+                                    <img src="./src/assets/images/main-page/staff-3.png" alt="staff-photo">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./src/assets/images/main-page/staff-4.png" alt="staff-photo">
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="staff-about anim-content">
-                        <h3>Ремонтируем кофемашины
+                    <div class="staff-about">
+                        <h3 class="title-anim">Ремонтируем кофемашины
                             с 2009 года</h3>
-                            <div class="staff-about-date">
+                            <div class="staff-about-date anim-content">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="70" height="13" viewBox="0 0 70 13" fill="none">
                                     <path d="M6.65218 9.65229C5.75054 9.65229 5.00049 9.37469 4.40205 8.81948C3.80361 8.25687 3.50439 7.56101 3.50439 6.73191C3.50439 5.9028 3.80361 5.21064 4.40205 4.65544C5.00049 4.09283 5.75054 3.81152 6.65218 3.81152C7.24264 3.81152 7.77326 3.94477 8.24403 4.21127C8.7148 4.47037 9.06589 4.822 9.29728 5.26616L8.42356 5.73254C8.27196 5.43643 8.03657 5.19954 7.71741 5.02187C7.40622 4.84421 7.05114 4.75537 6.65218 4.75537C6.05374 4.75537 5.55106 4.94414 5.14412 5.32168C4.74516 5.69922 4.54568 6.1693 4.54568 6.73191C4.54568 7.28711 4.74516 7.75348 5.14412 8.13102C5.55106 8.50856 6.05374 8.69733 6.65218 8.69733C7.05114 8.69733 7.41021 8.6122 7.72937 8.44194C8.04854 8.26427 8.29191 8.02739 8.45947 7.73128L9.34516 8.20875C9.08983 8.64551 8.72278 8.99715 8.24403 9.26365C7.76528 9.52274 7.23466 9.65229 6.65218 9.65229Z" fill="#FF8164"/>
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M6.42621 11.8153C9.23263 11.8153 11.5077 9.54025 11.5077 6.73383C11.5077 3.92742 9.23263 1.65237 6.42621 1.65237C3.6198 1.65237 1.34475 3.92742 1.34475 6.73383C1.34475 9.54025 3.6198 11.8153 6.42621 11.8153ZM6.42621 12.5746C9.65198 12.5746 12.267 9.9596 12.267 6.73383C12.267 3.50807 9.65198 0.893066 6.42621 0.893066C3.20045 0.893066 0.585449 3.50807 0.585449 6.73383C0.585449 9.9596 3.20045 12.5746 6.42621 12.5746Z" fill="#FF8164"/>
@@ -391,7 +410,7 @@
                                     <path d="M68.0187 6.22891C68.5993 6.33778 69.0747 6.58817 69.4449 6.98009C69.815 7.37202 70.0001 7.86918 70.0001 8.47158C70.0001 9.21187 69.7461 9.79613 69.238 10.2243C68.73 10.6526 68.1131 10.8667 67.3873 10.8667C66.8067 10.8667 66.2913 10.736 65.8414 10.4747C65.3914 10.2062 65.072 9.82153 64.8833 9.32074L65.7325 8.81995C65.9575 9.52396 66.5091 9.87597 67.3873 9.87597C67.859 9.87597 68.2437 9.75258 68.5413 9.50582C68.8388 9.25905 68.9876 8.9143 68.9876 8.47158C68.9876 8.02885 68.8388 7.6841 68.5413 7.43734C68.2437 7.18331 67.859 7.0563 67.3873 7.0563H67.126L66.7232 6.43576L68.4868 4.05156H65.1011V3.10442H69.6735V3.99713L68.0187 6.22891Z" fill="#FF8164"/>
                                 </svg>
                             </div>
-                            <img src="./src/assets/images/main-page/staff-logo.png" alt="kofes-logo">
+                            <img class="anim-content" src="./src/assets/images/main-page/staff-logo.png" alt="kofes-logo">
                     </div>
                 </div>
             </div>
@@ -513,7 +532,11 @@
                             <img src="./src/assets/images/main-page/brands/bosch-logo.png" alt="brand-logo">
                         </a>
                     </div>
-                    <a class="carrot-btn anim-content" href="#">Смотреть все бренды</a>
+                    <!-- <a class="carrot-btn anim-content" href="#">Смотреть все бренды</a> -->
+                    <a href="#" class="carrot-btn btn anim-content">
+                        <span class="btn-text link-text">Смотреть все бренды</span>
+                        <span class="btn-fill"></span>
+                    </a>
                 </div>
             </div>
         </div>
@@ -539,7 +562,10 @@
                                 <p class="problems-card-price">
                                     от <span>900</span> руб.
                                 </p>
-                                <button type="button" class="to-order dark-border-btn">Заказать</button>
+                                <button type="button" class="btn to-order dark-border-btn">
+                                    <span class="btn-text link-text">Заказать</span>
+                                    <span class="btn-fill"></span>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -561,7 +587,10 @@
                                 <p class="problems-card-price">
                                     от <span>900</span> руб.
                                 </p>
-                                <button type="button" class="to-order dark-border-btn">Заказать</button>
+                                <button type="button" class="btn to-order dark-border-btn">
+                                    <span class="btn-text link-text">Заказать</span>
+                                    <span class="btn-fill"></span>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -582,7 +611,10 @@
                                 <p class="problems-card-price">
                                     от <span>900</span> руб.
                                 </p>
-                                <button type="button" class=" to-order dark-border-btn">Заказать</button>
+                                <button type="button" class="btn to-order dark-border-btn">
+                                    <span class="btn-text link-text">Заказать</span>
+                                    <span class="btn-fill"></span>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -608,7 +640,11 @@
                                 <p class="problems-card-price">
                                     от <span>900</span> руб.
                                 </p>
-                                <button type="button" class="to-order dark-border-btn">Заказать</button>
+                                <button type="button" class="btn to-order dark-border-btn">
+                                    <span class="btn-text link-text">Заказать</span>
+                                    <span class="btn-fill"></span>
+                                </button>
+                                
                             </div>
                         </div>
                     </div>
@@ -630,7 +666,10 @@
                                 <p class="problems-card-price">
                                     от <span>900</span> руб.
                                 </p>
-                                <button type="button" class="to-order dark-border-btn">Заказать</button>
+                                <button type="button" class="btn to-order dark-border-btn">
+                                    <span class="btn-text link-text">Заказать</span>
+                                    <span class="btn-fill"></span>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -651,7 +690,10 @@
                                 <p class="problems-card-price">
                                     от <span>900</span> руб.
                                 </p>
-                                <button type="button" class="to-order dark-border-btn">Заказать</button>
+                                <button type="button" class="btn to-order dark-border-btn">
+                                    <span class="btn-text link-text">Заказать</span>
+                                    <span class="btn-fill"></span>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -671,7 +713,10 @@
                                 <p class="problems-card-price">
                                     от <span>900</span> руб.
                                 </p>
-                                <button type="button" class="to-order dark-border-btn">Заказать</button>
+                                <button type="button" class="btn to-order dark-border-btn">
+                                    <span class="btn-text link-text">Заказать</span>
+                                    <span class="btn-fill"></span>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -691,7 +736,10 @@
                                 <p class="problems-card-price">
                                     от <span>900</span> руб.
                                 </p>
-                                <button type="button" class="to-order dark-border-btn">Заказать</button>
+                                <button type="button" class="btn to-order dark-border-btn">
+                                    <span class="btn-text link-text">Заказать</span>
+                                    <span class="btn-fill"></span>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -711,7 +759,10 @@
                                 <p class="problems-card-price">
                                     от <span>900</span> руб.
                                 </p>
-                                <button type="button" class="to-order dark-border-btn">Заказать</button>
+                                <button type="button" class="btn to-order dark-border-btn">
+                                    <span class="btn-text link-text">Заказать</span>
+                                    <span class="btn-fill"></span>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -733,7 +784,10 @@
                                 <p class="problems-card-price">
                                     от <span>900</span> руб.
                                 </p>
-                                <button type="button" class="to-order dark-border-btn">Заказать</button>
+                                <button type="button" class="btn to-order dark-border-btn">
+                                    <span class="btn-text link-text">Заказать</span>
+                                    <span class="btn-fill"></span>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -753,7 +807,10 @@
                                 <p class="problems-card-price">
                                     от <span>900</span> руб.
                                 </p>
-                                <button type="button" class="to-order dark-border-btn">Заказать</button>
+                                <button type="button" class="btn to-order dark-border-btn">
+                                    <span class="btn-text link-text">Заказать</span>
+                                    <span class="btn-fill"></span>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -774,7 +831,10 @@
                                 <p class="problems-card-price">
                                     от <span>900</span> руб.
                                 </p>
-                                <button type="button" class="to-order dark-border-btn">Заказать</button>
+                                <button type="button" class="btn to-order dark-border-btn">
+                                    <span class="btn-text link-text">Заказать</span>
+                                    <span class="btn-fill"></span>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -793,7 +853,6 @@
                                   <span class="text">Другая проблема?</span>
                                 </span>
                             </h3>
-                            <!-- <h3>Другая проблема?</h3> -->
                             <p class="anim-content">Оставьте заявку и наши специалисты
                             свяжутся с Вами и сразу отправится на вызов!</p>
                         </div>
@@ -814,7 +873,10 @@
                                 </div>
                             </div>
                             <div class="input-wrap">
-                                <button class="carrot-btn" type="submit">Отправить</button>
+                                <button class="carrot-btn btn" type="submit">
+                                    <span class="btn-text">Отправить</span>
+                                    <span class="btn-fill"></span>
+                                </button>
                                 <span>Согласен(а) с политикой обработки персональных данных и офертой</span>
                             </div>
                         </div>

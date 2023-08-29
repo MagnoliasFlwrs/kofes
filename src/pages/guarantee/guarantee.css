@@ -11,6 +11,10 @@
     border-radius: 20px;
     background: var(--soft-gray, #F3F4F5);
 }
+.element-show .hero-block-inner {
+    transition: .5s ease 1s;
+    background: var(--soft-gray, #F3F4F5);
+}
 .hero-block-inner h1 {
     font-size: calc(40 * var(--fz));
     font-style: normal;
@@ -49,6 +53,10 @@
     background: var(--black-3, #212121);
     padding: calc(30 * var(--fz));
     color: #fff;
+}
+.element-show .about-col-inner {
+    transition: .5s ease .5s;
+    background: var(--black-3, #212121);
 }
 .about-col-inner h2 {
     font-size: calc(32 * var(--fz));
@@ -127,6 +135,10 @@
     gap: 10px;
     padding: calc(30 * var(--fz));
     border-radius: 20px;
+    background: transparent;
+}
+.element-show .about-col-row:first-child {
+    transition: .5s ease .5s;
     background: #F8F8F8;
 }
 .about-col-row:first-child h3 , .about-col-row:last-child h3 {
@@ -173,8 +185,12 @@
 .about-col-row:last-child {
     padding: calc(30 * var(--fz));
     border-radius: 20px;
-    background-color: var(--carrot);
+    background-color: transparent;
     color: #fff;
+}
+.element-show .about-col-row:last-child  {
+    transition: .5s ease .5s;
+    background-color: var(--carrot);
 }
 .about-col-row:last-child p {
     margin: 10px 0;
@@ -192,18 +208,62 @@
     font-weight: 500;
     line-height: 125%;
     color: var(--black);
+    position: relative;
+    z-index: 5;
+    overflow: hidden;
 }
 .white-btn:hover {
-    background: var(--black-3, #212121);
+    /* background: var(--black-3, #212121); */
     color: #fff;
+    border: 2px solid  var(--black-3, #212121);
+}
+.white-btn  .btn-text:before {
+    animation: c .6s ease 1;
+    color: var(--black-2, #303030);
+}
+
+.white-btn  .btn-text:after {
+    color: #fff;
+    animation: d .6s ease 1;
+    opacity: 0
+}
+.white-btn  .btn-fill {
+    display: inline-block;
+    vertical-align: top;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 200%;
+    height: 150%;
+    top: 120%;
+    left: -50%;
+    z-index: -1;
+    width: 150%;
+    height: 200%;
+    border-radius: 50%;
+    top: -50%;
+    left: -25%;
+    background: var(--black-3, #212121);
     border: 2px solid  var(--black-3, #212121);
 }
 .services {
     padding: calc(120 * var(--fz)) 0;
-    background-color: var(--black-3);
+    background-color: transparent;
     border-radius: 20px;
     width: 100%;
     color: #fff
+}
+.dark-form-inner .form-wrap .input-wrap:last-child .carrot-btn {
+    margin: 0;
+}
+.element-show .dark-form-inner {
+    transition: .5s ease .5s;
+    background-color:  #303030;
+}
+
+.element-show.services {
+    transition: .3s ease;
+    background-color: var(--black-3);
 }
 .services h2 {
     font-size: calc(32 * var(--fz));
@@ -308,6 +368,9 @@
 .repair-brands-card {
     font-size: calc(16 * var(--fz));
 }
+/* .element-animation.repair-brands {
+    background-color: transparent;
+} */
 
 
 
@@ -462,6 +525,7 @@
         font-size: calc(20 * var(--fz));
         padding: calc(30 * var(--fz)) calc(60 * var(--fz));
     }
+    
 }
 
 @media (min-width:1200px) {
@@ -514,6 +578,10 @@
     .serv-acc-item {
         padding: calc(60 * var(--fz));
         gap: 30px ;
+    }
+    .repair-brands {
+        padding: calc(120 * var(--fz)) 0;
+        margin: calc(250 * var(--fz)) 0;
     }
 
 }

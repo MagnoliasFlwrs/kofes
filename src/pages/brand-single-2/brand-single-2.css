@@ -14,6 +14,10 @@
 .hero-main-content {
     padding: calc(30 * var(--fz));
     border-radius: 20px;
+    background-color: transparent;
+}
+.element-show .hero-main-content {
+    transition: .5s ease;
     background-color: var(--soft-gray, #F3F4F5);
 }
 .hero-main-content h1 {
@@ -94,8 +98,12 @@
 }
 .advantages-card {
     border-radius: 20px;
-    background: var(--soft-gray, #F3F4F5);
+    background: transparent;
     padding: calc(30 * var(--fz));
+}
+.element-show .advantages-card {
+    transition: .5s ease;
+    background: var(--soft-gray, #F3F4F5);
 }
 .advantages-card svg {
     width: calc(35 * var(--fz));
@@ -141,6 +149,10 @@
 .repair-block-col:last-child {
     padding: calc(30 * var(--fz));
     border-radius: 20px;
+    background-color: transparent;
+}
+.element-show .repair-block-col:last-child {
+    transition: .5s ease;
     background-color: var(--soft-gray, #F3F4F5);
 }
 .repair-block-col ul {

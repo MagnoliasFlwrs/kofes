@@ -14,7 +14,11 @@
 .hero-main-content {
     padding: calc(30 * var(--fz));
     border-radius: 20px;
-    background-color: var(--soft-gray, #F3F4F5);
+    background-color: transparent;
+}
+.element-show .hero-main-content  {
+    transition: background-color .5s ease 1s;
+    background-color: var(--soft-gray);
 }
 .hero-main-content h1 {
     font-size: calc(44 * var(--fz));
@@ -36,8 +40,12 @@
 .hero-block-price {
     border-radius: 20px;
     padding: calc(30 * var(--fz));
-    background-color: var(--carrot);
+    background-color: transparent;
     margin-bottom: 16px;
+}
+.element-show .hero-block-price  {
+    transition: background-color .5s ease .8s;
+    background-color: var(--carrot);
 }
 .hero-block-price h3 {
     font-size: calc(22 * var(--fz));
@@ -68,6 +76,10 @@
 .hero-block-consult {
     border-radius: 20px;
     padding: calc(30 * var(--fz));
+    background-color: transparent;
+}
+.element-show .hero-block-consult  {
+    transition: background-color .5s ease .8s;
     background-color: var(--black-3, #212121);
 }
 .hero-block-consult p {

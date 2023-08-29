@@ -219,7 +219,7 @@
     flex-direction: column;
     gap: calc(15 * var(--fz));
 }
-.input-wrap:last-child span {
+.input-wrap:last-child .agreement {
     font-size: calc(14 * var(--fz));
     font-style: normal;
     font-weight: 500;
@@ -480,7 +480,7 @@
         flex-direction: row;
         gap: 15px;
     }
-    .dark-form-inner .form-wrap .input-wrap:last-child span {
+    .dark-form-inner .form-wrap .input-wrap:last-child .agreement {
         font-size: calc(18 * var(--fz));
         font-style: normal;
         font-weight: 400;

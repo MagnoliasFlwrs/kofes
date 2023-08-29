@@ -9,7 +9,7 @@
 .hero-block-inner {
     padding: calc(30 * var(--fz));
     border-radius: 20px;
-    background: var(--soft-gray, #F3F4F5);
+    background: transparent;
 }
 .hero-block-inner h1 {
     font-size: calc(40 * var(--fz));
@@ -19,6 +19,10 @@
     letter-spacing: -1.32px;
     color: var(--black);
     margin-bottom: 15px;
+}
+.element-show .hero-block-inner {
+    transition: .5s ease 1s;
+    background: var(--soft-gray, #F3F4F5);
 }
 .contacts {
     width: 100%;
@@ -38,9 +42,13 @@
     flex-direction: column;
     gap: 20px;
     border-radius: 20px;
-    background: var(--black-3, #212121);
+    background: transparent;
     color: #fff;
     padding: calc(30 * var(--fz));
+}
+.element-show .contacts-block {
+    transition: .5s ease .3s;
+    background: var(--black-3, #212121);
 }
 .contacts-block-text {
     display: flex;
@@ -68,8 +76,12 @@
 }
 .contacts-images {
     padding: calc(30 * var(--fz));
-    background-color: var(--soft-gray);
+    background-color: transparent;
     border-radius: 20px;
+}
+.element-show .contacts-images {
+    transition: .5s ease .3s;
+    background-color: var(--soft-gray);
 }
 .contacts-row {
     display: flex;

@@ -9,7 +9,7 @@
 .hero-block-inner {
     padding: calc(30 * var(--fz));
     border-radius: 20px;
-    background: var(--soft-gray, #F3F4F5);
+    background: transparent;
 }
 .hero-block-inner h1 {
     font-size: calc(40 * var(--fz));
@@ -31,7 +31,7 @@
 .blog-wrapper-col {
     padding: calc(30 * var(--fz));
     border-radius: 20px;
-    background: #F8F8F8;
+    background: transparent;
 }
 .blog-wrapper-col p , .blog-wrapper-col ul li {
     font-size: calc(16 * var(--fz));
@@ -87,7 +87,7 @@
 .articles {
     margin-bottom: 120px;
     border-radius: 20px;
-    background: var(--soft-gray, #F3F4F5);
+    background: transparent;
 }
 .articles h2 {
     font-size: calc(40 * var(--fz));
@@ -127,7 +127,17 @@
     line-height: 125%; /* 20px */
     letter-spacing: -0.48px;
 }
-
+.element-show .hero-block-inner , .articles.element-show {
+    transition: 0.3s ease;
+    background: var(--soft-gray, #F3F4F5);
+}
+.element-show .blog-wrapper-col {
+    transition: 0.3s ease;
+    background: #F8F8F8;
+}
+.articles-inner a {
+    color: var(--black);
+}
 @media (min-width:992px) {
     .hero-block {
         padding: calc(50 * var(--fz)) 0 calc(60 * var(--fz));
