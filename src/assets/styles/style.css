@@ -612,6 +612,9 @@ body {
     height: 100%;
     object-fit: contain;
 }
+.brand-card:hover {
+    transform: scale(1.1);
+}
 .brands-inner h3 {
     font-size: calc(30 * var(--fz));
     font-style: normal;
