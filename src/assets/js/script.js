@@ -438,21 +438,20 @@ if (animateLogo) {
         let tl = gsap.timeline({
         })
         .from(animateLogo.querySelector('svg'), {
-            yPercent: 100,
-            ease: Power2.out,
-            duration: 1,
-            stagger : 0.2
+            y:100,
+            opacity:0,
+            delay:.3,
+            duration:.6,
         })
         .to(animateLogo, {
             webkitClipPath : "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
 			clipPath : "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
-            stagger : 0.2,
             duration: .5,
         })
     })
 }
 
-
+// magnetic-btn
     var mArea = document.querySelector('#magnetic-area');
 
     function parallaxIt(e, target, movement = 1){

@@ -21,7 +21,12 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
+    position: relative; 
+    opacity: 0;
+}
+.element-show .banner-video {
+    transition: all .5s ease 1s;
+    opacity: 1;
 }
 .mobile-banner .banner-video::after {
     content: '';
@@ -46,6 +51,10 @@
     padding: calc(25  * var(--fz));
     width: 100%;
     border-radius: 20px;
+    background-color: transparent;
+}
+.element-show .banner-content {
+    transition: all 0.5s ease 1s;
     background-color: var(--soft-gray, #F3F4F5);
 }
 .banner-content h2 {
@@ -75,6 +84,11 @@
     background-size: cover;
     position: relative;
     display: none;
+    opacity: 0;
+}
+.element-show .desktop-banner {
+    transition: all .5s ease;
+    opacity: 1;
 }
 .desktop-banner::after {
     content: '';
