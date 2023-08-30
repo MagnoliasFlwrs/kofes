@@ -9,8 +9,12 @@
 }
 .hero-inner {
     border-radius: 20px;
-    background: var(--soft-gray, #F3F4F5);
+    background: transparent;
     padding: calc(30 * var(--fz));
+}
+.element-show .hero-inner  {
+    transition: all .5s ease 1s;
+    background: var(--soft-gray, #F3F4F5);
 }
 .hero-inner h1 {
     font-size: calc(44 * var(--fz));

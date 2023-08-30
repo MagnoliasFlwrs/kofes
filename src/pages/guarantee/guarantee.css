@@ -9,7 +9,7 @@
 .hero-block-inner {
     padding: calc(30 * var(--fz));
     border-radius: 20px;
-    background: var(--soft-gray, #F3F4F5);
+    background: transparent;
 }
 .element-show .hero-block-inner {
     transition: .5s ease 1s;
