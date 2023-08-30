@@ -171,7 +171,28 @@
 .text-wrapper {
   overflow: hidden;
   display: block;
+
 }
+.text {
+    overflow: hidden;
+}
+/* h1 , h2 {
+	font-size: 4rem;
+	position: relative;
+	overflow: hidden;
+	height: calc(70 * var(--fz));
+	margin: 0;
+}
+.title {
+    font-size: calc(80 * var(--fz));
+}
+
+
+.hidden-text {
+	position: absolute;
+	z-index: 200;
+} */
+
 
 @media (max-width:768px) {
     h2 span {
@@ -308,7 +329,9 @@ body {
     left: -25%;
     background-color: var(--black-3, #212121);
 }
-
+.title-anim {
+    overflow: hidden;
+}
 
 
 .dark-border-btn {

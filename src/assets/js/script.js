@@ -326,7 +326,6 @@ function onEntry(entry) {
         })
     }, options)
     let elements = document.querySelectorAll('.element-animation');
-    console.log(elements)
     elements.forEach(i => {
         observer.observe(i)
     })
@@ -334,17 +333,19 @@ function onEntry(entry) {
 const animateBlocks =  document.querySelectorAll('.element-animation');
 
 animateBlocks.forEach(el=> {
-    let currentTitle =  el.querySelectorAll('.title-anim');
+    let lines =  el.querySelectorAll('.text-wrapper');
+    console.log(lines)
     let currentAnimContent = el.querySelectorAll('.anim-content');
 
+    
     const timeline=gsap.timeline({
         scrollTrigger:{
           trigger: el,
           start: "top 80%",
         }
       })
-      timeline.from(currentTitle,{
-        y:150,
+      timeline.from(lines,{
+        y:100,
         opacity:0,
         delay:.3,
         duration:.6,
@@ -352,6 +353,7 @@ animateBlocks.forEach(el=> {
         duration:.5,
         opacity:0,
     })
+    
 })
 
 
@@ -451,81 +453,8 @@ if (animateLogo) {
 }
 
 
-
-// var mWrap = document.querySelectorAll(".magnetic-wrap");
-
-// function parallaxIt(e, wrap, movement = 1) {
-//   var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-//   var boundingRect = wrap.mArea.getBoundingClientRect();
-//   var relX = e.pageX - boundingRect.left;
-//   var relY = e.pageY - boundingRect.top;
-
-//   gsap.to(wrap.mContent, {
-//     x: (relX - boundingRect.width / 2) * movement,
-//     y: (relY - boundingRect.height / 2 - scrollTop) * movement,
-//     ease: "power1",
-//     duration: 0.6
-//   });
-// }
-
-// mWrap.forEach(function (wrap) {
-//   wrap.mContent = wrap.querySelector(".js-magnetic-content");
-//   wrap.mArea = wrap.querySelector(".js-magnetic-area");
-
-//   wrap.mArea.addEventListener("mousemove", function(e) {
-//     parallaxIt(e, wrap);
-//   });
-
-//   wrap.mArea.addEventListener("mouseleave", function (e) {
-//     gsap.to(wrap.mContent, {
-//       scale: 1,
-//       x: 0,
-//       y: 0,
-//       ease: "power3",
-//       duration: 0.6
-//     });
-//   });
-// });
-
-// var windowWidth = window.width;
-// if((windowWidth > 1200) & (document.querySelector('.magnetic-btn').length) && false){
-// 	var mArea = document.querySelector('.magnetic-btn');
-// 	function parallaxIt(e, target, movement = 1){
-// 		var boundingRect = mArea.getBoundingClientRect();
-// 		var relX = e.pageX - boundingRect.left;
-// 		var relY = e.pageY - boundingRect.top;
-// 		var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-
-// 		gsap.to(target, {
-// 			x: (relX - boundingRect.width / 3.4),
-// 			y: (relY - boundingRect.height / 1.2 - scrollTop),
-// 			ease: "power1",
-// 			duration: 0.6
-// 		});
-// 	}
-
-// 	function callParallax(e){
-// 		parallaxIt(e, '.magnetic-btn');
-// 	}
-
-// 	mArea.addEventListener('mousemove', function(e){
-// 		callParallax(e);
-// 	});
-
-// 	mArea.addEventListener('mouseleave', function(e){
-// 		gsap.to('.magnetic-btn', {
-// 			scale:1,
-// 			x: 0,
-// 			y: 0,
-// 			ease: "power3",
-// 			duration: 0.6
-// 		});
-// 	});
-// }
-
     var mArea = document.querySelector('#magnetic-area');
 
-    // 1. Set the function and variables
     function parallaxIt(e, target, movement = 1){
       var boundingRect = mArea.getBoundingClientRect();
       var relX = e.pageX - boundingRect.left;
@@ -541,7 +470,6 @@ if (animateLogo) {
       });
     }
 
-    // 2. Call the function
     function callParallax(e){
       parallaxIt(e, '#magnetic-content');
     }
