@@ -21,7 +21,6 @@
     margin-bottom: 15px;
 }
 .blog-wrapper {
-    padding-top: calc(120 * var(--fz));
     padding-bottom: calc(120 * var(--fz));
 }
 
@@ -117,7 +116,11 @@
         font-size: calc(50 * var(--fz));
         margin-bottom: 30px;
     }
+    .blog-card:hover {
+        border: 1px solid var(--carrot);
+    }
     .blog-card:hover .circle-btn {
+        
         visibility: visible;
         opacity: 1;
     }

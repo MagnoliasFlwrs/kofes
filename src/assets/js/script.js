@@ -1,17 +1,20 @@
 const burger = document.querySelector('.burger');
 const mobileMenu = document.querySelector('.mobile-menu');
 const closeBurger = document.querySelector('.mobile-head svg');
+const body = document.querySelector('body')
 
 function activateBurgerMenu() {
     burger.addEventListener('click' , ()=> {
         burger.classList.add('active');
         mobileMenu.classList.add('active');
         setTimeout(burger.classList.remove('active') , 1000);
+        body.style.overflow="hidden"
     })
 }
 function closeBurgerMenu() {
     closeBurger.addEventListener('click' , ()=> {
         mobileMenu.classList.remove('active');
+        body.style.overflow="auto"
     })
 }
 activateBurgerMenu();
@@ -54,7 +57,7 @@ const swiper = new Swiper('.staff-swiper', {
       }
 });
 const teamSwiper = new Swiper('.team-swiper', {
-    slidesPerView: 1.3,
+    slidesPerView: 1.25,
     spaceBetween: 16,
     freeMode: true,
     breakpoints: {
@@ -94,10 +97,11 @@ boxes.forEach((box) => {
   box.addEventListener("click", boxHandler);
 });
 
+
 function boxHandler(e) {
   e.preventDefault();
   let currentBox = e.target.closest(".box");
-  let currentContent = e.target.nextElementSibling;
+  let currentContent = currentBox.querySelector('.acc-content');
   currentBox.classList.toggle("active");
   if (currentBox.classList.contains("active")) {
     currentContent.style.maxHeight = currentContent.scrollHeight + "px";
@@ -406,7 +410,7 @@ btns.forEach((btn) => {
         btn.classList.remove('hover');
         if (btn.querySelectorAll('.btn-fill')) {
             gsap.to(btn.querySelector('.btn-fill') , .45, {
-                startAt: {y: "76%"},
+                startAt: {y: "0"},
                     y: "-76%",
                     ease: Power2.easeInOut,
             })
@@ -448,6 +452,7 @@ if (animateLogo) {
 			clipPath : "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
             duration: .5,
         })
+        
     })
 }
 

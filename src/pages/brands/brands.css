@@ -71,12 +71,12 @@
 
 @media (min-width:1200px) {
     .hero-block-inner {
-        padding: calc(30 * var(--fz));
+        padding: calc(60 * var(--fz));
     }
     .hero-block-inner h1 {
         font-size: calc(70 * var(--fz));
         margin-bottom: 60px;
-        max-width: 550px;
+        /* max-width: 753px; */
     }
     .hero-block-filter {
         gap: 20px;

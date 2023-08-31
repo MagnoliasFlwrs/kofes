@@ -218,7 +218,7 @@
     font-style: normal;
     font-weight: 500;
     line-height: 110%;
-    letter-spacing: -0.96px;
+    letter-spacing: -1.68px;
     color: var(--soft-gray);
     margin-bottom: 15px;
 }
@@ -367,7 +367,7 @@
     text-align: center;
 }
 .brands {
-    padding-top: calc(120 * var(--fz)) ;
+    padding-top: calc(20 * var(--fz)) !important ;
     width: 100%;
 }
 .brands-inner {
@@ -429,7 +429,7 @@
     padding-bottom: calc(30 * var(--fz));
 }
 .problems-card-head {
-    padding: calc(25 * var(--fz)) calc(30 * var(--fz));
+    padding: calc(17 * var(--fz)) calc(30 * var(--fz));
     display: flex;
     gap: 30px;
     align-items: center;
@@ -674,7 +674,10 @@
     letter-spacing: -0.66px;
     max-width: 80%;
 }
-.accordion-container .box.active .label p {
+.accordion-container .box.active .label {
+    padding-bottom: 0;
+}
+.accordion-container .box.active .label p , .accordion-container .box .label:hover p{
     color: var(--carrot);
 }
 
@@ -804,8 +807,8 @@
 }
 .team-swiper .swiper-slide img {
     border-radius: 7.829px;
-    width: calc(232 * var(--fz)) ;
-    height: calc(138 * var(--fz)) ;
+    width: calc(262 * var(--fz)) ;
+    height: calc(150 * var(--fz)) ;
 }
 .repair {
     width: 100%;
@@ -988,6 +991,7 @@
         transform: translate(-50% , 50%);
     }
     .proxima-col ul li::before , .problems-card-info ul li::before {
+        margin-top: 10px;
         margin-right: 20px;
     }
     .search-field input {
@@ -1145,7 +1149,7 @@
         width: 100%;
     }
     .brands {
-        padding-top: calc(60 * var(--fz));
+        padding-top: calc(60 * var(--fz)) !important;
         width: 100%;
     }
     .dark-form {
@@ -1191,6 +1195,9 @@
     }
     .staff-photos h3 , .proxima-col h3 , .team-row h3 , .search-inner h3 , .brands-inner h3 , .faq-accord h3  {
         font-size: calc(70 * var(--fz));
+    }
+    .proxima-col h3  {
+        font-size: calc(56 * var(--fz));
     }
     .staff-about h3 , .dark-form-text h3 {
         font-size: calc(70 * var(--fz));

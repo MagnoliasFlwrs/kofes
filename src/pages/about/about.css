@@ -20,12 +20,18 @@
     color: var(--black);
     margin-bottom: 15px;
 }
+
 .kofes-main {
+    /* padding: calc(30 * var(--fz));
+    border-radius: 20px;
+    background: var(--black-3, #212121); */
+}
+.kofes-main-inner {
     padding: calc(30 * var(--fz));
     border-radius: 20px;
     background: var(--black-3, #212121);
 }
-.kofes-main .content {
+.kofes-main-inner  {
     display: flex;
     flex-direction: column;
     gap: 60px;
@@ -85,11 +91,15 @@
     max-width: 50%;
     width: 100%;
 }
+/* .cofes-numbers-card:last-child{
+    max-width: 70%;
+    width: 100%;
+} */
 .cofes-numbers-card p {
     font-size: calc(80 * var(--fz));
     font-style: normal;
     font-weight: 300;
-    line-height: 125%; /* 100px */
+    line-height: calc(80 * var(--fz)); 
     letter-spacing: -4px;
     text-transform: uppercase;
     color: #fff;
@@ -97,10 +107,11 @@
 .cofes-numbers-card span {
     font-size: calc(16 * var(--fz));
     font-style: normal;
-    font-weight: 500;
-    line-height: 125%; /* 20px */
+    font-weight: 400;
+    line-height: 125%; 
     letter-spacing: -0.48px;
     color: #fff;
+    display: block;
 }
 .brand-banner {
     padding-bottom: calc(120 * var(--fz));
@@ -149,6 +160,7 @@
     cursor: pointer;
 }
 .team {
+    padding-top: 0;
     margin-bottom: calc(120 * var(--fz));
 }
 .team-inner {
@@ -215,9 +227,11 @@
     }
     .cofes-numbers-card p {
         font-size: calc(150 * var(--fz));
+        line-height: calc(170 * var(--fz));
     }
     .cofes-numbers-card span {
         font-size: calc(26 * var(--fz));
+        font-weight: 400;
     }
     .kofes-numbers-inner {
         padding: calc(40 * var(--fz));
@@ -247,10 +261,10 @@
         margin-bottom: 30px;
         max-width: 75%;
     }
-    .kofes-main {
-        padding: calc(60 * var(--fz));
+    .kofes-main-inner  {
+        padding:calc(80 * var(--fz)) calc(60 * var(--fz)) calc(180 * var(--fz));
     }
-    .kofes-main .content {
+    .kofes-main-inner  {
         gap: 80px;
     }
     .kofes-main-row {
@@ -264,6 +278,9 @@
     .kofes-main-row:last-child .kofes-main-col {
         max-width: calc((100% - 16px)/2);
         width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
     }
     .kofes-main-col {
         gap: 20px;
@@ -272,6 +289,7 @@
         font-size: calc(42 * var(--fz));
     }
     .kofes-main-col p {
+        max-width: 80%;
         font-size: calc(20 * var(--fz));
     }
     .kofes-main-row img:first-child {
@@ -285,9 +303,21 @@
     }
     .cofes-numbers-card p {
         font-size: calc(200 * var(--fz));
+        line-height: calc(200 * var(--fz));
     }
+    
     .kofes-numbers-inner {
         padding: calc(60 * var(--fz));
+    }
+    .cofes-numbers-card:first-child {
+        order: 1;
+    }
+    .cofes-numbers-card:nth-child(2) {
+        order: 3;
+        padding-right: 30px;
+    }
+    .cofes-numbers-card:last-child {
+        order: 2;
     }
     .kofes-numbers {
         margin: calc(120 * var(--fz)) 0 calc(250 * var(--fz));
@@ -344,6 +374,13 @@
     .kofes-main-row img:last-child {
         width: calc(277 * var(--fz));
         height: calc(46 * var(--fz));
+    }
+    .kofes-numbers-inner {
+        padding:calc(120 * var(--fz)) calc(60 * var(--fz));
+    }
+    .cofes-numbers-card:nth-child(2) {
+        order: 3;
+        padding-right: 145px;
     }
     .brand-banner-pc {
         height: calc(960 * var(--fz));

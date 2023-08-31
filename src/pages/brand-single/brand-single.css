@@ -171,7 +171,7 @@
     width: 5px;
     height: 5px;
     background-color: var(--carrot);
-    margin-top: 5px;
+    margin-top: 15px;
     border-radius: 100%;
     flex-shrink: 0;
 }
@@ -405,7 +405,7 @@
         gap: 18px;
     }
     .hero-block-col:first-child {
-        max-width: 65%;
+        max-width: 68.5%;
         width: 100%;
     }
     .hero-main-content {
@@ -609,6 +609,9 @@
     
 }
 @media (min-width:1200px) {
+    .repair-brands h3 {
+        max-width: 100%;
+    }
     .hero-block {
         padding: calc(50 * var(--fz)) 0 calc(250 * var(--fz));
     }
@@ -619,6 +622,9 @@
     }
     .hero-main-content p {
         max-width: 70%;
+    }
+    .hero-block-logo {
+        height: 422px;
     }
     .hero-block-logo img {
         width: calc(390 * var(--fz));

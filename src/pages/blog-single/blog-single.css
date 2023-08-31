@@ -4,7 +4,7 @@
 @import url(../../assets/styles/modals.css);
 
 .hero-block {
-    padding: calc(19 * var(--fz)) 0 calc(30 * var(--fz));
+    padding: calc(19 * var(--fz)) 0 0;
 }
 .hero-block-inner {
     padding: calc(30 * var(--fz));
