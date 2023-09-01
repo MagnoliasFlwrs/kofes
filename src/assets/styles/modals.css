@@ -234,9 +234,11 @@ box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
     }
     .modal-content form .submit-wrap .modal-agree {
         font-size: calc(20 * var(--fz));
+        text-align: left;
     }
     .modal-content form .submit-wrap .carrot-btn {
-        width: auto;
+        max-width: 50% ;
+        width: 100%;
     }
     .modal-content form .submit-wrap {
         flex-direction: row;
@@ -288,7 +290,7 @@ box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
     }
 
     .modal-content form .submit-wrap .modal-agree {
-        font-size: calc(25 * var(--fz));
+        font-size: calc(23 * var(--fz));
     }
     .modal-content form .submit-wrap .carrot-btn {
         width: 49%;
@@ -301,7 +303,7 @@ box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
         align-items: center;
     }
     .modal-content form .submit-wrap .modal-agree {
-        font-size: calc(25 * var(--fz));
+        font-size: calc(23 * var(--fz));
         font-style: normal;
         font-weight: 400;
         line-height: 125%;

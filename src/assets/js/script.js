@@ -252,14 +252,16 @@ const aboutShowMoreBtn = document.querySelector('.about-show-more-btn');
 const aboutShowMoreBody = document.querySelector('.about-show-more-body');
 
 aboutShowMoreBtn?.addEventListener('click' , ()=> {
-    aboutShowMoreBody.classList.toggle('active');
-    aboutShowMoreBtn.classList.toggle('active');
     if (! aboutShowMoreBtn.classList.contains('active')) {
         aboutShowMoreBtn.innerHTML = 'Развернуть'
+        // showMoreBody.style.opacity = '0';
     }
     if (aboutShowMoreBtn.classList.contains('active')) {
         aboutShowMoreBtn.innerHTML = 'Свернуть'
+        // showMoreBody.style.opacity = '1';
     }
+    aboutShowMoreBody.classList.toggle('active');
+    aboutShowMoreBtn.classList.toggle('active');
 })
 showMoreBtns?.forEach(el => {
     el.addEventListener('click' , (e) => {
@@ -479,11 +481,11 @@ if (animateLogo) {
     }
 
 
-    mArea.addEventListener('mousemove', function(e){
+    mArea?.addEventListener('mousemove', function(e){
       callParallax(e);
     });
 
-    mArea.addEventListener('mouseleave', function(e){
+    mArea?.addEventListener('mouseleave', function(e){
       gsap.to('#magnetic-content', {
         scale:1,
         x: 0,

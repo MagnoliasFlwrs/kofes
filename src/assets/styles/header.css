@@ -14,8 +14,8 @@
 
 }
 .logo img {
-    width: calc(190 * var(--fz));
-    height: calc(25 * var(--fz));
+    width: 190;
+    height: 23px;
 }
 .navigation , .item-btn ul {
     display: flex;
@@ -419,6 +419,10 @@
         display: flex;
         align-items: center;
     }
+    .logo img {
+        width: calc(335 * var(--fz));
+        height: calc(41 * var(--fz));
+    }
 
 }
 @media (min-width:992px) {
@@ -442,10 +446,7 @@
         width: calc(18 * var(--fz));
         height: calc(19 * var(--fz))
     }
-    .logo img {
-        width: calc(292 * var(--fz));
-        height: calc(40 * var(--fz));
-    }
+    
 
 }
 
@@ -464,4 +465,8 @@
         display: inline-block;
         margin-left: calc(9 * var(--fz));
     } */
+    .logo img {
+        width: calc(235 * var(--fz));
+        height: calc(31 * var(--fz));
+    }
 }

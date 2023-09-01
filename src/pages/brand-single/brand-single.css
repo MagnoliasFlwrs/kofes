@@ -260,6 +260,7 @@
     font-weight: 500;
     line-height: 125%;
     color: #A7A8A9;
+    margin-top: 5px;
 }
 .repair-price-card-inner ul {
     display: flex;
@@ -315,13 +316,22 @@
     line-height: 125%;
 }
 .repair-price-row .carrot-btn {
-    display: block;
+    /* display: block; */
     margin: 30px auto 0;
 }
 .repair-price .dark-form-inner {
     margin-top: 87px;
     border-radius: 20px;
     background: #303030;
+}
+
+.price-card-inner-text  .price-text-gr {
+    color: var(--text-gray, #848484);
+    font-family: Gilroy;
+    font-size: calc(16 * var(--fz));
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%; /* 20px */
 }
 .about-brand {
     padding: 0 0 calc(120 * var(--fz));
@@ -384,12 +394,19 @@
     height: 0;
     opacity: 0;
     visibility: hidden;
-    transition: .3s ease;
+    transition: .7s ease;
 }
 .about-show-more-body.active {
+    transition: 0.7s ease;
     height: auto;
     opacity: 1;
     visibility: visible;
+}
+.about-show-more-body p {
+    opacity: 0;
+}
+.about-show-more-body.active p {
+    opacity: 1;
 }
 
 
@@ -481,6 +498,12 @@
         font-size: calc(20 * var(--fz));
         gap: 20px;
     }
+    .price-card-inner-text {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-end;
+    }
     .brand-banner-pc {
         display: block;
     }
@@ -565,7 +588,27 @@
         padding: calc(30 * var(--fz)) calc(60 * var(--fz));
         max-width: 32%;
         display: flex;
-        align-items: center;
+        align-items: center;   
+        /* overflow: hidden;  */
+    }
+    .repair-brands-card p {
+        text-overflow: ellipsis;
+        overflow-x: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+    .repair-brands-card p::-webkit-scrollbar { width: 0; height: 0;}
+    .repair-brands-card:hover {
+        border: 1px solid #fff;
+    }
+    .repair-brands-card:hover  p{
+        overflow-x: auto;
+        text-overflow: none;
+        display: block;
+
     }
     .about-brand {
         padding: 0 0 calc(250 * var(--fz));
@@ -663,6 +706,9 @@
     .brand-banner-video-play svg {
         width: calc(144 * var(--fz));
         height: calc(144 * var(--fz));
+    }
+    .brand-banner {
+        padding-bottom: calc(250 * var(--fz));
     }
     .repair-price h2 {
         font-size: calc(70 * var(--fz));
