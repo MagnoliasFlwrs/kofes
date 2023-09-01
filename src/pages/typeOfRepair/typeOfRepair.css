@@ -33,6 +33,7 @@
     letter-spacing: -0.48px;
     color: var(--black);
     margin-bottom: calc(15 * var(--fz));
+    
 }
 .problems {
     padding-top: calc(20 * var(--fz));
@@ -339,6 +340,7 @@
     .hero-inner p {
         font-size: calc(26 * var(--fz));
         margin-bottom: calc(30 * var(--fz));
+        max-width: 50%;
     }
     .problems {
         padding-top: calc(120 * var(--fz));

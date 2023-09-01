@@ -87,7 +87,7 @@
     opacity: 0;
 }
 .element-show .desktop-banner {
-    transition: all .5s ease;
+    transition: all .5s ease ;
     opacity: 1;
 }
 .desktop-banner::after {
@@ -140,7 +140,7 @@
     padding: calc(30 * var(--fz)) 0;
 }
 .element-show .staff-photos {
-    transition: background-color .5s ease 1s;
+    transition: background-color .5s ease 1.5s;
     background-color: var(--soft-gray);
 }
 .staff-photos h3 , .search-inner h3{
@@ -167,7 +167,7 @@
     border-radius: 20px;
 }
 .element-show .staff-about {
-    transition: background-color .5s ease 1s;
+    transition: background-color .2s ease;
     background-color: var(--carrot);
 }
 .staff-about-date {
@@ -1193,14 +1193,17 @@
     .desktop-banner-content p , .proxima-col ul li {
         font-size: calc(26 * var(--fz));
     }
-    .staff-photos h3 , .proxima-col h3 , .team-row h3 , .search-inner h3 , .brands-inner h3 , .faq-accord h3  {
+    .proxima-col h3 , .team-row h3 , .search-inner h3 , .brands-inner h3 , .faq-accord h3  {
         font-size: calc(70 * var(--fz));
     }
     .proxima-col h3  {
         font-size: calc(56 * var(--fz));
     }
-    .staff-about h3 , .dark-form-text h3 {
+     .dark-form-text h3 {
         font-size: calc(70 * var(--fz));
+    }
+    .staff-about h3 , .staff-photos h3 {
+        font-size: calc(56 * var(--fz));
     }
     .staff-about-date {
         margin: calc(50 * var(--fz)) 0 calc(15 * var(--fz));

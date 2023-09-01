@@ -316,6 +316,10 @@ function onEntry(entry) {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('element-show');
+                const title = entry.target.querySelector('.title-anim');
+                console.log(entry.target)
+                console.log(title)
+                title?.classList.add('active');
                 setTimeout(() => {
                     const contentArr = document.querySelectorAll('.anim-content');
                     if (contentArr) {
@@ -338,26 +342,47 @@ function onEntry(entry) {
 }
 const animateBlocks =  document.querySelectorAll('.element-animation');
 
+const lines = Splitting({
+    target:'.test',
+    by:'lines'
+})
+// lines.Splitting({
+//     target: '.lines .word'
+// })
+Splitting({
+    target: ".title-anim .text",
+    by: "words"
+});
 animateBlocks.forEach(el=> {
-    let lines =  el.querySelectorAll('.text-wrapper');
-    console.log(lines)
+    // let lines =  el.querySelectorAll('.text-wrapper');
     let currentAnimContent = el.querySelectorAll('.anim-content');
 
-    
+
+    // const timeline=gsap.timeline({
+    //     scrollTrigger:{
+    //       trigger: el,
+    //       start: "top 80%",
+    //     }
+    //   })
+    //   timeline.from(lines,{
+    //     y:100,
+    //     opacity:0,
+    //     delay:.3,
+    //     duration:.6,
+    //   }).from(currentAnimContent,{
+    //     duration:.5,
+    //     opacity:0,
+    // })
     const timeline=gsap.timeline({
         scrollTrigger:{
           trigger: el,
           start: "top 80%",
         }
       })
-      timeline.from(lines,{
-        y:100,
-        opacity:0,
-        delay:.3,
-        duration:.6,
-      }).from(currentAnimContent,{
+      timeline.from(currentAnimContent,{
         duration:.5,
         opacity:0,
+        delay: 1
     })
     
 })
@@ -495,4 +520,5 @@ if (animateLogo) {
       });
     });
 
+    
 

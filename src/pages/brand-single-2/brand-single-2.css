@@ -483,10 +483,42 @@
     border-radius: 0 0 20px 20px;
   }
 
+  .about-show-more-body.active {
+    transition: 0.7s ease;
+    height: auto;
+    opacity: 1;
+    visibility: visible;
+}
+.about-show-more-body p {
+    opacity: 0;
+}
+.about-show-more-body.active p {
+    opacity: 1;
+}
+
 
 
 
 @media (min-width:992px) {
+    .repair-brands-card p::-webkit-scrollbar { width: 0; height: 0;}
+    .repair-brands-card:hover {
+        border: 1px solid #fff;
+    }
+    .repair-brands-card:hover  p{
+        overflow-x: auto;
+        text-overflow: none;
+        display: block;
+
+    }
+    .repair-brands-card p {
+        text-overflow: ellipsis;
+        overflow-x: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
     .hero-block {
         padding: calc(50 * var(--fz)) 0 ;
     }

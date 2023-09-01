@@ -156,6 +156,45 @@
     animation: c .6s ease 1;
 }
 
+.element-show .title-anim .word {
+    opacity: 1;
+    margin: 0;
+    animation: slideUp 1s forwards;
+    display: inline-block;
+    transform: translateY(150%);
+	
+}
+.element-show .text-wrapper {
+    clip-path: polygon(100% 100%, 0% 100%, 100% 100%);
+    overflow: hidden;
+    animation: clipAnim 1s forwards .05s;
+}
+.element-show .title-anim .text-wrapper:last-child .word {
+    opacity: 1;
+    margin: 0;
+    animation: slideUp 1s forwards .05s;
+    display: inline-block;
+    transform: translateY(150%);
+}
+@keyframes clipAnim {
+    0% {
+        clip-path: polygon(100% 100%, 0% 100%, 100% 100%);
+      }
+      100% {
+        clip-path : polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+      }
+}
+@keyframes slideUp {
+    0% {
+      transform: translateY(150%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0%);
+      opacity: 1;
+    }
+  }
+
 @media (max-width:768px) {
     .logo-svg {
         width: 100%;
@@ -268,12 +307,20 @@
 }
 .anim-content.show-content {
     opacity: 1;
-    transition: opacity 1s;
+    transition: opacity 1s 0.3s;
 }
 .element-animation.element-show {
     opacity: 1;
     transition: opacity 1s;
-  }
+}
+.staff-inner .staff-anim-content {
+    opacity: 0;
+}
+.element-show .staff-inner .staff-anim-content {
+    opacity: 1;
+    transition:  1s ease 1.1s;  
+}
+
 @keyframes slideUp {
   0% {
     transform: translateY(150%);
@@ -344,7 +391,11 @@ body {
     overflow: hidden;
     z-index: 5;
 }
-.carrot-btn .btn-text:before {
+.carrot-btn:hover {
+    border: 2px solid var(--carrot-2, #E3512E);
+    background-color: #E3512E;
+}
+/* .carrot-btn .btn-text:before {
     animation: c .6s ease 1;
     color: white;
     font-size: calc(16 * var(--fz));
@@ -365,7 +416,7 @@ body {
     line-height: 125%;
     letter-spacing: -0.78px;
     color: #fff;
-}
+} */
 /* .carrot-btn .btn-text {
     font-size: calc(16 * var(--fz));
     font-style: normal;
