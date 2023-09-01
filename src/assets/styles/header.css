@@ -265,6 +265,9 @@
 }
 .mobile-submenu-brands li:last-child a {
     color: var(--carrot, #E55938);
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 .dropdown-inner {
     position: relative;

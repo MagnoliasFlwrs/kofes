@@ -183,7 +183,7 @@
   .custom-select-body {
     width: 100%;
     position: absolute;
-    z-index: 1;
+    z-index: 10;
     top: 115%;
     left: 0;
     padding: calc(30 * var(--fz));
