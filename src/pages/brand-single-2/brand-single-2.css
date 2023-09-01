@@ -737,6 +737,9 @@
 
 }
 @media (min-width:1200px) {
+    .repair-brands h3 {
+        max-width: 100%;
+    }
     .hero-block {
         padding: calc(50 * var(--fz)) 0 calc(250 * var(--fz));
     }

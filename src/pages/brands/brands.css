@@ -32,6 +32,9 @@
     border: 2px solid var(--black-2, #303030);
     color: #fff;
 }
+.carrot-border-btn.active:hover {
+    border: 2px solid var(--carrot);
+}
 .brands {
     padding-top: calc(20 * var(--fz));
 }

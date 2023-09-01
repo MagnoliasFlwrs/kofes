@@ -305,7 +305,7 @@
 }
 .repair-brands-cards-pc {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     flex-wrap: wrap;
     row-gap: 60px;
     display: none;

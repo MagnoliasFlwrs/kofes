@@ -215,6 +215,7 @@
 .white-btn:hover {
     /* background: var(--black-3, #212121); */
     color: #fff;
+    background-color: var(--black-3, #212121);
     border: 2px solid  var(--black-3, #212121);
 }
 .white-btn  .btn-text:before {
@@ -255,6 +256,8 @@
 }
 .dark-form-inner .form-wrap .input-wrap:last-child .carrot-btn {
     margin: 0;
+    max-width: 228px;
+    width: 100%;
 }
 .element-show .dark-form-inner {
     transition: .5s ease .5s;
@@ -371,10 +374,41 @@
 /* .element-animation.repair-brands {
     background-color: transparent;
 } */
+.repair-brands-card {
+    font-size: calc(16 * var(--fz));
+    font-style: normal;
+    font-weight: 500;
+    line-height: 125%;
+    letter-spacing: -0.6px;
+    border-radius: 1000px;
+    padding: calc(30 * var(--fz)) calc(60 * var(--fz));
+    max-width: 32%;
+    display: flex;
+    align-items: center;
+}
 
 
 
 @media (min-width:992px) {
+    .repair-brands-card p {
+        text-overflow: ellipsis;
+        overflow-x: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+    .repair-brands-card p::-webkit-scrollbar { width: 0; height: 0;}
+    .repair-brands-card:hover {
+        border: 1px solid #fff;
+    }
+    .repair-brands-card:hover  p{
+        overflow-x: auto;
+        text-overflow: none;
+        display: block;
+
+    }
     .hero-block {
         padding: calc(50 * var(--fz)) 0 calc(60 * var(--fz));
     }
@@ -387,7 +421,11 @@
         max-width: 75%;
     }
     .hero-block-col {
-        max-width: calc((100% - 60px)/2);
+        max-width: 60%;
+        width: 100%;
+    }
+    .hero-block-col:last-child {
+        max-width: 40%;
         width: 100%;
     }
     .hero-block-col img{
@@ -529,6 +567,9 @@
 }
 
 @media (min-width:1200px) {
+    .repair-brands h3 {
+        max-width: 100%;
+    }
     .hero-block-inner h1 {
         font-size: calc(70 * var(--fz));
     }

@@ -443,8 +443,9 @@ body {
 }
 .dark-btn:hover {
     color: #fff;
+    background-color: var(--black-3, #212121);
 }
-.dark-btn .btn-text:before {
+/* .dark-btn .btn-text:before {
     animation: c .6s ease 1;
     color: #fff;
 }
@@ -472,7 +473,7 @@ body {
     top: -50%;
     left: -25%;
     background-color: var(--black-3, #212121);
-}
+} */
 .title-anim {
     overflow: hidden;
 }
@@ -587,6 +588,7 @@ body {
     animation: d .6s ease 1;
     opacity: 0
 }
+
 .carrot-border-btn.active:hover  .btn-text:before{
     animation: c .6s ease 1;
     opacity: 0;
@@ -594,32 +596,13 @@ body {
 .carrot-border-btn.active:hover .btn-text::after {
     color: var(--black-2);
     animation: d .6s ease 1;
-    opacity: 1
+    opacity: 1;
+    background-color: 2px solid var(--carrot);
 }
 
 .carrot-border-btn:hover  {
     border: 2px solid var(--black-2, #303030);
     background-color:var(--black-2, #303030) ;
-}
-
-.carrot-border-btn.active .btn-fill {
-    display: inline-block;
-    vertical-align: top;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 200%;
-    height: 150%;
-    top: 120%;
-    left: -50%;
-    z-index: -1;
-    width: 150%;
-    height: 200%;
-    border-radius: 50%;
-    top: -50%;
-    left: -25%;
-    background-color: #fff;
-    border: 2px solid #fff;
 }
 .carrot-border-btn .btn-fill {
     display: inline-block;
@@ -640,6 +623,26 @@ body {
     background-color: var(--black-2, #303030);
     border: 2px solid var(--black-2, #303030);
 }
+.carrot-border-btn.active .btn-fill {
+    display: inline-block;
+    vertical-align: top;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 200%;
+    height: 150%;
+    top: 120%;
+    left: -50%;
+    z-index: -1;
+    width: 150%;
+    height: 200%;
+    border-radius: 50%;
+    top: -50%;
+    left: -25%;
+    background-color: #fff;
+    border: 2px solid var(--carrot);
+}
+
 .circle-btn {
     display: flex;
     width: calc(80 * var(--fz));
@@ -1054,7 +1057,7 @@ body {
         padding: calc(146 * var(--fz)) calc(60 * var(--fz));
     }
     .dark-form-inner .form-wrap {
-        max-width: 40%;
+        max-width: 662px;
         width: 100%;
     }
     .dark-form-inner .dark-form-img-wrap img {
