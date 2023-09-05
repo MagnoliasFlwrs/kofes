@@ -33,7 +33,7 @@
     letter-spacing: -0.48px;
     color: var(--black);
     margin-bottom: calc(15 * var(--fz));
-    
+
 }
 .problems {
     padding-top: calc(20 * var(--fz));
@@ -53,6 +53,7 @@
     justify-content: space-between;
     border-radius: 20px;
     background-color: var(--black-2, #303030);
+
 }
 .problems-card-head p {
     font-size: calc(22 * var(--fz));
@@ -62,8 +63,10 @@
     letter-spacing: -0.66px;
     color: #fff;
 }
-.problems-card-head p:hover {
+.problems-card-head:hover,
+.problems-card-head:hover p{
     color: var(--carrot);
+    cursor: pointer;
 }
 .problems-card-head img {
     width: calc(35 * var(--fz));
@@ -98,7 +101,7 @@
     border-radius: 50px;
     margin-right: 10px;
     flex-shrink: 0;
-    margin-top: 5px;
+    margin-top: 11px;
 }
 .problems-card-price-inner {
     display: flex;
@@ -266,7 +269,7 @@
     font-size: calc(30 * var(--fz));
     font-style: normal;
     font-weight: 500;
-    line-height: 110%; 
+    line-height: 110%;
     letter-spacing: -0.96px;
     color: var(--black);
     margin-bottom: 30px;
@@ -294,7 +297,7 @@
     font-size: calc(22 * var(--fz));
     font-style: normal;
     font-weight: 500;
-    line-height: 110%; 
+    line-height: 110%;
     letter-spacing: -0.66px;
     color: var(--black);
     border: 1px solid #fff;

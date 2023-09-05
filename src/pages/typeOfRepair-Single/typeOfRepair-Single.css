@@ -121,6 +121,7 @@
     letter-spacing: -0.96px;
     color: var(--black);
     margin-bottom: 30px;
+    padding-left: 30px;
 }
 .advantages-inner {
     display: flex;
@@ -198,6 +199,7 @@
     letter-spacing: -0.96px;
     color: #FFF;
     margin-bottom: 30px;
+    padding-left: 30px;
 }
 .other-problems-cards {
     display: flex;
@@ -259,7 +261,7 @@
         gap: 18px;
     }
     .hero-block-col:first-child {
-        max-width: 65%;
+        max-width: 68%;
         width: 100%;
     }
     .hero-main-content {
@@ -303,7 +305,7 @@
         padding: calc(250 * var(--fz)) 0;
     }
     .advantages-cards {
-        max-width: 65%;
+        max-width: 68%;
         width: 100%;
     }
     .advantages h2 , .other-problems h2 {
@@ -373,7 +375,9 @@
     .brands {
         padding: calc(250 * var(--fz)) 0;
     }
-
+    .input-wrap input {
+        height: 80px;
+    }
 
 
 }
@@ -385,6 +389,7 @@
     .advantages h2 , .other-problems h2 {
         font-size: calc(70 * var(--fz));
         margin-bottom: 80px;
+        padding-left: 60px;
     }
     .advantages-card {
         padding: calc(60 * var(--fz));
@@ -410,6 +415,12 @@
         display: flex;
         flex-direction: row;
         gap: 16;
+    }
+    .advantages .form .input-wrap:last-child {
+        margin-top: 40px;
+    }
+    .advantages .input-wrap:last-child .agreement {
+        font-size: calc(20 * var(--fz));
     }
     .other-problems-card {
         padding: calc(60 * var(--fz));

@@ -99,8 +99,8 @@
     font-size: calc(32 * var(--fz));
     font-style: normal;
     font-weight: 500;
-    line-height: 110%; 
-    letter-spacing: -0.96px;    
+    line-height: 110%;
+    letter-spacing: -0.96px;
 }
 .problem-card .circle-btn{
     position: absolute;
@@ -139,6 +139,9 @@
     transition: .5s ease .5s;
     background-color:  #303030;
 }
+.pc-btn {
+    display: none;
+}
 
 
 @media (min-width:992px) {
@@ -175,7 +178,7 @@
         font-size: calc(18 * var(--fz));
     }
     .problem-price span {
-        font-size: calc(42 * var(--fz));   
+        font-size: calc(42 * var(--fz));
     }
     .problem-card {
         padding: calc(60 * var(--fz));
@@ -192,6 +195,10 @@
         font-size: calc(50 * var(--fz));
         margin-bottom: 50px;
         padding-left: calc(60 * var(--fz));
+    }
+    .pc-btn {
+        display: block;
+        margin: 120px auto 0;
     }
 }
 @media (min-width:1200px) {

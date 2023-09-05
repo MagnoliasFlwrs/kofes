@@ -24,6 +24,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     display: none;
+    margin: 16px;
 }
 .send-ok-message {
     max-width: 748px;
@@ -53,7 +54,7 @@
     height: calc(34 * var(--fz));
 }
 .modal-content h3 , .send-ok-message h3 {
-    font-size: calc(44 * var(--fz));
+    font-size: calc(45 * var(--fz));
     font-style: normal;
     font-weight: 500;
     line-height: 100%;

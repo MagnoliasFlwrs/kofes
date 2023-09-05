@@ -160,6 +160,7 @@ console.log(window.location.host)
 addMaskFromInputCallBackForm('.input-wrap input[name="form-tel"]', '+7(___) ___-__-__');
 addMaskFromInputCallBackForm('.input-wrap input[name="modal-cons-tel"]', '+7(___) ___-__-__');
 addMaskFromInputCallBackForm('.input-wrap input[name="modal-appl-tel"]', '+7(___) ___-__-__');
+addMaskFromInputCallBackForm('.input-wrap input[name="modal-serv-tel"]', '+7(___) ___-__-__');
 
 
 
@@ -384,7 +385,7 @@ animateBlocks.forEach(el=> {
         opacity:0,
         delay: 1
     })
-    
+
 })
 
 
@@ -479,7 +480,7 @@ if (animateLogo) {
 			clipPath : "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
             duration: .5,
         })
-        
+
     })
 }
 
@@ -487,38 +488,38 @@ if (animateLogo) {
     var mArea = document.querySelector('#magnetic-area');
 
     function parallaxIt(e, target, movement = 1){
-      var boundingRect = mArea.getBoundingClientRect();
-      var relX = e.pageX - boundingRect.left;
-      var relY = e.pageY - boundingRect.top;
-      var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        var boundingRect = mArea.getBoundingClientRect();
+        var relX = e.pageX - boundingRect.left;
+        var relY = e.pageY - boundingRect.top;
+        var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
-      gsap.to(target, {
-        x: (relX - boundingRect.width/2) * movement,
-        y: (relY - boundingRect.height/2 - scrollTop) * movement,
-        ease: "power1",
-        duration: 0.6,
-        scale:1.2
-      });
+        gsap.to(target, {
+            x: (relX - boundingRect.width/2) * movement,
+            y: (relY - boundingRect.height/2 - scrollTop) * movement,
+            ease: "power1",
+            duration: 0.6,
+            scale:1.2
+        });
     }
 
     function callParallax(e){
-      parallaxIt(e, '#magnetic-content');
+        parallaxIt(e, '#magnetic-content');
     }
 
 
     mArea?.addEventListener('mousemove', function(e){
-      callParallax(e);
+        callParallax(e);
     });
 
     mArea?.addEventListener('mouseleave', function(e){
-      gsap.to('#magnetic-content', {
-        scale:1,
-        x: 0,
-        y: 0,
-        ease: "power3",
-        duration: 0.6
-      });
+        gsap.to('#magnetic-content', {
+            scale:1,
+            x: 0,
+            y: 0,
+            ease: "power3",
+            duration: 0.6
+        });
     });
 
-    
+
 

@@ -123,7 +123,7 @@
     height: calc(14 * var(--fz));
 }
 .sertificate h3 {
-    font-size: calc(22 * var(--fz));
+    font-size: calc(20 * var(--fz));
     font-style: normal;
     font-weight: 500;
     line-height: 110%; /* 24.2px */
@@ -254,11 +254,7 @@
     width: 100%;
     color: #fff
 }
-.dark-form-inner .form-wrap .input-wrap:last-child .carrot-btn {
-    margin: 0;
-    max-width: 228px;
-    width: 100%;
-}
+
 .element-show .dark-form-inner {
     transition: .5s ease .5s;
     background-color:  #303030;
@@ -303,7 +299,8 @@
     font-size: calc(14 * var(--fz));
     font-style: normal;
     font-weight: 500;
-    line-height: 125%
+    line-height: 125%;
+    margin-top: 7px;
 }
 .serv-acc-item .item-content {
     display: flex;
@@ -360,13 +357,26 @@
     line-height: 125%;
     color: var(--carrot);
 }
+.dark-form-inner .form-wrap .input-wrap:last-child .carrot-btn  {
+    margin: 5px 0 0;
+}
 .carrot-btn {
-    display: block;
-    margin: 30px auto 0;
+    /* display: block; */
+    margin: 30px 0 0;
 }
 .dark-form-inner {
     background: #303030;
     margin-top: 103px;
+}
+.repair-brands.element-show {
+    background-color: white;
+    margin-bottom: 0;
+}
+
+.repair-brands-inner {
+    background-color: var(--soft-gray);
+    padding: calc(30 * var(--fz));
+    border-radius: 20px;
 }
 .repair-brands-card {
     font-size: calc(16 * var(--fz));
@@ -381,15 +391,19 @@
     line-height: 125%;
     letter-spacing: -0.6px;
     border-radius: 1000px;
-    padding: calc(30 * var(--fz)) calc(60 * var(--fz));
-    max-width: 32%;
+    padding: calc(25 * var(--fz));
+    max-width: 100%;
     display: flex;
     align-items: center;
+}
+.repair-brands-cards-mob .carrot-btn {
+    margin: 30px auto 0;
 }
 
 
 
 @media (min-width:992px) {
+
     .repair-brands-card p {
         text-overflow: ellipsis;
         overflow-x: hidden;
@@ -420,25 +434,25 @@
         margin-bottom: 30px;
         max-width: 75%;
     }
-    .hero-block-col {
-        max-width: 60%;
+    /* .hero-block-col {
+        max-width: 70%;
         width: 100%;
     }
     .hero-block-col:last-child {
-        max-width: 40%;
+        max-width: 30%;
         width: 100%;
-    }
+    } */
     .hero-block-col img{
         width: 100%;
         height: 100%;
         object-fit: contain;
     }
-    .hero-block-row {
+    /* .hero-block-row {
         display: flex;
         flex-direction: row;
         align-items: center;
         gap: 60px;
-    }
+    } */
     .about-inner {
         display: flex;
         flex-direction: row;
@@ -563,7 +577,12 @@
         font-size: calc(20 * var(--fz));
         padding: calc(30 * var(--fz)) calc(60 * var(--fz));
     }
-    
+    .dark-form-inner .form-wrap .input-wrap:last-child .carrot-btn {
+        margin: 0;
+        max-width: 228px;
+        width: 100%;
+    }
+
 }
 
 @media (min-width:1200px) {
@@ -623,6 +642,25 @@
     .repair-brands {
         padding: calc(120 * var(--fz)) 0;
         margin: calc(250 * var(--fz)) 0;
+    }
+    .hero-block-col {
+        max-width: 60%;
+        width: 100%;
+    }
+    .hero-block-col:last-child {
+        max-width: 40%;
+        width: 100%;
+    }
+    .hero-block-row {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 60px;
+    }
+    .repair-brands-inner {
+        background-color: var(--soft-gray);
+        padding: calc(120 * var(--fz)) calc(60 * var(--fz));
+        border-radius: 20px;
     }
 
 }
