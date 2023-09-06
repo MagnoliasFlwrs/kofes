@@ -408,9 +408,34 @@
 .about-show-more-body.active p {
     opacity: 1;
 }
+.repair-brands {
+    margin-top: 120px;
+    background-color: #fff;
+    padding: 0;
+}
+.repair-brands.element-show {
+    background-color: #fff;
+}
+.repair-brands-inner {
+    padding: calc(30 * var(--fz));
+    border-radius: 20px;
+}
+.repair-brands.element-show .repair-brands-inner {
+    transition: .5s ease;
+    background-color: var(--soft-gray, #F3F4F5);
+}
+.repair-brands-card {
+    border-radius: 1000px;
+    font-size: calc(16 * var(--fz));
+    padding: calc(25 * var(--fz));
+}
 
 
-
+@media (max-width:768px) {
+    .about-brand h2 {
+        padding-bottom: 0;
+    }
+}
 
 
 @media (min-width:992px) {
@@ -719,12 +744,14 @@
         max-width: 24%;
     }
     .repair-brands {
-        padding: calc(120 * var(--fz)) 0;
-        margin-bottom: calc(250 * var(--fz));
-        margin-top: calc(250 * var(--fz));
+        margin: 0;
+        margin: calc(250 * var(--fz)) 0;
     }
     .about-brand h2 {
         font-size: calc(70 * var(--fz));
 
+    }
+    .repair-brands-inner {
+        padding: calc(120 * var(--fz)) calc(60 * var(--fz));
     }
 }

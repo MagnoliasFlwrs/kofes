@@ -385,7 +385,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 60px;
+    height: calc(60*var(--fz));
     /* gap: 10px; */
     position: relative;
     overflow: hidden;
@@ -887,11 +887,15 @@ body {
     border: none;
     position: relative;
     outline: none;
-    height: 55px;
+    height: calc(55 * var(--fz));
     color: #fff;
     font-size: calc(15 * var(--fz));
+    cursor: pointer;
 }
-.input-wrap input:focus {
+.input-wrap input:hover {
+    border: 1px solid #999;
+}
+.input-wrap input:focus , .input-wrap input:active {
     border: 1px solid var(--carrot);
 }
 .custom-placeholder span {
@@ -1070,6 +1074,7 @@ body {
     }
     .input-wrap input {
         font-size: calc(20 * var(--fz));
+        height: calc(80 * var(--fz));
     }
     .input-wrap input:focus + .label-box label  {
         font-size: calc(15 * var(--fz));
@@ -1084,7 +1089,7 @@ body {
 @media (min-width:1200px) {
     .carrot-btn {
         font-size: calc(26 * var(--fz));
-        height: 80px;
+        height: calc(80 * var(--fz));
         align-items: center;
     gap: 10px;
     }
@@ -1158,15 +1163,15 @@ body {
         padding: calc(60 * var(--fz));
     }
     .input-wrap input {
-        font-size: calc(26 * var(--fz));
+        font-size: calc(23 * var(--fz));
     }
     .input-wrap input:focus + .label-box label  {
         font-size: calc(15 * var(--fz));
-        top: 10px;
+        top: 15px;
     }
     .input-wrap input.input-vs-value + .label-box label {
         font-size: calc(15 * var(--fz));
-        top: 10px;
+        top: 15px;
     }
 
 }

@@ -282,6 +282,7 @@ const customSelectBody = document.querySelector('.custom-select-body');
 
 customSelect?.addEventListener('click' , ()=> {
     customSelectBody.classList.toggle('open');
+    customSelect.classList.toggle('active');
 })
 customOptions.forEach(el => {
     el.addEventListener('click' , ()=> {
