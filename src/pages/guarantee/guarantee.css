@@ -404,6 +404,9 @@
 .repair-brands-cards-mob .carrot-btn {
     padding: 12px 35px;
 }
+.submit-wrap .carrot-btn {
+    margin-top: 0;
+}
 
 
 
