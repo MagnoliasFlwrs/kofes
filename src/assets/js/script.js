@@ -57,7 +57,7 @@ const swiper = new Swiper('.staff-swiper', {
       }
 });
 const teamSwiper = new Swiper('.team-swiper', {
-    slidesPerView: 1.25,
+    slidesPerView: 1.2,
     spaceBetween: 16,
     freeMode: true,
     breakpoints: {

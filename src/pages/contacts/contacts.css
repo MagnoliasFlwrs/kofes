@@ -149,7 +149,7 @@
     display: flex;
     gap: 20px;
     row-gap: 20px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 .contacts-pc-block .contacts-images-wrap img {
     width: calc(133 * var(--fz));
@@ -182,12 +182,7 @@
         /* margin-bottom: 30px; */
         max-width: 75%;
     }
-    .contacts-mob  {
-        display: none;
-    }
-    .contacts-pc {
-        display: flex;
-    }
+
     .contacts-block {
         gap: 40px;
     }
@@ -224,6 +219,12 @@
     }
     .dark-form-text h3  {
         max-width: 300px;
+    }
+    .contacts-pc {
+        display: flex;
+    }
+    .contacts-mob  {
+        display: none;
     }
 
 }

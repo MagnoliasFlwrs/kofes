@@ -171,7 +171,7 @@
     width: 5px;
     height: 5px;
     background-color: var(--carrot);
-    margin-top: 15px;
+    margin-top: 8px;
     border-radius: 100%;
     flex-shrink: 0;
 }
@@ -260,7 +260,7 @@
     font-weight: 500;
     line-height: 125%;
     color: #A7A8A9;
-    margin-top: 5px;
+    
 }
 .repair-price-card-inner ul {
     display: flex;
@@ -344,6 +344,7 @@
     letter-spacing: -0.96px;
     color: #000;
     padding: calc(30 * var(--fz));
+    
 }
 .about-brand-inner {
     display: flex;
@@ -427,13 +428,23 @@
 .repair-brands-card {
     border-radius: 1000px;
     font-size: calc(16 * var(--fz));
-    padding: calc(25 * var(--fz));
+    padding: calc(30 * var(--fz));
+}
+.repair-brands-cards-pc {
+    row-gap: 20px;
+}
+.repair-brands-cards-mob .carrot-btn {
+    padding: 12px 35px;
 }
 
 
 @media (max-width:768px) {
     .about-brand h2 {
         padding-bottom: 0;
+        padding-top: 0;
+    }
+    .price-card-inner-text  .price-text-gr {
+        font-weight: 500;
     }
 }
 
@@ -559,6 +570,9 @@
     }
     .repair-price-card span {
         font-size: calc(20 * var(--fz));
+    }
+    .repair-price-card span {
+        margin-top: 5px;
     }
     .repair-price-card-inner ul {
         display: flex;
@@ -753,5 +767,14 @@
     }
     .repair-brands-inner {
         padding: calc(120 * var(--fz)) calc(60 * var(--fz));
+    }
+    .repair-block-col ul li::before {
+        content: '';
+        width: 5px;
+        height: 5px;
+        background-color: var(--carrot);
+        margin-top: 15px;
+        border-radius: 100%;
+        flex-shrink: 0;
     }
 }

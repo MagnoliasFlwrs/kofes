@@ -36,6 +36,7 @@
     padding: calc(30 * var(--fz));
     position: relative;
     border: 1px solid transparent;
+    transition: 0.3s ease;
 }
 .blog-card p {
     font-size: calc(22 * var(--fz));
@@ -65,6 +66,7 @@
     opacity: 0;  
 }
 .blog-card:hover {
+    transition: 0.3s ease;
     border: 1px solid var(--carrot);
 }
 .controls {
@@ -117,10 +119,11 @@
         margin-bottom: 30px;
     }
     .blog-card:hover {
+        transition: 0.3s ease;
         border: 1px solid var(--carrot);
     }
     .blog-card:hover .circle-btn {
-        
+        transition: 0.3s ease;
         visibility: visible;
         opacity: 1;
     }

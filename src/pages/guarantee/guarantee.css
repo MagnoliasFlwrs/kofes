@@ -300,7 +300,6 @@
     font-style: normal;
     font-weight: 500;
     line-height: 125%;
-    margin-top: 7px;
 }
 .serv-acc-item .item-content {
     display: flex;
@@ -391,13 +390,19 @@
     line-height: 125%;
     letter-spacing: -0.6px;
     border-radius: 1000px;
-    padding: calc(25 * var(--fz));
+    padding: calc(30 * var(--fz));
     max-width: 100%;
     display: flex;
     align-items: center;
 }
 .repair-brands-cards-mob .carrot-btn {
     margin: 30px auto 0;
+}
+.repair-brands-cards-mob, .show-more-body {
+    gap: 10px;
+}
+.repair-brands-cards-mob .carrot-btn {
+    padding: 12px 35px;
 }
 
 
@@ -550,6 +555,7 @@
     .serv-acc-item .item-num {
         flex-shrink: 0;
         font-size: calc(20 * var(--fz));
+        margin-top: 5px;
     }
     .serv-acc-item .item-content {
         flex-direction: row;
@@ -648,19 +654,23 @@
         width: 100%;
     }
     .hero-block-col:last-child {
-        max-width: 40%;
+        max-width: (calc((100% - 16px)/2) - calc(60 * var(--fz)));
+        max-width: calc((100% - 16px)/2 - 60 * var(--fz));
         width: 100%;
     }
     .hero-block-row {
         display: flex;
         flex-direction: row;
         align-items: center;
-        gap: 60px;
+        gap: 0;
     }
     .repair-brands-inner {
         background-color: var(--soft-gray);
         padding: calc(120 * var(--fz)) calc(60 * var(--fz));
         border-radius: 20px;
+    }
+    .repair-brands-cards-pc {
+        row-gap: 20px;
     }
 
 }

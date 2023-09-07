@@ -101,7 +101,7 @@
     border-radius: 50px;
     margin-right: 10px;
     flex-shrink: 0;
-    margin-top: 11px;
+    margin-top: 7px;
 }
 .problems-card-price-inner {
     display: flex;
@@ -265,7 +265,7 @@
     margin-bottom: calc(120 * var(--fz));
 }
 .repair-brands h3 {
-    text-align: center;
+    text-align: left;
     font-size: calc(30 * var(--fz));
     font-style: normal;
     font-weight: 500;
@@ -519,5 +519,16 @@
         max-width: 650px;
         font-size: calc(70 * var(--fz));
         margin-bottom: 80px;
+    }
+    .problems-card-info ul li::before {
+        content: '';
+        display: block;
+        width: 5px;
+        height: 5px;
+        background-color: var(--carrot);
+        border-radius: 50px;
+        margin-right: 10px;
+        flex-shrink: 0;
+        margin-top: 10px;
     }
 }

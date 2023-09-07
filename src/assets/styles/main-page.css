@@ -245,6 +245,7 @@
     border-radius: 50px;
     margin-right: 10px;
     flex-shrink: 0;
+    margin-top: 5px;
 }
 .proxima-col img {
     width: 100%;
@@ -481,7 +482,7 @@
     border-radius: 50px;
     margin-right: 10px;
     flex-shrink: 0;
-    margin-top: 5px;
+    margin-top: 7px;
 }
 
 .problems-card-price-inner {
@@ -648,6 +649,9 @@
 
 .accordion-container {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
   .accordion-container .box {
     position: relative;
@@ -675,7 +679,7 @@
     max-width: 80%;
 }
 .accordion-container .box.active .label {
-    padding-bottom: 0;
+    /* padding-bottom: 0; */
 }
 .accordion-container .box.active .label p , .accordion-container .box .label:hover p{
     color: var(--carrot);
@@ -737,6 +741,7 @@
     padding: calc(16 * var(--fz)) calc(30 * var(--fz)) calc(30 * var(--fz));
     background-color: #F8F8F8;
     border-radius: 0 0 20px 20px;
+    padding-top: 0;
   }
   .faq-accord {
     width: 100%;
@@ -826,7 +831,7 @@
     line-height: 100%; /* 32px */
     letter-spacing: -0.96px;
     color: var(--black);
-    padding: 0 calc(30 * var(--fz));
+    padding: 0  0 0 calc(30 * var(--fz));
 }
 .repair-col:last-child {
     border-radius: 20px;
@@ -990,8 +995,12 @@
         bottom: 50%;
         transform: translate(-50% , 50%);
     }
-    .proxima-col ul li::before , .problems-card-info ul li::before {
+    .problems-card-info ul li::before {
         margin-top: 10px;
+        margin-right: 20px;
+    }
+    .proxima-col ul li::before  {
+        margin-top: 7px;
         margin-right: 20px;
     }
     .search-field input {
@@ -1063,6 +1072,7 @@
     .accordion-container {
         display: flex;
         justify-content: space-between;
+        flex-direction: row;
     }
     .acc-col {
         max-width: 48%;
@@ -1119,9 +1129,14 @@
         flex-direction: row;
         gap: 50px;
     }
-    .repair-col h3 {
-        max-width: 516px;
+    .repair-col:first-child {
+        max-width: 666px;
+        width: 100%;
     }
+    .repair-col h3 {
+        width: 100%;
+    }
+    
     .repair-col:last-child {
         padding: calc(60 * var(--fz));
     }
@@ -1346,7 +1361,7 @@
         flex-shrink: 0;
     }
     .repair-col h3 {
-        font-size: calc(56 * var(--fz));
+        font-size: calc(53 * var(--fz));
     }
     .brands-inner {
         gap: 80px;

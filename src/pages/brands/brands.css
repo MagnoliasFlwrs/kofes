@@ -25,7 +25,7 @@
     display: flex;
     gap: 5px;
     flex-wrap: wrap;
-    row-gap: 16px;
+    
 }
 .carrot-border-btn.active {
     background: var(--black-2, #303030);
