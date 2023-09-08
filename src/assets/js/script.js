@@ -382,7 +382,7 @@ animateBlocks.forEach(el=> {
         }
       })
       timeline.from(currentAnimContent,{
-        duration:.5,
+        duration:.3,
         opacity:0,
         delay: 0.4
     })

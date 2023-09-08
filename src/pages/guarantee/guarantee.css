@@ -215,6 +215,7 @@
 .white-btn:hover {
     /* background: var(--black-3, #212121); */
     color: #fff;
+    transition: all .1s ease .2s;
     background-color: var(--black-3, #212121);
     border: 2px solid  var(--black-3, #212121);
 }

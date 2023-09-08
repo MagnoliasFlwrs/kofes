@@ -135,13 +135,16 @@
 }
 .input-wrap input:focus + .label-box label  {
     font-size: calc(10 * var(--fz));
-    top: 10px;
+    top: 15px;
     margin-bottom: 15px;
 }
 .input-wrap input.input-vs-value + .label-box label {
     font-size: calc(10 * var(--fz));
     top: 15px;
     margin-bottom: 15px;
+}
+.input-wrap input:focus + .label-box label span {
+    font-size: calc(10 * var(--fz));
 }
 .customselect {
     width: 100%;
