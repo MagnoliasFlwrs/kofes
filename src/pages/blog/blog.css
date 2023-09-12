@@ -11,6 +11,7 @@
     border-radius: 20px;
     background: transparent;
 }
+
 .hero-block-inner h1 {
     font-size: calc(44 * var(--fz));
     font-style: normal;
@@ -103,9 +104,20 @@
     color: #fff;
 }
 .element-show .hero-block-inner , .element-show .blog-card {
-    transition: 0.3s ease;
+    transition: 0.3s ease .3s;
     border: 1px solid var(--soft-gray, #F3F4F5);
     background: var(--soft-gray, #F3F4F5);
+}
+.element-show .blog-card {
+    transition: 0.3s ease .6s;
+}
+.element-show .blog-card .anim-content {
+    transition: 0.5s ease .4s;
+}
+@media (max-width:768px) {
+    .element-show .blog-card {
+        transition: 0.3s ease 1s;
+    }
 }
 @media (min-width:992px) {
     .hero-block {

@@ -175,7 +175,7 @@
 .element-show .title-anim .word {
     opacity: 1;
     margin: 0;
-    animation: slideUp 1s forwards;
+    animation: slideUp 1s forwards ;
     display: inline-block;
     transform: translateY(150%);
 }
@@ -821,7 +821,7 @@ body {
     background-color: transparent;
 }
 .element-show .brands-inner  {
-    transition: background-color .5s ease 1s;
+    transition: background-color .5s ease .3s;
     background-color: var(--soft-gray);
 }
 .brands-cards {
@@ -991,7 +991,7 @@ body {
     margin-bottom: 15px;
 }
 .element-show .dark-form-inner {
-    transition: .5s ease .5s;
+    transition: .5s ease .1s;
     background-color: var(--black-3, #212121);
 }
 @media (min-width:992px) {

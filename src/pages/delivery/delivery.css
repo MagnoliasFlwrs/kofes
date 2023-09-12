@@ -12,7 +12,7 @@
     background: transparent;
 }
 .element-show .hero-block-inner  {
-    transition: .5s ease 1s;
+    transition: .5s ease 0.1s;
     background: var(--soft-gray, #F3F4F5);
 }
 .hero-block-inner h1 {
@@ -163,7 +163,17 @@
     letter-spacing: -0.48px;
     margin-top: 10px;
 }
-
+@media (max-width:768px) {
+    .element-show .delivery-col {
+        transition: .5s ease .9s;
+    }
+    .element-show .delivery-col .anim-content {
+        transition: .5s ease .3s;
+    }
+    .element-show .delivery-map .anim-content {
+        transition: .5s ease .4s;
+    }
+}
 @media (min-width:992px) {
     .hero-block {
         padding: calc(50 * var(--fz)) 0 calc(60 * var(--fz));

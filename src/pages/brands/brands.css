@@ -10,7 +10,11 @@
 .hero-block-inner {
     padding: calc(30 * var(--fz));
     border-radius: 20px;
-    background: var(--soft-gray, #F3F4F5);
+    background-color: transparent;
+}
+.element-show .hero-block-inner{
+    transition: .5s ease 0.3s;
+    background-color: var(--soft-gray, #F3F4F5);
 }
 .hero-block-inner h1 {
     font-size: calc(44 * var(--fz));
@@ -42,6 +46,20 @@
     width: 100%;
     padding-top: calc(120 * var(--fz));
     padding-bottom: calc(120 * var(--fz));
+}
+.element-show .brands-inner {
+    transition: background-color .5s ease 0.5s;
+}
+.element-show .brands-inner .anim-content {
+    transition: 0.5s ease 0.3s;
+}
+@media (max-width:768px) {
+    .element-show .brands-inner {
+        transition: background-color .5s ease 0.8s;
+    }
+    .element-show .brands-inner .anim-content {
+        transition: 0.5s ease 0.4s;
+    }
 }
 
 @media (min-width:992px) {

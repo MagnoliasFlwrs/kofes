@@ -54,7 +54,7 @@
     background-color: transparent;
 }
 .element-show .banner-content {
-    transition: all 0.5s ease 1s;
+    transition: all 0.5s ease .1s;
     background-color: var(--soft-gray, #F3F4F5);
 }
 .banner-content h2 {
@@ -140,7 +140,7 @@
     padding: calc(30 * var(--fz)) 0;
 }
 .element-show .staff-photos {
-    transition: background-color .5s ease 1.5s;
+    transition: background-color .5s ease .2s;
     background-color: var(--soft-gray);
 }
 .staff-photos h3 , .search-inner h3{
@@ -167,7 +167,7 @@
     border-radius: 20px;
 }
 .element-show .staff-about {
-    transition: background-color .2s ease;
+    transition: background-color .5s ease .2s;
     background-color: var(--carrot);
 }
 .staff-about-date {
@@ -199,7 +199,7 @@
 .proxima-inner {
     width: 100%;
     border-radius: 20px;
-    background-color: var(--black-3, #212121);
+    /* background-color: var(--black-3, #212121); */
     display: inline-flex;
     padding: calc(60 * var(--fz)) calc(30 * var(--fz));
     flex-direction: column;
@@ -209,10 +209,10 @@
     color: #fff;
     position: relative;
 }
-/* .element-show .proxima-inner {
-    transition: background-color .5s ease 1s;
+.element-show .proxima-inner {
+    transition: background-color .5s ease 0.2s;
     background-color: var(--black-3, #212121);
-} */
+}
 .proxima-col h3  {
     font-size: calc(30 * var(--fz));
     font-style: normal;
@@ -271,6 +271,10 @@
     align-items: center;
     gap: 30px;
     border-radius: 20px;
+    background-color: transparent;
+}
+.element-show .search-inner {
+    transition: 0.5s ease .3s;
     background-color: var(--soft-gray);
 }
 .search-inner h3 {
@@ -767,7 +771,7 @@
 }
 .element-show .team-inner {
     background-color: var(--soft-gray, #F3F4F5);
-    transition: background-color .5s ease 1s;
+    transition: background-color .5s ease .3s;
 }
 .team-row {
     display: flex;

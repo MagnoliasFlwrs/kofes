@@ -17,7 +17,7 @@
     background-color: transparent;
 }
 .element-show .hero-main-content  {
-    transition: background-color .5s ease 1s;
+    transition: background-color .5s ease .1s;
     background-color: var(--soft-gray);
 }
 .hero-main-content h1 {
@@ -44,7 +44,7 @@
     margin-bottom: 16px;
 }
 .element-show .hero-block-price  {
-    transition: background-color .5s ease .8s;
+    transition: background-color .5s ease .1s;
     background-color: var(--carrot);
 }
 .hero-block-price h3 {
@@ -79,7 +79,7 @@
     background-color: transparent;
 }
 .element-show .hero-block-consult  {
-    transition: background-color .5s ease .8s;
+    transition: background-color .5s ease .1s;
     background-color: var(--black-3, #212121);
 }
 .hero-block-consult p {
@@ -251,6 +251,20 @@
 }
 .brands {
     padding: calc(120 * var(--fz)) 0;
+}
+.element-show .brands-inner {
+    transition: background-color .5s ease .1s;
+}
+@media (max-width:768px) {
+    .element-show .hero-block-price  {
+        transition: background-color .5s ease .7s;
+    }
+    .element-show .hero-block-consult  {
+        transition: background-color .5s ease .8s;
+    }
+    .element-show .hero-block-price .anim-content , .element-show .hero-block-consult .anim-content{
+        transition: 0.5s ease .3s;
+    }
 }
 @media (min-width:992px) {
     .hero-block {

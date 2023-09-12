@@ -12,7 +12,7 @@
     background: transparent;
 }
 .element-show .hero-block-inner {
-    transition: .5s ease 1s;
+    transition: .5s ease 0.2s;
     background: var(--soft-gray, #F3F4F5);
 }
 .hero-block-inner h1 {
@@ -50,12 +50,12 @@
 }
 .about-col-inner {
     border-radius: 20px;
-    background: var(--black-3, #212121);
+    background: transparent;
     padding: calc(30 * var(--fz));
     color: #fff;
 }
 .element-show .about-col-inner {
-    transition: .5s ease .5s;
+    transition: .5s ease .2s;
     background: var(--black-3, #212121);
 }
 .about-col-inner h2 {
@@ -374,12 +374,16 @@
 }
 
 .repair-brands-inner {
-    background-color: var(--soft-gray);
+    background-color: transparent;
     padding: calc(30 * var(--fz));
     border-radius: 20px;
 }
 .repair-brands-card {
     font-size: calc(16 * var(--fz));
+}
+.element-show .repair-brands-inner {
+    transition: 0.5s ease 0.2s;
+    background-color: var(--soft-gray);
 }
 /* .element-animation.repair-brands {
     background-color: transparent;
@@ -409,7 +413,18 @@
     margin-top: 0;
 }
 
-
+@media (max-width:768px) {
+    .element-show .about-col-inner {
+        transition: .5s ease 1s;
+        background-color:  #303030;
+    }
+    .element-show .about-col-inner .title-anim .word {
+        animation-delay: 1.2s;
+    }
+    .element-show .about-col-inner  .title-anim .text-wrapper:last-child .word {
+        animation-delay: 1.3s;
+    }
+}
 
 @media (min-width:992px) {
 
@@ -669,7 +684,7 @@
         gap: 0;
     }
     .repair-brands-inner {
-        background-color: var(--soft-gray);
+        /* background-color: var(--soft-gray); */
         padding: calc(120 * var(--fz)) calc(60 * var(--fz));
         border-radius: 20px;
     }

@@ -13,7 +13,7 @@
     padding: calc(30 * var(--fz));
 }
 .element-show .hero-inner  {
-    transition: all .5s ease 1s;
+    transition: all .5s ease ;
     background: var(--soft-gray, #F3F4F5);
 }
 .hero-inner h1 {
@@ -328,7 +328,11 @@
     visibility: visible;
     opacity: 1;
 }
-
+@media (max-width:768px) {
+    .problems.element-animation.element-show .anim-content {
+        transition: 0.5s ease 0.3s;
+    }
+}
 @media (min-width:992px) {
     .hero-block {
         padding-top: calc(50 * var(--fz));
