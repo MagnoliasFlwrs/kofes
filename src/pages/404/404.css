@@ -1,0 +1,184 @@
+@import url(../../assets/styles/style.css);
+@import url(../../assets/styles/footer.css);
+@import url(../../assets/styles/header.css);
+@import url(../../assets/styles/modals.css);
+
+
+.error-block {
+    padding: calc(50 * var(--fz)) 0 calc(120 * var(--fz));
+}
+.error-wrapper {
+    border-radius: 20px;
+    background: #F3F4F5;
+    padding: calc(129 * var(--fz)) 0 calc(129 * var(--fz)) calc(150 * var(--fz));
+    position: relative;
+}
+.element-show .error-wrapper {
+    transition: .5s ease 0.2s;
+    background-color: var(--soft-gray, #F3F4F5);
+}
+.error-wrapper .error-span {
+    color: #FFF;
+    font-size: calc(562 * var(--fz));
+    font-style: normal;
+    font-weight: 600;
+    line-height: 90%; /* 505.877px */
+    letter-spacing: -28.104px;
+
+}
+.error-message-block {
+    max-width: calc(530 * var(--fz));
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    position: absolute;
+    bottom: calc(120 * var(--fz));
+    left: 55%;
+}
+.error-message-block h1 {
+    color: #000;
+    font-size: calc(80 * var(--fz));
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%; /* 80px */
+    letter-spacing: -2.4px;
+}
+.error-message-block p {
+    color: #303030;
+    font-size: calc(26 * var(--fz));
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 39px */
+    letter-spacing: -0.78px;
+}
+.error-message-block a {
+    /* width: 380px;
+    padding: auto; */
+}
+
+
+@media (max-width:1200px) {
+    .error-message-block {
+        max-width: calc(330 * var(--fz));
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        position: absolute;
+        bottom: calc(120 * var(--fz));
+        left: 55%;
+    }
+    .error-wrapper {
+        border-radius: 20px;
+        background: #F3F4F5;
+        padding: calc(129 * var(--fz)) 0 calc(129 * var(--fz)) calc(100 * var(--fz));
+        position: relative;
+    }
+    .error-wrapper .error-span {
+        color: #FFF;
+        font-size: calc(362 * var(--fz));
+        font-style: normal;
+        font-weight: 600;
+        line-height: 90%; /* 505.877px */
+        letter-spacing: -28.104px;
+    
+    }
+    .error-message-block h1 {
+        font-size: calc(50 * var(--fz));
+    }
+    .error-message-block p {
+        font-size: calc(26 * var(--fz));
+    }
+    .carrot-btn {
+        padding: calc(12 * var(--fz))  calc(60 * var(--fz));
+        border-radius: 1000px;
+        border: 2px solid var(--carrot, #E55938);
+        background-color: var(--carrot, #E55938);
+        font-size: calc(22 * var(--fz));
+        font-style: normal;
+        font-weight: 500;
+        line-height: 125%;
+        letter-spacing: -0.78px;
+        color: #fff;
+        cursor: pointer;
+    }
+    .carrot-btn .btn-text:before {
+        animation: c .6s ease 1;
+        color: white;
+        font-size: calc(18 * var(--fz));
+        font-style: normal;
+        font-weight: 500;
+        line-height: 125%;
+        letter-spacing: -0.78px;
+        color: #fff;
+    }
+    .carrot-btn .btn-text:after {
+        animation: d .6s ease 1;
+        opacity: 0;
+        font-size: calc(18 * var(--fz));
+        font-style: normal;
+        font-weight: 500;
+        line-height: 125%;
+        letter-spacing: -0.78px;
+        color: #fff;
+    }
+}
+@media (max-width:1000px) {
+    .error-block {
+        padding: calc(25 * var(--fz)) 0 calc(50 * var(--fz));
+    }
+    .error-message-block h1 {
+        font-size: calc(30 * var(--fz));
+    }
+    .error-message-block p {
+        font-size: calc(20 * var(--fz));
+    }
+    .error-wrapper .error-span {
+        color: #FFF;
+        font-size: calc(200 * var(--fz));
+    }
+    .error-message-block {
+        max-width: calc(250 * var(--fz));
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        position: absolute;
+        bottom: calc(50 * var(--fz));
+        right: 10%;
+    }
+    .error-wrapper {
+        border-radius: 20px;
+        background: #F3F4F5;
+        padding: calc(100 * var(--fz)) 0 calc(100 * var(--fz)) calc(50 * var(--fz));
+        position: relative;
+    }
+    /* .error-message-block a {
+        width: 100%;
+    } */
+}
+@media (max-width:768px) {
+    .error-message-block {
+        /* max-width: 50%; */
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        position: absolute;
+        bottom: calc(50 * var(--fz));
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .error-message-block h1 {
+        font-size: calc(20 * var(--fz));
+    }
+    .error-message-block p {
+        font-size: calc(15 * var(--fz));
+    }
+    .error-wrapper .error-span {
+        color: #FFF;
+        font-size: calc(150 * var(--fz));
+    }
+    /* .error-message-block a {
+        width: fit-content;
+    } */
+}
